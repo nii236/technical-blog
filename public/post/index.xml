@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on nii236&#39;s Technical Blog</title>
+    <link>http://blog.niiteki.io/post/</link>
+    <description>Recent content in Posts on nii236&#39;s Technical Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Sep 2015 14:21:40 +0800</lastBuildDate>
+    <atom:link href="http://blog.niiteki.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>first</title>
+      <link>http://blog.niiteki.io/post/first/</link>
+      <pubDate>Fri, 18 Sep 2015 14:21:40 +0800</pubDate>
+      
+      <guid>http://blog.niiteki.io/post/first/</guid>
+      <description>&lt;p&gt;This is the initial post. I&amp;rsquo;ll be exploring various technology stacks during my journey to become a (more) competent developer.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

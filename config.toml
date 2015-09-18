@@ -1,0 +1,37 @@
+# Site settings
+baseurl = "http://blog.niiteki.io/"
+languageCode = "en-us"
+title = "nii236's Technical Blog"
+theme = "hugo-cactus-theme"
+
+[params]
+	name = "John Nguyen"
+	description = "Explorations in tech"
+	bio = "Engineer - Developer - Traveller"
+	# Enter optionally your twitter account
+	twitter = "nii236"
+	# Disable comments by leaving disqusShortname empty
+	disqusShortname = "nii236"
+	# Enter your tracking code to enable Google Analytics
+	googleAnalytics = ""
+	enableRSS = true
+
+	# The variables below are optionally too and can be used to
+	# translate or customize each string of the theme.
+
+	# Navigation links
+	home = ""
+	about = ""
+	subscribe = ""
+	# Pagination links
+	olderPosts = ""
+	newerPosts = ""
+	readMore = ""
+	copyright = ""
+	# Sharing options and author information in posts
+	aboutAuthor = "I am an aspiring developer"
+	tweet = ""
+	share = ""
+	# 404 page
+	title404 = ""
+	subtitle404 = ""
