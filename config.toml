@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "http://nii236.github.io/technical-blog"
+baseurl = "http://nii236.github.io/technical-blog/"
 languageCode = "en-us"
 title = "nii236's Technical Blog"
 theme = "hugo-cactus-theme"
