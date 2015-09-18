@@ -10,12 +10,16 @@
     <atom:link href="http://nii236.github.io/technical-blog/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>first</title>
+      <title>First post!</title>
       <link>http://nii236.github.io/technical-blog/post/first/</link>
       <pubDate>Fri, 18 Sep 2015 14:21:40 +0800</pubDate>
       
       <guid>http://nii236.github.io/technical-blog/post/first/</guid>
-      <description>&lt;p&gt;This is the initial post. I&amp;rsquo;ll be exploring various technology stacks during my journey to become a (more) competent developer.&lt;/p&gt;
+      <description>
+
+&lt;h1 id=&#34;why-hello-there:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;Why hello there!&lt;/h1&gt;
+
+&lt;p&gt;This is the initial post. I&amp;rsquo;ll be exploring various technology stacks during my journey to become a (more) competent developer.&lt;/p&gt;
 </description>
     </item>
     

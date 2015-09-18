@@ -1,8 +1,9 @@
 +++
 date = "2015-09-18T14:21:40+08:00"
 description = "git commit -am 'initial post'"
-title = "first"
+title = "First post!"
 
 +++
 
+# Why hello there!
 This is the initial post. I'll be exploring various technology stacks during my journey to become a (more) competent developer.

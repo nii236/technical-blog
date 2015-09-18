@@ -10,12 +10,40 @@
     <atom:link href="http://nii236.github.io/technical-blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>first</title>
+      <title>First post!</title>
       <link>http://nii236.github.io/technical-blog/post/first/</link>
       <pubDate>Fri, 18 Sep 2015 14:21:40 +0800</pubDate>
       
       <guid>http://nii236.github.io/technical-blog/post/first/</guid>
-      <description>&lt;p&gt;This is the initial post. I&amp;rsquo;ll be exploring various technology stacks during my journey to become a (more) competent developer.&lt;/p&gt;
+      <description>
+
+&lt;h1 id=&#34;why-hello-there:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;Why hello there!&lt;/h1&gt;
+
+&lt;p&gt;This is the initial post. I&amp;rsquo;ll be exploring various technology stacks during my journey to become a (more) competent developer.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>about</title>
+      <link>http://nii236.github.io/technical-blog/about/</link>
+      <pubDate>Thu, 17 Sep 2015 09:07:19 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/about/</guid>
+      <description>
+
+&lt;h1 id=&#34;about-me:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;About me&lt;/h1&gt;
+
+&lt;p&gt;I&amp;rsquo;m an ex-control systems/automation engineer. I’ve been working in the mining industry for 6 years before switching to software development.&lt;/p&gt;
+
+&lt;p&gt;During my engineering career I have spent about 3 years on mine sites, from Boddington to South Australia. I even spent nine months in Ghana, West Africa! A lot of my work involved switch configuration, PLC and SCADA programming, fault finding, code debugging, breakdown support and field testing.&lt;/p&gt;
+
+&lt;p&gt;After my short career in engineering I started to have thoughts about finding work that lets me live close to civilisation. That coupled with my main engineering path already leaning towards tech, and the fact that in my spare time my hobbies were basically software development, I figured that this industry was the way to go.&lt;/p&gt;
+
+&lt;p&gt;I find self motivation is the biggest factor in learning something. I have had a recent interest in cryptocurrencies, Bitcoin in particular. This is what has been driving my desire to learn more about software development. I wrote a few trading bots in Python and have recently written a blog post covering how to use graph databases to see trends in the blockchain.&lt;/p&gt;
+
+&lt;p&gt;I am currently working full-time as an analyst developer at The Frontier Group. My work involves data visualisations and writing extensions to TIBCO&amp;rsquo;s Spotfire platform using C# and D3.js.&lt;/p&gt;
+
+&lt;p&gt;My current interests revolve around data science, data visualisations and cryptocurrencies.&lt;/p&gt;
 </description>
     </item>
     

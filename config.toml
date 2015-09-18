@@ -21,11 +21,11 @@ theme = "hugo-cactus-theme"
 
 	# Navigation links
 	home = ""
-	about = ""
-	subscribe = ""
+	about = "About"
+	subscribe = "RSS"
 	# Pagination links
-	olderPosts = ""
-	newerPosts = ""
+	olderPosts = "Back in time..."
+	newerPosts = "Forward in time..."
 	readMore = ""
 	copyright = ""
 	# Sharing options and author information in posts
