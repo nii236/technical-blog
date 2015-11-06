@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>nii236&#39;s Technical Blog</title>
+    <title>A Technical Blog</title>
     <link>http://nii236.github.io/technical-blog/</link>
-    <description>Recent content on nii236&#39;s Technical Blog</description>
+    <description>Recent content on A Technical Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 18 Sep 2015 14:21:40 +0800</lastBuildDate>
@@ -24,16 +24,12 @@
     </item>
     
     <item>
-      <title>about</title>
+      <title>About</title>
       <link>http://nii236.github.io/technical-blog/about/</link>
       <pubDate>Thu, 17 Sep 2015 09:07:19 +0800</pubDate>
       
       <guid>http://nii236.github.io/technical-blog/about/</guid>
-      <description>
-
-&lt;h1 id=&#34;about-me:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;About me&lt;/h1&gt;
-
-&lt;p&gt;I&amp;rsquo;m an ex-control systems/automation engineer. I’ve been working in the mining industry for 6 years before switching to software development.&lt;/p&gt;
+      <description>&lt;p&gt;I&amp;rsquo;m an ex-control systems/automation engineer. I’ve been working in the mining industry for 6 years before switching to software development.&lt;/p&gt;
 
 &lt;p&gt;During my engineering career I have spent about 3 years on mine sites, from Boddington to South Australia. I even spent nine months in Ghana, West Africa! A lot of my work involved switch configuration, PLC and SCADA programming, fault finding, code debugging, breakdown support and field testing.&lt;/p&gt;
 

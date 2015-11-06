@@ -1,11 +1,10 @@
 +++
 date = "2015-09-17T09:07:19+08:00"
 description = ""
-title = "about"
+title = "About"
 
 +++
 
-# About me
 I'm an ex-control systems/automation engineer. I’ve been working in the mining industry for 6 years before switching to software development.
 
 During my engineering career I have spent about 3 years on mine sites, from Boddington to South Australia. I even spent nine months in Ghana, West Africa! A lot of my work involved switch configuration, PLC and SCADA programming, fault finding, code debugging, breakdown support and field testing.
