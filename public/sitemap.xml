@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://localhost:1313/technical-blog/</loc>
+    <loc>http://nii236.github.io/technical-blog/</loc>
     <lastmod>2015-11-06T16:55:21+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/technical-blog/post/electron/</loc>
+    <loc>http://nii236.github.io/technical-blog/post/electron/</loc>
     <lastmod>2015-11-06T16:55:21+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/technical-blog/post/first/</loc>
+    <loc>http://nii236.github.io/technical-blog/post/first/</loc>
     <lastmod>2015-09-18T14:21:40+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/technical-blog/about/</loc>
+    <loc>http://nii236.github.io/technical-blog/about/</loc>
     <lastmod>2015-09-17T09:07:19+08:00</lastmod>
   </url>
   

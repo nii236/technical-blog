@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on A Technical Blog</title>
-    <link>http://localhost:1313/technical-blog/post/</link>
+    <link>http://nii236.github.io/technical-blog/post/</link>
     <description>Recent content in Posts on A Technical Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 06 Nov 2015 16:55:21 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/technical-blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://nii236.github.io/technical-blog/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Square peg into a square hole</title>
-      <link>http://localhost:1313/technical-blog/post/electron/</link>
+      <link>http://nii236.github.io/technical-blog/post/electron/</link>
       <pubDate>Fri, 06 Nov 2015 16:55:21 +0800</pubDate>
       
-      <guid>http://localhost:1313/technical-blog/post/electron/</guid>
+      <guid>http://nii236.github.io/technical-blog/post/electron/</guid>
       <description>
 
 &lt;h1 id=&#34;go:ebf9963405bac373eb63012bc418035c&#34;&gt;Go&lt;/h1&gt;
@@ -54,10 +54,10 @@
     
     <item>
       <title>First post!</title>
-      <link>http://localhost:1313/technical-blog/post/first/</link>
+      <link>http://nii236.github.io/technical-blog/post/first/</link>
       <pubDate>Fri, 18 Sep 2015 14:21:40 +0800</pubDate>
       
-      <guid>http://localhost:1313/technical-blog/post/first/</guid>
+      <guid>http://nii236.github.io/technical-blog/post/first/</guid>
       <description>
 
 &lt;h1 id=&#34;why-hello-there:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;Why hello there!&lt;/h1&gt;
