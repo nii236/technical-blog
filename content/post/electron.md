@@ -6,11 +6,11 @@ title = "Square peg into a square hole"
 
 # Go
 
-My friends know me as someone who is not very loyal. I don't mean to my girlfriend. I mean to various technology and web stacks. Ever since the advent of node.js, frameworks, tooling and just weird stacks have popped up. Not that I'm complaining.
+My friends know me as someone who is not very loyal. I don't mean to my girlfriend. I mean to various technology and web stacks. Ever since the advent of node.js, frameworks, tooling and just weird stacks have popped up. Not that I'm complaining. I love reading about new frameworks, languages and development in general.
 
 My current interest is in [Go](golang.org), or [Golang](golang.org). I won't bother introducing it here, as I'll just be repeating what others have said.
 
-I've been really interest in the language lately, and I look forward to building apps with it. One of the main limitations of Go at the moment is the lack of a proper UI library. There are some bindings to GTK/QT somewhere, but usually filled with bugs or some weird hackery.
+I've been really interested in the language lately, and I look forward to building apps with it. One of the main limitations of Go at the moment is the lack of a proper UI library. There are some bindings to GTK/QT somewhere, but usually filled with bugs or some weird hackery.
 
 # Electron
 
