@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on A Blog</title>
+    <link>http://nii236.github.io/technical-blog/tags/programming/</link>
+    <description>Recent content in Programming on A Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Nov 2015 11:06:25 +0800</lastBuildDate>
+    <atom:link href="http://nii236.github.io/technical-blog/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>npm install mad-skillz</title>
+      <link>http://nii236.github.io/technical-blog/post/jobprep/</link>
+      <pubDate>Sun, 15 Nov 2015 11:06:25 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/post/jobprep/</guid>
+      <description>&lt;p&gt;So I started considering a job in software development around October 2014. All I had with me were:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;First year computer science&lt;/li&gt;
+&lt;li&gt;Mechatronics engineering (MATLAB and similar)&lt;/li&gt;
+&lt;li&gt;Two years of PLC/SCADA/Cicode programming&lt;/li&gt;
+&lt;li&gt;9 months of being stuck on site and poking around with Linux, VPNs, vim, bash&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Not too bad considering.&lt;/p&gt;
+
+&lt;p&gt;I have a extremely large appetite for self learning and research if something interests me enough, so for the next few months I applied for various software roles, while self learning. Codecademy, The Odin Project, The Rails Tutorial were part of it.&lt;/p&gt;
+
+&lt;p&gt;At the same time, applying to more control systems jobs was my other fulltime job. You know, in addition to my existing fulltime job of trying to be a software developer.&lt;/p&gt;
+
+&lt;p&gt;I suppose I lucked out in the end. I managed to score a role at &lt;a href=&#34;http://www.thefrontiergroup.com.au&#34;&gt;The Frontier Group&lt;/a&gt;! At the end of the day, it was not my feeble attempts to learn software development that got me the role, it was a combination of the following things:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The drive to learn something new&lt;/li&gt;
+&lt;li&gt;The initiative to switch careers&lt;/li&gt;
+&lt;li&gt;The ability to fit into the company culture&lt;/li&gt;
+&lt;li&gt;My existing knowledge in mining and engineering&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The actual role was not a development role unfortunately. I was employed as an &amp;lsquo;analyst developer&amp;rsquo;, which focuses on data analytics for various clients (usually mining). TFG is, however, mainly a web development company, and I hoped by just being I would have the opportunity to learn skills that I needed to be able to hold my own in this new industry.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

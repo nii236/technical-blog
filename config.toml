@@ -6,7 +6,7 @@ theme = "hugo-theme-blueberry-detox"
 
 [params]
 	name = "John Nguyen"
-	description = "Explorations in tech"
+	description = "Explorations in tech and music"
 	bio = "Engineer - Developer - Traveller"
 	# Enter optionally your twitter account
 	twitter = "nii236"

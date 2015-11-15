@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Go on A Blog</title>
+    <link>http://nii236.github.io/technical-blog/tags/go/</link>
+    <description>Recent content in Go on A Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Nov 2015 16:18:08 +0800</lastBuildDate>
+    <atom:link href="http://nii236.github.io/technical-blog/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Introducing Graviton</title>
+      <link>http://nii236.github.io/technical-blog/post/graviton/</link>
+      <pubDate>Sun, 15 Nov 2015 16:18:08 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/post/graviton/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;d like to introduce Graviton in this post. Its a name I made up for my project mentioned in a previous post. There&amp;rsquo;s no real point to the name, except that it uses Electron plus Go. So I figured I&amp;rsquo;d choose a cool physics based name that starts with G.&lt;/p&gt;
+
+&lt;p&gt;In this post I&amp;rsquo;ll explain the basic steps in communicating between the front and back. In this case a &amp;ldquo;Hello World&amp;rdquo; should do the trick.&lt;/p&gt;
+
+&lt;p&gt;So there are three parts to a graviton app:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Browser front-end&lt;/li&gt;
+&lt;li&gt;Node js glue-end&lt;/li&gt;
+&lt;li&gt;Golang backend&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The first two parts are covered with Electron.js. And the backend is covered by Go, believe it or not.&lt;/p&gt;
+
+&lt;p&gt;Connecting the front-end to the glue-end is done by Electron&amp;rsquo;s internal &lt;code&gt;ipc&lt;/code&gt; package. Its an event based system.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s send a &amp;ldquo;Hello from front-end&amp;rdquo; message from our front-end. I&amp;rsquo;m a react.js guy as well, so that&amp;rsquo;s what I&amp;rsquo;ll be using.&lt;/p&gt;
+
+&lt;p&gt;Create a React component which has a button which calls:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ipc.send(&#39;SendHello&#39;, &#39;Front-end&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the glue-end, you&amp;rsquo;ll want a handler for this event, which basically just passes this onto the backend&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var client = new todoProto.Todo(&#39;localhost:3000&#39;, grpc.Credentials.createInsecure());
+
+ipc.on(&#39;SendHello&#39;, function(event, arg) {
+  client.sendHello({request: arg}, function(err, response) {
+    if (err) { console.log(err); }
+    event.sender.send(&#39;SendHelloResponse&#39;, response)
+  });
+})
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The communication between the glue-end and the backend needs to be declared in a protobuf3 file. The glue-end will also handle the response which will be sent back over IPC to the front-end:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;syntax = &amp;quot;proto3&amp;quot;;
+
+package Hello;
+
+message SendHelloRequest {
+  string request = 1;
+}
+
+message SendHelloResponse {
+  string response = 1;
+}
+
+service Todo {
+  rpc SendHello(SendHelloRequest) returns
+  (SendHelloResponse);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now to handle it in the backend:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;type sendHelloServer struct{}
+
+// AddTodoService implements pb.AddTodoServer
+func (s sendHelloServer) SendHello(ctx context.Context, in *pb.SendHelloRequest) (*pb.SendHelloResponse, error) {
+	return &amp;amp;pb.SendHelloResponse{Response: &amp;quot;Hello&amp;quot; + in.Request}, nil
+}
+
+func main() {
+  port := os.Getenv(&amp;quot;PORT&amp;quot;)
+	host := os.Getenv(&amp;quot;HOST&amp;quot;)
+
+	if len(port) == 0 {
+		port = &amp;quot;3000&amp;quot;
+	}
+
+	if len(host) == 0 {
+		host = &amp;quot;localhost&amp;quot;
+	}
+
+	lis, err := net.Listen(&amp;quot;tcp&amp;quot;, host+&amp;quot;:&amp;quot;+port)
+	if err != nil {
+		log.Fatalf(&amp;quot;failed to listen: %v&amp;quot;, err)
+	}
+	s := grpc.NewServer()
+	pb.RegisterSendHelloServer(s, &amp;amp;sendHelloServer{})
+	s.Serve(lis)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The response from the Go backend is now sent to your node.js glue-end which will forward it to the front-end. Now handle the response over in your front-end:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ipc.on(&#39;SendHelloResponse&#39;, (arg) =&amp;gt; {
+  console.log(arg);
+});
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You will see &amp;ldquo;Hello Front-end&amp;rdquo; in your Electron&amp;rsquo;s console everytime you click the button! Amazing!&lt;/p&gt;
+
+&lt;p&gt;I imagine you&amp;rsquo;re thinking something like:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Goddamn that was a LOT of effort for a Hello World&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Sure it was. But now you have a cool framework for your Go app! You are Hello World-ing across three different layers! Its a self contained, cross platform, multi-language, HTTP2 streaming enabled microservice!&lt;/p&gt;
+
+&lt;p&gt;The connection between the presentation layer and the backend is handled in Protobuf/gRPC format. Communication is very efficient compared to JSON, uses HTTP/2 and supports streaming, duplex communication and other cool things that I have only begun to explore.&lt;/p&gt;
+
+&lt;p&gt;I would like to imagine that with all this setup you have a scalable system with which you can create cool apps like PopcornTime, Atom and others, except now you can do it with Go.&lt;/p&gt;
+
+&lt;p&gt;And that&amp;rsquo;s pretty damn cool.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Square peg into a square hole</title>
+      <link>http://nii236.github.io/technical-blog/post/electron/</link>
+      <pubDate>Fri, 06 Nov 2015 16:55:21 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/post/electron/</guid>
+      <description>
+
+&lt;h1 id=&#34;go:ebf9963405bac373eb63012bc418035c&#34;&gt;Go&lt;/h1&gt;
+
+&lt;p&gt;My friends know me as someone who is not very loyal. I don&amp;rsquo;t mean to my girlfriend. I mean to various technology and web stacks. Ever since the advent of node.js, frameworks, tooling and just weird stacks have popped up. Not that I&amp;rsquo;m complaining. I love reading about new frameworks, languages and development in general.&lt;/p&gt;
+
+&lt;p&gt;My current interest is in &lt;a href=&#34;golang.org&#34;&gt;Go&lt;/a&gt;, or &lt;a href=&#34;golang.org&#34;&gt;Golang&lt;/a&gt;. I won&amp;rsquo;t bother introducing it here, as I&amp;rsquo;ll just be repeating what others have said.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been really interested in the language lately, and I look forward to building apps with it. One of the main limitations of Go at the moment is the lack of a proper UI library. There are some bindings to GTK/QT somewhere, but usually filled with bugs or some weird hackery.&lt;/p&gt;
+
+&lt;h1 id=&#34;electron:ebf9963405bac373eb63012bc418035c&#34;&gt;Electron&lt;/h1&gt;
+
+&lt;p&gt;I have also been looking into &lt;a href=&#34;http://electron.atom.io/&#34;&gt;Electron&lt;/a&gt; lately. It used to be known as Atom Shell and has been rebranded recently.&lt;/p&gt;
+
+&lt;p&gt;Electron allows people who are more experienced in Single Page App (SPA) style development to build apps for desktops. All signs point towards web apps as the future, but yet here is Electron and Atom enjoying success and adoption. It helps us lowly web developers to get our feet wet in desktop development.&lt;/p&gt;
+
+&lt;p&gt;A quick read of Electron documentation suggests that it runs off a basic node.js server as the &lt;code&gt;main process&lt;/code&gt;. There are also many &lt;code&gt;renderer processes&lt;/code&gt; that can be spawned, and these will be your browser instances that will be presented to the end user.&lt;/p&gt;
+
+&lt;p&gt;Communication between the main and renderer processes are done by way of the ipc package that comes with Electron. So I&amp;rsquo;d imagine your main process handles most of the comms, state, and processing. One of the biggest complaints about node js is that when it blocks, it &lt;em&gt;really, really&lt;/em&gt; blocks. Single threaded execution means that as soon as you do some sort of heavy number crunching you&amp;rsquo;re screwed, and then everyone will start complaining about how your &lt;a href=&#34;http://atom.io/&#34;&gt;app&lt;/a&gt; is slow as molasses.&lt;/p&gt;
+
+&lt;h1 id=&#34;multi-tier-architecture:ebf9963405bac373eb63012bc418035c&#34;&gt;Multi tier architecture&lt;/h1&gt;
+
+&lt;p&gt;So why not defer the processing intensive stuff to yet another process? Perhaps using another language that is well suited to portability (static binaries) and performance.&lt;/p&gt;
+
+&lt;p&gt;There is something called &lt;a href=&#34;https://en.wikipedia.org/wiki/Multitier_architecture&#34;&gt;multitier architecture&lt;/a&gt; that allows one to split up these concerns cleanly.&lt;/p&gt;
+
+&lt;p&gt;I have explored connecting a Go backend into Electron and have found reasonable success. The first iteration used a REST API, and my second attempt covers using gRPC instead, to great effect. I may have solved two problems in two different camps:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Performance by the main process in Electron&lt;/li&gt;
+&lt;li&gt;A UI toolkit for Go&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I&amp;rsquo;ll continue these musings in part two.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
