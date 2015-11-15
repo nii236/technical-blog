@@ -1,0 +1,115 @@
++++
+date = "2015-11-15T16:18:08+08:00"
+title = "Introducing Graviton"
+tags = ["graviton", "electron", "go", "golang"]
++++
+
+I'd like to introduce Graviton in this post. Its a name I made up for my project mentioned in a previous post. There's no real point to the name, except that it uses Electron plus Go. So I figured I'd choose a cool physics based name that starts with G.
+
+In this post I'll explain the basic steps in communicating between the front and back. In this case a "Hello World" should do the trick.
+
+So there are three parts to a graviton app:
+
+- Browser front-end
+- Node js glue-end
+- Golang backend
+
+The first two parts are covered with Electron.js. And the backend is covered by Go, believe it or not.
+
+Connecting the front-end to the glue-end is done by Electron's internal `ipc` package. Its an event based system.
+
+Let's send a "Hello from front-end" message from our front-end. I'm a react.js guy as well, so that's what I'll be using.
+
+Create a React component which has a button which calls:
+
+```
+ipc.send('SendHello', 'Front-end');
+```
+
+In the glue-end, you'll want a handler for this event, which basically just passes this onto the backend
+
+```
+var client = new todoProto.Todo('localhost:3000', grpc.Credentials.createInsecure());
+
+ipc.on('SendHello', function(event, arg) {
+  client.sendHello({request: arg}, function(err, response) {
+    if (err) { console.log(err); }
+    event.sender.send('SendHelloResponse', response)
+  });
+})
+```
+
+The communication between the glue-end and the backend needs to be declared in a protobuf3 file. The glue-end will also handle the response which will be sent back over IPC to the front-end:
+
+```
+syntax = "proto3";
+
+package Hello;
+
+message SendHelloRequest {
+  string request = 1;
+}
+
+message SendHelloResponse {
+  string response = 1;
+}
+
+service Todo {
+  rpc SendHello(SendHelloRequest) returns
+  (SendHelloResponse);
+}
+```
+
+Now to handle it in the backend:
+```
+type sendHelloServer struct{}
+
+// AddTodoService implements pb.AddTodoServer
+func (s sendHelloServer) SendHello(ctx context.Context, in *pb.SendHelloRequest) (*pb.SendHelloResponse, error) {
+	return &pb.SendHelloResponse{Response: "Hello" + in.Request}, nil
+}
+
+func main() {
+  port := os.Getenv("PORT")
+	host := os.Getenv("HOST")
+
+	if len(port) == 0 {
+		port = "3000"
+	}
+
+	if len(host) == 0 {
+		host = "localhost"
+	}
+
+	lis, err := net.Listen("tcp", host+":"+port)
+	if err != nil {
+		log.Fatalf("failed to listen: %v", err)
+	}
+	s := grpc.NewServer()
+	pb.RegisterSendHelloServer(s, &sendHelloServer{})
+	s.Serve(lis)
+}
+```
+
+The response from the Go backend is now sent to your node.js glue-end which will forward it to the front-end. Now handle the response over in your front-end:
+
+```
+ipc.on('SendHelloResponse', (arg) => {
+  console.log(arg);
+});
+
+```
+
+You will see "Hello Front-end" in your Electron's console everytime you click the button! Amazing!
+
+I imagine you're thinking something like:
+
+> Goddamn that was a LOT of effort for a Hello World
+
+Sure it was. But now you have a cool framework for your Go app! You are Hello World-ing across three different layers! Its a self contained, cross platform, multi-language, HTTP2 streaming enabled microservice!
+
+The connection between the presentation layer and the backend is handled in Protobuf/gRPC format. Communication is very efficient compared to JSON, uses HTTP/2 and supports streaming, duplex communication and other cool things that I have only begun to explore.
+
+I would like to imagine that with all this setup you have a scalable system with which you can create cool apps like PopcornTime, Atom and others, except now you can do it with Go.
+
+And that's pretty damn cool.
