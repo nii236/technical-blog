@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Golang on A Blog</title>
+    <link>http://nii236.github.io/technical-blog/tags/golang/</link>
+    <description>Recent content in Golang on A Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Nov 2015 16:18:08 +0800</lastBuildDate>
+    <atom:link href="http://nii236.github.io/technical-blog/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Introducing Graviton</title>
+      <link>http://nii236.github.io/technical-blog/post/graviton/</link>
+      <pubDate>Sun, 15 Nov 2015 16:18:08 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/post/graviton/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;d like to introduce Graviton in this post. Its a name I made up for my project mentioned in a previous post. There&amp;rsquo;s no real point to the name, except that it uses Electron plus Go. So I figured I&amp;rsquo;d choose a cool physics based name that starts with G.&lt;/p&gt;
+
+&lt;p&gt;In this post I&amp;rsquo;ll explain the basic steps in communicating between the front and back. In this case a &amp;ldquo;Hello World&amp;rdquo; should do the trick.&lt;/p&gt;
+
+&lt;p&gt;So there are three parts to a graviton app:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Browser front-end&lt;/li&gt;
+&lt;li&gt;Node js glue-end&lt;/li&gt;
+&lt;li&gt;Golang backend&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The first two parts are covered with Electron.js. And the backend is covered by Go, believe it or not.&lt;/p&gt;
+
+&lt;p&gt;Connecting the front-end to the glue-end is done by Electron&amp;rsquo;s internal &lt;code&gt;ipc&lt;/code&gt; package. Its an event based system.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s send a &amp;ldquo;Hello from front-end&amp;rdquo; message from our front-end. I&amp;rsquo;m a react.js guy as well, so that&amp;rsquo;s what I&amp;rsquo;ll be using.&lt;/p&gt;
+
+&lt;p&gt;Create a React component which has a button which calls:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ipc.send(&#39;SendHello&#39;, &#39;Front-end&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the glue-end, you&amp;rsquo;ll want a handler for this event, which basically just passes this onto the backend&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var client = new todoProto.Todo(&#39;localhost:3000&#39;, grpc.Credentials.createInsecure());
+
+ipc.on(&#39;SendHello&#39;, function(event, arg) {
+  client.sendHello({request: arg}, function(err, response) {
+    if (err) { console.log(err); }
+    event.sender.send(&#39;SendHelloResponse&#39;, response)
+  });
+})
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The communication between the glue-end and the backend needs to be declared in a protobuf3 file. The glue-end will also handle the response which will be sent back over IPC to the front-end:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;syntax = &amp;quot;proto3&amp;quot;;
+
+package Hello;
+
+message SendHelloRequest {
+  string request = 1;
+}
+
+message SendHelloResponse {
+  string response = 1;
+}
+
+service Todo {
+  rpc SendHello(SendHelloRequest) returns
+  (SendHelloResponse);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now to handle it in the backend:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;type sendHelloServer struct{}
+
+// AddTodoService implements pb.AddTodoServer
+func (s sendHelloServer) SendHello(ctx context.Context, in *pb.SendHelloRequest) (*pb.SendHelloResponse, error) {
+	return &amp;amp;pb.SendHelloResponse{Response: &amp;quot;Hello&amp;quot; + in.Request}, nil
+}
+
+func main() {
+  port := os.Getenv(&amp;quot;PORT&amp;quot;)
+	host := os.Getenv(&amp;quot;HOST&amp;quot;)
+
+	if len(port) == 0 {
+		port = &amp;quot;3000&amp;quot;
+	}
+
+	if len(host) == 0 {
+		host = &amp;quot;localhost&amp;quot;
+	}
+
+	lis, err := net.Listen(&amp;quot;tcp&amp;quot;, host+&amp;quot;:&amp;quot;+port)
+	if err != nil {
+		log.Fatalf(&amp;quot;failed to listen: %v&amp;quot;, err)
+	}
+	s := grpc.NewServer()
+	pb.RegisterSendHelloServer(s, &amp;amp;sendHelloServer{})
+	s.Serve(lis)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The response from the Go backend is now sent to your node.js glue-end which will forward it to the front-end. Now handle the response over in your front-end:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ipc.on(&#39;SendHelloResponse&#39;, (arg) =&amp;gt; {
+  console.log(arg);
+});
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You will see &amp;ldquo;Hello Front-end&amp;rdquo; in your Electron&amp;rsquo;s console everytime you click the button! Amazing!&lt;/p&gt;
+
+&lt;p&gt;I imagine you&amp;rsquo;re thinking something like:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Goddamn that was a LOT of effort for a Hello World&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Sure it was. But now you have a cool framework for your Go app! You are Hello World-ing across three different layers! Its a self contained, cross platform, multi-language, HTTP2 streaming enabled microservice!&lt;/p&gt;
+
+&lt;p&gt;The connection between the presentation layer and the backend is handled in Protobuf/gRPC format. Communication is very efficient compared to JSON, uses HTTP/2 and supports streaming, duplex communication and other cool things that I have only begun to explore.&lt;/p&gt;
+
+&lt;p&gt;I would like to imagine that with all this setup you have a scalable system with which you can create cool apps like PopcornTime, Atom and others, except now you can do it with Go.&lt;/p&gt;
+
+&lt;p&gt;And that&amp;rsquo;s pretty damn cool.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

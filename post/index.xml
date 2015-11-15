@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on A Blog</title>
+    <link>http://nii236.github.io/technical-blog/post/</link>
+    <description>Recent content in Posts on A Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Feb 2016 11:06:25 +0800</lastBuildDate>
+    <atom:link href="http://nii236.github.io/technical-blog/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Experiments in learning jazz piano</title>
+      <link>http://nii236.github.io/technical-blog/post/learning-jazz-piano/</link>
+      <pubDate>Mon, 01 Feb 2016 11:06:25 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/post/learning-jazz-piano/</guid>
+      <description>
+
+&lt;p&gt;So I have been learning music on and off for years, and have never really gotten to a &lt;strong&gt;fully sick&lt;/strong&gt; level of proficiency. The problem here is usually that I don&amp;rsquo;t put in enough hours, which is true. The other problem is paralysis analysis, and the filthy need to optimise my learning. I have suffered this same problem in my Japanese studies but I&amp;rsquo;ll leave that for another post.&lt;/p&gt;
+
+&lt;h1 id=&#34;jazz:58ef134edb6f9bf310a91dd2ee4ee4a4&#34;&gt;Jazz&lt;/h1&gt;
+
+&lt;p&gt;My background is classical piano, where I learnt enough in high school that a constant level of proficiency just sticks with me for the rest of my life. My interest in the past five years, however, has been jazz piano. I have had various teachers, learning methods and styles, but have never really seemed to stick. My poor sight reading ability coupled with my adult responsibilities (harhar) make it difficult to keep a steady practice routine going.&lt;/p&gt;
+
+&lt;p&gt;I am about to embark on a new method, combining everything that I have attempted so far.&lt;/p&gt;
+
+&lt;h1 id=&#34;synthesia:58ef134edb6f9bf310a91dd2ee4ee4a4&#34;&gt;Synthesia&lt;/h1&gt;
+
+&lt;p&gt;The game &lt;a href=&#34;http://www.synthesiagame.com&#34;&gt;Synthesia&lt;/a&gt; is something that has been around for a long long time. I bought a license back in 2011 I think, and its still been going strong. I opened up the latest version just last night and it seems that it now supports:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Custom hand splitting&lt;/li&gt;
+&lt;li&gt;Looping&lt;/li&gt;
+&lt;li&gt;Sweet sweet UI&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Definitely worth the price.&lt;/p&gt;
+
+&lt;h2 id=&#34;finding-high-quality-midi:58ef134edb6f9bf310a91dd2ee4ee4a4&#34;&gt;Finding high quality MIDI&lt;/h2&gt;
+
+&lt;p&gt;Most of the songs in Synthesia kind of suck to be honest. Not to mention irrelevant to jazz piano. Or classical piano. Or anything decent really. And I refuse to pay for lame-o Adele piano covers.&lt;/p&gt;
+
+&lt;p&gt;So I went hunting around for decent jazz piano MIDI. It needs to ideally have backing tracks, quantized beats and split tracks for each hand. Its not easy. Here it is.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.bushgrafts.com&#34;&gt;Douglas McKenzie&lt;/a&gt; (I bought his DVD!) is a great jazz pianist in Australia. He has a website with excellently formatted MIDI files. Its actually to time! And he even releases sheet music transcriptions of each of his solos. The MIDI files even have his annotations of each improvisation idea dammit! Its amazing.&lt;/p&gt;
+
+&lt;p&gt;I am also lazy. So run the following code in the folder of your choice to download all the MIDI files on his page.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;wget -A mid -m -p -E -k -K -np http://www.bushgrafts.com/jazz/midi.htm
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Stage 2 (actually stage 999) will be to look at these &lt;a href=&#34;http://www.billevans.nl/midipage.htm&#34;&gt;Bill Evans transcriptions&lt;/a&gt;. Pull them thus:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;wget -A mid -m -p -E -k -K -np http://www.billevans.nl/midipage.htm
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;using-the-midi:58ef134edb6f9bf310a91dd2ee4ee4a4&#34;&gt;Using the MIDI&lt;/h2&gt;
+
+&lt;p&gt;So just feed these into Synthesia, have a listen, play what you can, then check against the Synthesia falling notes, official sheet music or the generated ones from the game.&lt;/p&gt;
+
+&lt;p&gt;Feed the MIDI output into a virtual MIDI device into Reaper, and listen to that &lt;a href=&#34;https://www.pianoteq.com/&#34;&gt;sweet sweet piano VST&lt;/a&gt; that you no doubt own.&lt;/p&gt;
+
+&lt;p&gt;Practice the ear, export to MP3, run it through &lt;a href=&#34;http://www.seventhstring.com/&#34;&gt;Transcribe&lt;/a&gt; (or just slow it down through Synthesia)!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introducing Graviton</title>
+      <link>http://nii236.github.io/technical-blog/post/graviton/</link>
+      <pubDate>Sun, 15 Nov 2015 16:18:08 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/post/graviton/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;d like to introduce Graviton in this post. Its a name I made up for my project mentioned in a previous post. There&amp;rsquo;s no real point to the name, except that it uses Electron plus Go. So I figured I&amp;rsquo;d choose a cool physics based name that starts with G.&lt;/p&gt;
+
+&lt;p&gt;In this post I&amp;rsquo;ll explain the basic steps in communicating between the front and back. In this case a &amp;ldquo;Hello World&amp;rdquo; should do the trick.&lt;/p&gt;
+
+&lt;p&gt;So there are three parts to a graviton app:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Browser front-end&lt;/li&gt;
+&lt;li&gt;Node js glue-end&lt;/li&gt;
+&lt;li&gt;Golang backend&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The first two parts are covered with Electron.js. And the backend is covered by Go, believe it or not.&lt;/p&gt;
+
+&lt;p&gt;Connecting the front-end to the glue-end is done by Electron&amp;rsquo;s internal &lt;code&gt;ipc&lt;/code&gt; package. Its an event based system.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s send a &amp;ldquo;Hello from front-end&amp;rdquo; message from our front-end. I&amp;rsquo;m a react.js guy as well, so that&amp;rsquo;s what I&amp;rsquo;ll be using.&lt;/p&gt;
+
+&lt;p&gt;Create a React component which has a button which calls:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ipc.send(&#39;SendHello&#39;, &#39;Front-end&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the glue-end, you&amp;rsquo;ll want a handler for this event, which basically just passes this onto the backend&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var client = new todoProto.Todo(&#39;localhost:3000&#39;, grpc.Credentials.createInsecure());
+
+ipc.on(&#39;SendHello&#39;, function(event, arg) {
+  client.sendHello({request: arg}, function(err, response) {
+    if (err) { console.log(err); }
+    event.sender.send(&#39;SendHelloResponse&#39;, response)
+  });
+})
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The communication between the glue-end and the backend needs to be declared in a protobuf3 file. The glue-end will also handle the response which will be sent back over IPC to the front-end:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;syntax = &amp;quot;proto3&amp;quot;;
+
+package Hello;
+
+message SendHelloRequest {
+  string request = 1;
+}
+
+message SendHelloResponse {
+  string response = 1;
+}
+
+service Todo {
+  rpc SendHello(SendHelloRequest) returns
+  (SendHelloResponse);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now to handle it in the backend:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;type sendHelloServer struct{}
+
+// AddTodoService implements pb.AddTodoServer
+func (s sendHelloServer) SendHello(ctx context.Context, in *pb.SendHelloRequest) (*pb.SendHelloResponse, error) {
+	return &amp;amp;pb.SendHelloResponse{Response: &amp;quot;Hello&amp;quot; + in.Request}, nil
+}
+
+func main() {
+  port := os.Getenv(&amp;quot;PORT&amp;quot;)
+	host := os.Getenv(&amp;quot;HOST&amp;quot;)
+
+	if len(port) == 0 {
+		port = &amp;quot;3000&amp;quot;
+	}
+
+	if len(host) == 0 {
+		host = &amp;quot;localhost&amp;quot;
+	}
+
+	lis, err := net.Listen(&amp;quot;tcp&amp;quot;, host+&amp;quot;:&amp;quot;+port)
+	if err != nil {
+		log.Fatalf(&amp;quot;failed to listen: %v&amp;quot;, err)
+	}
+	s := grpc.NewServer()
+	pb.RegisterSendHelloServer(s, &amp;amp;sendHelloServer{})
+	s.Serve(lis)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The response from the Go backend is now sent to your node.js glue-end which will forward it to the front-end. Now handle the response over in your front-end:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ipc.on(&#39;SendHelloResponse&#39;, (arg) =&amp;gt; {
+  console.log(arg);
+});
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You will see &amp;ldquo;Hello Front-end&amp;rdquo; in your Electron&amp;rsquo;s console everytime you click the button! Amazing!&lt;/p&gt;
+
+&lt;p&gt;I imagine you&amp;rsquo;re thinking something like:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Goddamn that was a LOT of effort for a Hello World&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Sure it was. But now you have a cool framework for your Go app! You are Hello World-ing across three different layers! Its a self contained, cross platform, multi-language, HTTP2 streaming enabled microservice!&lt;/p&gt;
+
+&lt;p&gt;The connection between the presentation layer and the backend is handled in Protobuf/gRPC format. Communication is very efficient compared to JSON, uses HTTP/2 and supports streaming, duplex communication and other cool things that I have only begun to explore.&lt;/p&gt;
+
+&lt;p&gt;I would like to imagine that with all this setup you have a scalable system with which you can create cool apps like PopcornTime, Atom and others, except now you can do it with Go.&lt;/p&gt;
+
+&lt;p&gt;And that&amp;rsquo;s pretty damn cool.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Life on the Dark Side</title>
+      <link>http://nii236.github.io/technical-blog/post/lifeAtTFG/</link>
+      <pubDate>Sun, 15 Nov 2015 16:05:24 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/post/lifeAtTFG/</guid>
+      <description>&lt;p&gt;So there I was.&lt;/p&gt;
+
+&lt;p&gt;I joked that programming is like the dark side of career paths. Its tempting to do because it looks fun from the outside. It would have been a nice change from pushing paper and excel spreadsheets to vendors about why X does not adhere to standard Y. To be able to go to &amp;lsquo;work&amp;rsquo;, and that &amp;lsquo;work&amp;rsquo; means somewhere near civilisation. The concept is amazingly tempting, yet fraught with risk.&lt;/p&gt;
+
+&lt;p&gt;As I write this, I&amp;rsquo;ve been working at TFG for the past 9 months! I have various things to say but my work here has been very fruitful.&lt;/p&gt;
+
+&lt;p&gt;The majority of my time has been spent looking at the data analytics work that I was originally signed up to do. During slower times, however, I have been encouraged to help out with the others in developing web apps just like I hoped!&lt;/p&gt;
+
+&lt;p&gt;I have one current project in production, and another still in staging. I&amp;rsquo;ve had experience in the following technologies, languages and frameworks:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;d3.js&lt;/li&gt;
+&lt;li&gt;react.js&lt;/li&gt;
+&lt;li&gt;node.js&lt;/li&gt;
+&lt;li&gt;koa.js&lt;/li&gt;
+&lt;li&gt;Ruby on Rails&lt;/li&gt;
+&lt;li&gt;Ruby&lt;/li&gt;
+&lt;li&gt;RabbitMQ&lt;/li&gt;
+&lt;li&gt;Protobuf&lt;/li&gt;
+&lt;li&gt;Microservices&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I&amp;rsquo;ve had to pick up a smattering of things, not limited to databases, ORMs, Continuous Integration tools or deployment tools.&lt;/p&gt;
+
+&lt;p&gt;In my spare time I&amp;rsquo;ve continued to learn at a fast pace and have touched on the following things:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Electron.js&lt;/li&gt;
+&lt;li&gt;Python&lt;/li&gt;
+&lt;li&gt;Blockchains&lt;/li&gt;
+&lt;li&gt;Go/Golang&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I&amp;rsquo;ve even helped drive change in the stack that is used! React.js and webpack specifically. Before it was browserify and react-rails/coffeescript, but obsessive tendency to stay on the cutting edge and research the latest and greatest tooling has managed to see us enter a new era for javascript.&lt;/p&gt;
+
+&lt;p&gt;I like to think that it is currently the &amp;lsquo;golden age&amp;rsquo; for javascript, mostly because of node as I&amp;rsquo;m sure you&amp;rsquo;re aware of. I&amp;rsquo;m glad to be in the industry now, and not 5 or 10 years ago where you&amp;rsquo;d be hacking away with LAMP and jquery. Or Silverlight. Or Java applets.&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s the story so far anyway. I&amp;rsquo;ll update this every now and then to see my present thoughts at the time regarding my career change choice. But for now I am still optimistic and hopeful. At this point I feel that the future will continue to see me learn new things, be challenged and do things that I actually want to do.&lt;/p&gt;
+
+&lt;p&gt;Finance notwithstanding of course. I&amp;rsquo;m about to lock in a large mortgage so I have been feeling the urge to return to engineering for the extra money. Let&amp;rsquo;s not hope it comes to that.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>npm install mad-skillz</title>
+      <link>http://nii236.github.io/technical-blog/post/jobprep/</link>
+      <pubDate>Sun, 15 Nov 2015 11:06:25 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/post/jobprep/</guid>
+      <description>&lt;p&gt;So I started considering a job in software development around October 2014. All I had with me were:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;First year computer science&lt;/li&gt;
+&lt;li&gt;Mechatronics engineering (MATLAB and similar)&lt;/li&gt;
+&lt;li&gt;Two years of PLC/SCADA/Cicode programming&lt;/li&gt;
+&lt;li&gt;9 months of being stuck on site and poking around with Linux, VPNs, vim, bash&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Not too bad considering.&lt;/p&gt;
+
+&lt;p&gt;I have a extremely large appetite for self learning and research if something interests me enough, so for the next few months I applied for various software roles, while self learning. Codecademy, The Odin Project, The Rails Tutorial were part of it.&lt;/p&gt;
+
+&lt;p&gt;At the same time, applying to more control systems jobs was my other fulltime job. You know, in addition to my existing fulltime job of trying to be a software developer.&lt;/p&gt;
+
+&lt;p&gt;I suppose I lucked out in the end. I managed to score a role at &lt;a href=&#34;http://www.thefrontiergroup.com.au&#34;&gt;The Frontier Group&lt;/a&gt;! At the end of the day, it was not my feeble attempts to learn software development that got me the role, it was a combination of the following things:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The drive to learn something new&lt;/li&gt;
+&lt;li&gt;The initiative to switch careers&lt;/li&gt;
+&lt;li&gt;The ability to fit into the company culture&lt;/li&gt;
+&lt;li&gt;My existing knowledge in mining and engineering&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The actual role was not a development role unfortunately. I was employed as an &amp;lsquo;analyst developer&amp;rsquo;, which focuses on data analytics for various clients (usually mining). TFG is, however, mainly a web development company, and I hoped by just being I would have the opportunity to learn skills that I needed to be able to hold my own in this new industry.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>rake career:migrate</title>
+      <link>http://nii236.github.io/technical-blog/post/migration/</link>
+      <pubDate>Sun, 08 Nov 2015 11:15:27 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/post/migration/</guid>
+      <description>&lt;p&gt;I often see people posting on the &lt;a href=&#34;http://www.reddit.com/r/cscareerquestions&#34;&gt;/r/cscareerquestions&lt;/a&gt; subreddit questions about what is involved in migrating to a career of software development. I&amp;rsquo;m in the enviable position of having completed that step, and I&amp;rsquo;ll share my background in this article and will cover my migration to software development in a future post.&lt;/p&gt;
+
+&lt;p&gt;I graduated in 2008 with an Engineering bachelor&amp;rsquo;s degree in Mechatronics. I enjoyed the work, and the combination of electronic, mechanical and programming was appealing to me.&lt;/p&gt;
+
+&lt;p&gt;I ended up working as a vanilla mechanical engineer due to the job market at the time. I did it for 3 years, during which I worked on:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Piping&lt;/li&gt;
+&lt;li&gt;Estimating&lt;/li&gt;
+&lt;li&gt;Design&lt;/li&gt;
+&lt;li&gt;Construction&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Amongst other things.&lt;/p&gt;
+
+&lt;p&gt;Deep down I wasn&amp;rsquo;t getting the enjoyment I wanted out of it, mostly because there was nothing technologically oriented in my work. I made sure pipes were being delivered, I made sure mechanical steelwork was in the right place at the right time.&lt;/p&gt;
+
+&lt;p&gt;I switched to control systems engineering after 3 years. This was already a big career change and I had to start from the bottom again as a graduate. Working in control systems/process controls was amazing, and much much closer to my original vision of mechtronic engineering. I was working on:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Programmable Logic Controllers (PLC)&lt;/li&gt;
+&lt;li&gt;CitectSCADA (HMI design and software)&lt;/li&gt;
+&lt;li&gt;Interfacing with vendor systems&lt;/li&gt;
+&lt;li&gt;Server setup&lt;/li&gt;
+&lt;li&gt;Cisco switch setup&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So far so good! I was working with computers, I was working on industrial machinery, I was doing something I was actually good at.&lt;/p&gt;
+
+&lt;p&gt;One of the disadvantages of working in the mining industry is that you need to be away from home for long periods of time. During my six years of my time in the mining industry, I was probably away for three of those. The last site gig I had required me to be away for an entire year, for 3 months at a time. In the middle of a jungle in Ghana, West Africa. It was a unique experience, but not one that I was willing to repeat.&lt;/p&gt;
+
+&lt;p&gt;After a couple of years, I eventually got laid off from my (2nd) gig as a control systems engineer. Looking for further work posed a few problems:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I don&amp;rsquo;t have much control systems experience (I was still a &amp;lsquo;graduate&amp;rsquo;)&lt;/li&gt;
+&lt;li&gt;The job market was dying (dead?)&lt;/li&gt;
+&lt;li&gt;What work was available, usually required being underpaid, sent to site, or shoved into a niche market such as vendor auditing stacker anti collision logic.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As I laid in bed after three months of job hunting, my girlfriend just said to me:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;You&amp;rsquo;re spending all your time tinkering around with computers. Why don&amp;rsquo;t you look for work in software development?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;That got me thinking&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Square peg into a square hole</title>
+      <link>http://nii236.github.io/technical-blog/post/electron/</link>
+      <pubDate>Fri, 06 Nov 2015 16:55:21 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/post/electron/</guid>
+      <description>
+
+&lt;h1 id=&#34;go:ebf9963405bac373eb63012bc418035c&#34;&gt;Go&lt;/h1&gt;
+
+&lt;p&gt;My friends know me as someone who is not very loyal. I don&amp;rsquo;t mean to my girlfriend. I mean to various technology and web stacks. Ever since the advent of node.js, frameworks, tooling and just weird stacks have popped up. Not that I&amp;rsquo;m complaining. I love reading about new frameworks, languages and development in general.&lt;/p&gt;
+
+&lt;p&gt;My current interest is in &lt;a href=&#34;golang.org&#34;&gt;Go&lt;/a&gt;, or &lt;a href=&#34;golang.org&#34;&gt;Golang&lt;/a&gt;. I won&amp;rsquo;t bother introducing it here, as I&amp;rsquo;ll just be repeating what others have said.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been really interested in the language lately, and I look forward to building apps with it. One of the main limitations of Go at the moment is the lack of a proper UI library. There are some bindings to GTK/QT somewhere, but usually filled with bugs or some weird hackery.&lt;/p&gt;
+
+&lt;h1 id=&#34;electron:ebf9963405bac373eb63012bc418035c&#34;&gt;Electron&lt;/h1&gt;
+
+&lt;p&gt;I have also been looking into &lt;a href=&#34;http://electron.atom.io/&#34;&gt;Electron&lt;/a&gt; lately. It used to be known as Atom Shell and has been rebranded recently.&lt;/p&gt;
+
+&lt;p&gt;Electron allows people who are more experienced in Single Page App (SPA) style development to build apps for desktops. All signs point towards web apps as the future, but yet here is Electron and Atom enjoying success and adoption. It helps us lowly web developers to get our feet wet in desktop development.&lt;/p&gt;
+
+&lt;p&gt;A quick read of Electron documentation suggests that it runs off a basic node.js server as the &lt;code&gt;main process&lt;/code&gt;. There are also many &lt;code&gt;renderer processes&lt;/code&gt; that can be spawned, and these will be your browser instances that will be presented to the end user.&lt;/p&gt;
+
+&lt;p&gt;Communication between the main and renderer processes are done by way of the ipc package that comes with Electron. So I&amp;rsquo;d imagine your main process handles most of the comms, state, and processing. One of the biggest complaints about node js is that when it blocks, it &lt;em&gt;really, really&lt;/em&gt; blocks. Single threaded execution means that as soon as you do some sort of heavy number crunching you&amp;rsquo;re screwed, and then everyone will start complaining about how your &lt;a href=&#34;http://atom.io/&#34;&gt;app&lt;/a&gt; is slow as molasses.&lt;/p&gt;
+
+&lt;h1 id=&#34;multi-tier-architecture:ebf9963405bac373eb63012bc418035c&#34;&gt;Multi tier architecture&lt;/h1&gt;
+
+&lt;p&gt;So why not defer the processing intensive stuff to yet another process? Perhaps using another language that is well suited to portability (static binaries) and performance.&lt;/p&gt;
+
+&lt;p&gt;There is something called &lt;a href=&#34;https://en.wikipedia.org/wiki/Multitier_architecture&#34;&gt;multitier architecture&lt;/a&gt; that allows one to split up these concerns cleanly.&lt;/p&gt;
+
+&lt;p&gt;I have explored connecting a Go backend into Electron and have found reasonable success. The first iteration used a REST API, and my second attempt covers using gRPC instead, to great effect. I may have solved two problems in two different camps:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Performance by the main process in Electron&lt;/li&gt;
+&lt;li&gt;A UI toolkit for Go&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I&amp;rsquo;ll continue these musings in part two.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>First post!</title>
+      <link>http://nii236.github.io/technical-blog/post/first/</link>
+      <pubDate>Fri, 18 Sep 2015 14:21:40 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/post/first/</guid>
+      <description>
+
+&lt;h1 id=&#34;why-hello-there:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;Why hello there!&lt;/h1&gt;
+
+&lt;p&gt;This is the initial post. I&amp;rsquo;ll be exploring various technology stacks during my journey to become a (more) competent developer.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

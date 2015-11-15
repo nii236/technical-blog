@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Work on A Blog</title>
+    <link>http://nii236.github.io/technical-blog/tags/work/</link>
+    <description>Recent content in Work on A Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Nov 2015 16:05:24 +0800</lastBuildDate>
+    <atom:link href="http://nii236.github.io/technical-blog/tags/work/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Life on the Dark Side</title>
+      <link>http://nii236.github.io/technical-blog/post/lifeAtTFG/</link>
+      <pubDate>Sun, 15 Nov 2015 16:05:24 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/post/lifeAtTFG/</guid>
+      <description>&lt;p&gt;So there I was.&lt;/p&gt;
+
+&lt;p&gt;I joked that programming is like the dark side of career paths. Its tempting to do because it looks fun from the outside. It would have been a nice change from pushing paper and excel spreadsheets to vendors about why X does not adhere to standard Y. To be able to go to &amp;lsquo;work&amp;rsquo;, and that &amp;lsquo;work&amp;rsquo; means somewhere near civilisation. The concept is amazingly tempting, yet fraught with risk.&lt;/p&gt;
+
+&lt;p&gt;As I write this, I&amp;rsquo;ve been working at TFG for the past 9 months! I have various things to say but my work here has been very fruitful.&lt;/p&gt;
+
+&lt;p&gt;The majority of my time has been spent looking at the data analytics work that I was originally signed up to do. During slower times, however, I have been encouraged to help out with the others in developing web apps just like I hoped!&lt;/p&gt;
+
+&lt;p&gt;I have one current project in production, and another still in staging. I&amp;rsquo;ve had experience in the following technologies, languages and frameworks:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;d3.js&lt;/li&gt;
+&lt;li&gt;react.js&lt;/li&gt;
+&lt;li&gt;node.js&lt;/li&gt;
+&lt;li&gt;koa.js&lt;/li&gt;
+&lt;li&gt;Ruby on Rails&lt;/li&gt;
+&lt;li&gt;Ruby&lt;/li&gt;
+&lt;li&gt;RabbitMQ&lt;/li&gt;
+&lt;li&gt;Protobuf&lt;/li&gt;
+&lt;li&gt;Microservices&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I&amp;rsquo;ve had to pick up a smattering of things, not limited to databases, ORMs, Continuous Integration tools or deployment tools.&lt;/p&gt;
+
+&lt;p&gt;In my spare time I&amp;rsquo;ve continued to learn at a fast pace and have touched on the following things:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Electron.js&lt;/li&gt;
+&lt;li&gt;Python&lt;/li&gt;
+&lt;li&gt;Blockchains&lt;/li&gt;
+&lt;li&gt;Go/Golang&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I&amp;rsquo;ve even helped drive change in the stack that is used! React.js and webpack specifically. Before it was browserify and react-rails/coffeescript, but obsessive tendency to stay on the cutting edge and research the latest and greatest tooling has managed to see us enter a new era for javascript.&lt;/p&gt;
+
+&lt;p&gt;I like to think that it is currently the &amp;lsquo;golden age&amp;rsquo; for javascript, mostly because of node as I&amp;rsquo;m sure you&amp;rsquo;re aware of. I&amp;rsquo;m glad to be in the industry now, and not 5 or 10 years ago where you&amp;rsquo;d be hacking away with LAMP and jquery. Or Silverlight. Or Java applets.&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s the story so far anyway. I&amp;rsquo;ll update this every now and then to see my present thoughts at the time regarding my career change choice. But for now I am still optimistic and hopeful. At this point I feel that the future will continue to see me learn new things, be challenged and do things that I actually want to do.&lt;/p&gt;
+
+&lt;p&gt;Finance notwithstanding of course. I&amp;rsquo;m about to lock in a large mortgage so I have been feeling the urge to return to engineering for the extra money. Let&amp;rsquo;s not hope it comes to that.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>npm install mad-skillz</title>
+      <link>http://nii236.github.io/technical-blog/post/jobprep/</link>
+      <pubDate>Sun, 15 Nov 2015 11:06:25 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/post/jobprep/</guid>
+      <description>&lt;p&gt;So I started considering a job in software development around October 2014. All I had with me were:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;First year computer science&lt;/li&gt;
+&lt;li&gt;Mechatronics engineering (MATLAB and similar)&lt;/li&gt;
+&lt;li&gt;Two years of PLC/SCADA/Cicode programming&lt;/li&gt;
+&lt;li&gt;9 months of being stuck on site and poking around with Linux, VPNs, vim, bash&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Not too bad considering.&lt;/p&gt;
+
+&lt;p&gt;I have a extremely large appetite for self learning and research if something interests me enough, so for the next few months I applied for various software roles, while self learning. Codecademy, The Odin Project, The Rails Tutorial were part of it.&lt;/p&gt;
+
+&lt;p&gt;At the same time, applying to more control systems jobs was my other fulltime job. You know, in addition to my existing fulltime job of trying to be a software developer.&lt;/p&gt;
+
+&lt;p&gt;I suppose I lucked out in the end. I managed to score a role at &lt;a href=&#34;http://www.thefrontiergroup.com.au&#34;&gt;The Frontier Group&lt;/a&gt;! At the end of the day, it was not my feeble attempts to learn software development that got me the role, it was a combination of the following things:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The drive to learn something new&lt;/li&gt;
+&lt;li&gt;The initiative to switch careers&lt;/li&gt;
+&lt;li&gt;The ability to fit into the company culture&lt;/li&gt;
+&lt;li&gt;My existing knowledge in mining and engineering&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The actual role was not a development role unfortunately. I was employed as an &amp;lsquo;analyst developer&amp;rsquo;, which focuses on data analytics for various clients (usually mining). TFG is, however, mainly a web development company, and I hoped by just being I would have the opportunity to learn skills that I needed to be able to hold my own in this new industry.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>rake career:migrate</title>
+      <link>http://nii236.github.io/technical-blog/post/migration/</link>
+      <pubDate>Sun, 08 Nov 2015 11:15:27 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/post/migration/</guid>
+      <description>&lt;p&gt;I often see people posting on the &lt;a href=&#34;http://www.reddit.com/r/cscareerquestions&#34;&gt;/r/cscareerquestions&lt;/a&gt; subreddit questions about what is involved in migrating to a career of software development. I&amp;rsquo;m in the enviable position of having completed that step, and I&amp;rsquo;ll share my background in this article and will cover my migration to software development in a future post.&lt;/p&gt;
+
+&lt;p&gt;I graduated in 2008 with an Engineering bachelor&amp;rsquo;s degree in Mechatronics. I enjoyed the work, and the combination of electronic, mechanical and programming was appealing to me.&lt;/p&gt;
+
+&lt;p&gt;I ended up working as a vanilla mechanical engineer due to the job market at the time. I did it for 3 years, during which I worked on:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Piping&lt;/li&gt;
+&lt;li&gt;Estimating&lt;/li&gt;
+&lt;li&gt;Design&lt;/li&gt;
+&lt;li&gt;Construction&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Amongst other things.&lt;/p&gt;
+
+&lt;p&gt;Deep down I wasn&amp;rsquo;t getting the enjoyment I wanted out of it, mostly because there was nothing technologically oriented in my work. I made sure pipes were being delivered, I made sure mechanical steelwork was in the right place at the right time.&lt;/p&gt;
+
+&lt;p&gt;I switched to control systems engineering after 3 years. This was already a big career change and I had to start from the bottom again as a graduate. Working in control systems/process controls was amazing, and much much closer to my original vision of mechtronic engineering. I was working on:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Programmable Logic Controllers (PLC)&lt;/li&gt;
+&lt;li&gt;CitectSCADA (HMI design and software)&lt;/li&gt;
+&lt;li&gt;Interfacing with vendor systems&lt;/li&gt;
+&lt;li&gt;Server setup&lt;/li&gt;
+&lt;li&gt;Cisco switch setup&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So far so good! I was working with computers, I was working on industrial machinery, I was doing something I was actually good at.&lt;/p&gt;
+
+&lt;p&gt;One of the disadvantages of working in the mining industry is that you need to be away from home for long periods of time. During my six years of my time in the mining industry, I was probably away for three of those. The last site gig I had required me to be away for an entire year, for 3 months at a time. In the middle of a jungle in Ghana, West Africa. It was a unique experience, but not one that I was willing to repeat.&lt;/p&gt;
+
+&lt;p&gt;After a couple of years, I eventually got laid off from my (2nd) gig as a control systems engineer. Looking for further work posed a few problems:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I don&amp;rsquo;t have much control systems experience (I was still a &amp;lsquo;graduate&amp;rsquo;)&lt;/li&gt;
+&lt;li&gt;The job market was dying (dead?)&lt;/li&gt;
+&lt;li&gt;What work was available, usually required being underpaid, sent to site, or shoved into a niche market such as vendor auditing stacker anti collision logic.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As I laid in bed after three months of job hunting, my girlfriend just said to me:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;You&amp;rsquo;re spending all your time tinkering around with computers. Why don&amp;rsquo;t you look for work in software development?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;That got me thinking&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
