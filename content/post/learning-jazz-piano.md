@@ -1,5 +1,5 @@
 +++
-date = "2016-02-01T11:06:25+08:00"
+date = "2016-02-01T10:06:25+08:00"
 title = "Experiments in learning jazz piano"
 tags = ["piano", "jazz", "music"]
 +++
