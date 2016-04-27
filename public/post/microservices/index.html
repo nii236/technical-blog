@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#"><!--<![endif]-->
+
+<head>
+            <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Someone was going to do it eventually...">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="author" content="">
+        <meta name="keywords" content="awesome, definitely">
+	
+        <meta property="og:site_name" content="A Blog">
+        <meta property="og:title" content="A Blog">
+        <meta property="og:url" content="http://nii236.github.io/technical-blog/post/microservices/">
+        <meta property="og:description" content="Explorations in tech and music">
+    
+        <meta property="og:type" content="article" />
+        <meta property="og:article:author" content="" />
+        <meta property="og:article:published_time" content="2016-04-27T14:21:40&#43;08:00" />
+    
+        <meta name="generator" content="Hugo 0.15" />
+    <title>A trading platform in Go &middot; A Blog </title>
+    <link rel="canonical" href="http://nii236.github.io/technical-blog/" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="">
+    <link rel="stylesheet" type='text/css' href="http://nii236.github.io/technical-blog/css/main.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Montserrat:700' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="http://nii236.github.io/technical-blog/js/highlight.min.js"></script>
+    <link rel="stylesheet" href="http://nii236.github.io/technical-blog/css/default.min.css">
+    <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body>
+<!--[if lt IE 7]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chrome/‎">install Google Chrome</a> to experience this site.</p><![endif]-->
+
+    <header id="site-header">
+        <div class="container">
+            <a href="http://nii236.github.io/technical-blog/" alt="A Blog"><h1 class="blog-title heading">A Blog</h1></a>
+            <p class="blog-description">Explorations in tech and music</p>
+        </div>
+    </header>
+<main class="content" role="main">
+	<div class="container">
+		<article class="post">
+	<header class="post-header">
+        <h3 class="p-post-title">A trading platform in Go</h3>
+    </header>
+
+    <section class="post-content">
+        
+
+<h2 id="the-language:24c62ab0ae8d6139f10d3d52cfeca2af">The language</h2>
+
+<p>I&rsquo;ve been obsessing over Go lately. I won&rsquo;t go into it much since pretty much everyone else on the internet has at some point or another. And all of the people I know have probably heard me raving about it. The quality of the language itself remains divisive, but I am going to soldier on and just try and build something.</p>
+
+<h2 id="the-project:24c62ab0ae8d6139f10d3d52cfeca2af">The project</h2>
+
+<p>I&rsquo;ve been looking at playing with <a href="https://github.com/micro/go-micro">go-micro</a> and building microservices. Really, I only needed an excuse to build something. I&rsquo;ve come across some decent trading platforms and frameworks online but nothing really built in Go. So that&rsquo;s my project.</p>
+
+<p>The first step will be to write a client that subscribes to the Interactive Brokers API and publishes the ticker data onto a <a href="http://nats.io/">NATS</a> message bus, which will then be consumed by <a href="https://influxdata.com/">InfluxData&rsquo;s</a> Telegraf NATS connector. This will give me a bunch of data to play with, with helpful time series crunching tools that come for free with InfluxDB (<code>min</code>, <code>max</code>, even an <code>SMA</code>!).</p>
+
+<p>Everything will be docker-ised into a swarm. NATS and Influx provide docker containers so that&rsquo;s easy. The single microservices will contain static binaries so (in theory) that will be easy as well.</p>
+
+<h2 id="the-snippet:24c62ab0ae8d6139f10d3d52cfeca2af">The snippet</h2>
+
+<p>Here is a code snippet that subscribes to the IB API (also docker-ised) and (for now) just logs the values to STDOUT.</p>
+
+<pre><code class="language-go">func exec(pair string, currency string) {
+	log.Infoln(&quot;Starting connection to IB gateway...&quot;, &quot;Pair:&quot;, pair, &quot;, Currency:&quot;, currency)
+	options := &amp;ib.EngineOptions{
+		Client:           0,
+		Gateway:          &quot;192.168.99.100:4003&quot;,
+		DumpConversation: false,
+	}
+
+	var err error
+	e, err = ib.NewEngine(*options)
+
+	defer e.Stop()
+
+	if err != nil {
+		log.Fatalln(&quot;ERROR!&quot;, err)
+		return
+	}
+	defer e.Stop()
+	log.Infoln(&quot;Done.&quot;)
+	log.Infoln(&quot;Setting up contract for subscription...&quot;)
+	contract := &amp;ib.Contract{
+		Symbol:       pair,
+		SecurityType: &quot;CASH&quot;,
+		Exchange:     &quot;IDEALPRO&quot;,
+		Currency:     currency,
+	}
+
+	im, err := ib.NewInstrumentManager(e, *contract)
+	defer im.Close()
+	ctm, err := ib.NewCurrentTimeManager(e)
+	defer ctm.Close()
+
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	for {
+		select {
+		case &lt;-im.Refresh():
+			if err := im.FatalError(); err != nil {
+				log.Fatalln(err)
+			}
+			log.Infoln(&quot;Time:&quot;, ctm.Time().UnixNano())
+			log.Infoln(&quot;Bid:&quot;, im.Bid())
+			log.Infoln(&quot;Ask:&quot;, im.Ask())
+			log.Infoln(&quot;Last:&quot;, im.Last())
+		}
+
+	}
+}
+</code></pre>
+
+<p>At the moment CPU usage jumps up to 50% as soon as you connect to the IB Gateway. No idea why but I&rsquo;m just going to assume its a library issue for the time being.</p>
+
+<p>The repo can be located on <a href="https://github.com/nii236/nii-finance">Github</a>.</p>
+
+    </section>
+
+    <hr>
+
+    <footer class="post-footer">
+        <section class="f-1">
+            
+            
+            <p class="f-post-time"><time datetime="2016-04-27T14:21:40&#43;08:00">April 27, 2016</time></p>
+        </section>
+                        
+        <section class="f-2">
+            <section class="share">
+                <span>Share:
+                <a class="icon-twitter" href="http://twitter.com/share?text=A%20trading%20platform%20in%20Go&url=http%3a%2f%2fnii236.github.io%2ftechnical-blog%2fpost%2fmicroservices%2f"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fnii236.github.io%2ftechnical-blog%2fpost%2fmicroservices%2f"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http%3a%2f%2fnii236.github.io%2ftechnical-blog%2fpost%2fmicroservices%2f"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+                </span>
+            </section>
+
+            
+        </section>
+                
+        <section id="comments">
+            <div id="disqus_thread" class="post-comments"></div>
+            <script type="text/javascript">
+              if (window.location.hostname != "localhost") {
+                var disqus_shortname = 'nii236';
+                (function() {
+                  var dsq = document.createElement('script');
+                  dsq.type = 'text/javascript';
+                  dsq.async = true;
+                  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+              }
+            </script>
+            <noscript>
+              Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+            </noscript>
+        </section>
+                
+    </footer>
+</article>
+	</div>
+</main>
+    <footer id="site-footer">
+        <div class="container">
+            <a href="http://nii236.github.io/technical-blog/index.xml" title="Get the RSS feed"><span class="tooltip"><i class="fa fa-rss"></i></span></a>
+            <section>&copy; <a href="http://nii236.github.io/technical-blog/"></a> 2015 | All rights reserved</section>
+            <section>Theme by <a href="http://www.jrdnbwmn.com">Jordan Bowman</a>. Generated with <a href="http://gohugo.io/">Hugo</a>.</section>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="http://nii236.github.io/technical-blog/js/fittext.js"></script>
+    <script type="text/javascript">
+      $(".heading").fitText();
+    </script>
+
+
+</body>
+</html>
