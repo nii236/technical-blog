@@ -1,0 +1,145 @@
++++
+date = "2016-06-16T14:30:07+08:00"
+title = "Elixir"
+tags = ["elixir", "go", "programming", "software"]
++++
+
+All this Gophering around can get boring. That's not a bad thing, I still consider Go the language with which I am strongest and most comfortable. If I had to use a language at my workplace, Go would be it.
+
+But sometimes you just want to poke around and see what else is out there. A language that offers a sense of adventure instead of the safety of Go and its static types, simplicity, rock solid linting and strict philosophy.
+
+[Elixir](elixir-lang.org) complements Go in this regard. In fact it seems to be the complete opposite. Loosely typed, immutable data structures, enumerators, functional style programming.
+
+So yeah, apparently functional programming is a cool hip thing to do nowadays. Its a fancy term, it makes you think that functional programming actually works (you know, its *FUNCTIONAL*).
+
+I play around with linux/unix/osx (hah!) a lot, and the fact that you have a pipeline operator Elixir is amazing! Also map, reduce, filter and each operators are something I miss a lot moving to Go from Ruby, so I'm glad to see that it's got the first class treatment here in Elixir.
+
+# N(ot) I(nvented) H(ere)
+
+Being in Go land for so long, I had forgotten what the rest of the programming world is like. Gopher's shun extending the language, using dependencies, building packages for others to use.
+
+Gopher's have a serious case of NIH syndrome, and everything is handrolled to extremes. Its actually quite nice if you think about it. The software you develop ends up fitting like a really, really tight glove.
+
+It was, however, still an (unexpected) breath of fresh air when I had a look at the Elixir community and how they were enthusiastically talking about writing macros, extending the language, using web frameworks and installing dependencies willy nilly.
+
+# Code
+
+So I figured as a raw exercise, to convert one of the easy katas I did long ago. The exercise is called [Cut the Sticks](https://www.hackerrank.com/challenges/cut-the-sticks) and is a good exercise in recursion (my Go solution did not, however, use recursion).
+
+## Processing STDIN
+
+The hardest part in Go is always processing the arguments that come through HackerRank. Lots of STDIN scanning, processing etc.
+
+Here is how I processed the STDIN with Go.
+```Go
+// GetArgs reads from STDIN and returns stuff in the correct format
+func GetArgs(r io.Reader) (int, []int) {
+	var numArgs = 0
+	_, err := fmt.Fscanln(r, &numArgs)
+
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	sumArgs := make([]int, numArgs)
+	for i := range sumArgs {
+		_, err = fmt.Fscan(r, &sumArgs[i])
+		if err != nil {
+			fmt.Println(err)
+		}
+	}
+
+	return numArgs, sumArgs
+}
+```
+Here it is in Elixir.
+
+```
+def process(input) do
+  values = String.split(input, "\n")
+    |> List.delete_at(0)
+    |> List.delete_at(-1)
+    |> List.to_string
+    |> String.strip
+    |> String.split(" ")
+    |> Enum.map(&(Integer.parse(&1)))
+    |> Enum.map(&(elem(&1,0)))
+  recurse_cut(values, Enum.max(values))
+end
+```
+
+Maybe I just suck at Go, but I dunno, there's just something really, really **satisfying** about the pipeline operator and processing stuff functionally.
+
+## Cutting the sticks
+
+The *actual* code involves chopping off the sticks by the length of the shortest stick until nothing remains.
+
+UPDATE: I had a look and turns out I wrote the Go code recursively after all!
+
+Here it is in Go:
+```
+func cut(numArgs int, args []int, finalArray []int) (int, []int, []int) {
+
+	var newArray []int
+	var newFinalArray []int
+	var zeroValue bool
+
+	minArg := args[0]
+
+	// Get smallest number in args
+	for _, arg := range args {
+		if arg < minArg {
+			minArg = arg
+		}
+		if arg == 0 {
+			zeroValue = true
+		}
+	}
+
+	// If non zero, append to resulting array, less the minimum arg
+	for _, arg := range args {
+		if arg != 0 {
+			newArray = append(newArray, arg-minArg)
+		}
+	}
+
+	// If there exists any zero length sticks, run function again
+	if zeroValue {
+		return cut(len(newArray), newArray, finalArray)
+	}
+
+	// If more than 1 stick remain, run function recursively
+	if numArgs > 1 {
+		newFinalArray = append(finalArray, len(newArray))
+		return cut(len(newArray), newArray, newFinalArray)
+	}
+
+	newFinalArray = append(finalArray, len(newArray))
+	return len(newArray), newArray, newFinalArray
+
+}
+```
+
+
+Here it is in Elixir:
+```
+  def recurse_cut(values, max) when max > 0 do
+    min = values
+      |> Enum.filter(&(&1 > 0))
+      |> Enum.min
+    IO.puts(Enum.count(values, &(&1 >= min)))
+    result = Enum.map(values, &(&1-min))
+    recurse_cut(result, Enum.max(result))
+  end
+
+  def recurse_cut(_values, max) when max <= 0 do
+  end
+```
+
+Its so clean!
+
+As you can see, for programs that require a lot of iteration and mucking about, you might find that a functional style is a lot more efficient, and easier to understand.
+
+I still believe Go has advantages in tooling, raw speed, simplicity, teams, documentation and a unified community vision. But Elixir offers a great functional style of programming and a sense of adventure that complements it very nicely.
+
+I haven't explored Elixir's metaprogramming, macros or concurrency yet. I will have a look and share my thoughts in the future.

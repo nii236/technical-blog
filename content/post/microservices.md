@@ -2,7 +2,9 @@
 date = "2016-04-27T14:21:40+08:00"
 description = "Someone was going to do it eventually..."
 title = "A trading platform in Go"
-
+tags = ["microservices", "finance", "trading", "go"]
+categories = ["software"]
+series = ["go"]
 +++
 
 ## The language

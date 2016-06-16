@@ -1,7 +1,7 @@
 +++
 date = "2015-11-15T16:18:08+08:00"
 title = "Introducing Graviton"
-tags = ["graviton", "electron", "go", "golang"]
+tags = ["graviton", "electron", "go"]
 +++
 
 I'd like to introduce Graviton in this post. Its a name I made up for my project mentioned in a previous post. There's no real point to the name, except that it uses Electron plus Go. So I figured I'd choose a cool physics based name that starts with G.

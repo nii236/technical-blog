@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microservices on A Blog</title>
+    <link>http://nii236.github.io/technical-blog/tags/microservices/</link>
+    <description>Recent content in Microservices on A Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 27 Apr 2016 14:21:40 +0800</lastBuildDate>
+    <atom:link href="http://nii236.github.io/technical-blog/tags/microservices/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A trading platform in Go</title>
+      <link>http://nii236.github.io/technical-blog/post/microservices/</link>
+      <pubDate>Wed, 27 Apr 2016 14:21:40 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/post/microservices/</guid>
+      <description>
+
+&lt;h2 id=&#34;the-language:24c62ab0ae8d6139f10d3d52cfeca2af&#34;&gt;The language&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been obsessing over Go lately. I won&amp;rsquo;t go into it much since pretty much everyone else on the internet has at some point or another. And all of the people I know have probably heard me raving about it. The quality of the language itself remains divisive, but I am going to soldier on and just try and build something.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-project:24c62ab0ae8d6139f10d3d52cfeca2af&#34;&gt;The project&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been looking at playing with &lt;a href=&#34;https://github.com/micro/go-micro&#34;&gt;go-micro&lt;/a&gt; and building microservices. Really, I only needed an excuse to build something. I&amp;rsquo;ve come across some decent trading platforms and frameworks online but nothing really built in Go. So that&amp;rsquo;s my project.&lt;/p&gt;
+
+&lt;p&gt;The first step will be to write a client that subscribes to the Interactive Brokers API and publishes the ticker data onto a &lt;a href=&#34;http://nats.io/&#34;&gt;NATS&lt;/a&gt; message bus, which will then be consumed by &lt;a href=&#34;https://influxdata.com/&#34;&gt;InfluxData&amp;rsquo;s&lt;/a&gt; Telegraf NATS connector. This will give me a bunch of data to play with, with helpful time series crunching tools that come for free with InfluxDB (&lt;code&gt;min&lt;/code&gt;, &lt;code&gt;max&lt;/code&gt;, even an &lt;code&gt;SMA&lt;/code&gt;!).&lt;/p&gt;
+
+&lt;p&gt;Everything will be docker-ised into a swarm. NATS and Influx provide docker containers so that&amp;rsquo;s easy. The single microservices will contain static binaries so (in theory) that will be easy as well.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-snippet:24c62ab0ae8d6139f10d3d52cfeca2af&#34;&gt;The snippet&lt;/h2&gt;
+
+&lt;p&gt;Here is a code snippet that subscribes to the IB API (also docker-ised) and (for now) just logs the values to STDOUT.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;func exec(pair string, currency string) {
+	log.Infoln(&amp;quot;Starting connection to IB gateway...&amp;quot;, &amp;quot;Pair:&amp;quot;, pair, &amp;quot;, Currency:&amp;quot;, currency)
+	options := &amp;amp;ib.EngineOptions{
+		Client:           0,
+		Gateway:          &amp;quot;192.168.99.100:4003&amp;quot;,
+		DumpConversation: false,
+	}
+
+	var err error
+	e, err = ib.NewEngine(*options)
+
+	defer e.Stop()
+
+	if err != nil {
+		log.Fatalln(&amp;quot;ERROR!&amp;quot;, err)
+		return
+	}
+	defer e.Stop()
+	log.Infoln(&amp;quot;Done.&amp;quot;)
+	log.Infoln(&amp;quot;Setting up contract for subscription...&amp;quot;)
+	contract := &amp;amp;ib.Contract{
+		Symbol:       pair,
+		SecurityType: &amp;quot;CASH&amp;quot;,
+		Exchange:     &amp;quot;IDEALPRO&amp;quot;,
+		Currency:     currency,
+	}
+
+	im, err := ib.NewInstrumentManager(e, *contract)
+	defer im.Close()
+	ctm, err := ib.NewCurrentTimeManager(e)
+	defer ctm.Close()
+
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	for {
+		select {
+		case &amp;lt;-im.Refresh():
+			if err := im.FatalError(); err != nil {
+				log.Fatalln(err)
+			}
+			log.Infoln(&amp;quot;Time:&amp;quot;, ctm.Time().UnixNano())
+			log.Infoln(&amp;quot;Bid:&amp;quot;, im.Bid())
+			log.Infoln(&amp;quot;Ask:&amp;quot;, im.Ask())
+			log.Infoln(&amp;quot;Last:&amp;quot;, im.Last())
+		}
+
+	}
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;At the moment CPU usage jumps up to 50% as soon as you connect to the IB Gateway. No idea why but I&amp;rsquo;m just going to assume its a library issue for the time being.&lt;/p&gt;
+
+&lt;p&gt;The repo can be located on &lt;a href=&#34;https://github.com/nii236/nii-finance&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

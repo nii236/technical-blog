@@ -35,3 +35,8 @@ theme = "hugo-theme-blueberry-detox"
 	# 404 page
 	title404 = ""
 	subtitle404 = ""
+
+	[taxonomies]
+	tag = "tags"
+	category = "categories"
+	series = "series"
