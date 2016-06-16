@@ -11,10 +11,10 @@
     
     <item>
       <title>Introducing Graviton</title>
-      <link>http://nii236.github.io/technical-blog/post/graviton/</link>
+      <link>http://nii236.github.io/technical-blog/post/2015-11-15-graviton/</link>
       <pubDate>Sun, 15 Nov 2015 16:18:08 +0800</pubDate>
       
-      <guid>http://nii236.github.io/technical-blog/post/graviton/</guid>
+      <guid>http://nii236.github.io/technical-blog/post/2015-11-15-graviton/</guid>
       <description>&lt;p&gt;I&amp;rsquo;d like to introduce Graviton in this post. Its a name I made up for my project mentioned in a previous post. There&amp;rsquo;s no real point to the name, except that it uses Electron plus Go. So I figured I&amp;rsquo;d choose a cool physics based name that starts with G.&lt;/p&gt;
 
 &lt;p&gt;In this post I&amp;rsquo;ll explain the basic steps in communicating between the front and back. In this case a &amp;ldquo;Hello World&amp;rdquo; should do the trick.&lt;/p&gt;

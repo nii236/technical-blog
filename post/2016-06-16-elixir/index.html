@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#"><!--<![endif]-->
+
+<head>
+            <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="author" content="">
+        <meta name="keywords" content="awesome, definitely">
+	
+        <meta property="og:site_name" content="A Blog">
+        <meta property="og:title" content="A Blog">
+        <meta property="og:url" content="http://nii236.github.io/technical-blog/post/2016-06-16-elixir/">
+        <meta property="og:description" content="Explorations in tech and music">
+    
+        <meta property="og:type" content="article" />
+        <meta property="og:article:author" content="" />
+        <meta property="og:article:published_time" content="2016-06-16T14:30:07&#43;08:00" />
+    
+        <meta name="generator" content="Hugo 0.15" />
+    <title>Elixir &middot; A Blog </title>
+    <link rel="canonical" href="http://nii236.github.io/technical-blog/" />
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="">
+    <link rel="stylesheet" type='text/css' href="http://nii236.github.io/technical-blog/css/main.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300|Montserrat:700' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="http://nii236.github.io/technical-blog/js/highlight.min.js"></script>
+    <link rel="stylesheet" href="http://nii236.github.io/technical-blog/css/default.min.css">
+    <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+
+<body>
+<!--[if lt IE 7]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chrome/‎">install Google Chrome</a> to experience this site.</p><![endif]-->
+
+    <header id="site-header">
+        <div class="container">
+            <a href="http://nii236.github.io/technical-blog/" alt="A Blog"><h1 class="blog-title heading">A Blog</h1></a>
+            <p class="blog-description">Explorations in tech and music</p>
+        </div>
+    </header>
+<main class="content" role="main">
+	<div class="container">
+		<article class="post">
+	<header class="post-header">
+        <h3 class="p-post-title">Elixir</h3>
+    </header>
+
+    <section class="post-content">
+        
+
+<p>All this Gophering around can get boring. That&rsquo;s not a bad thing, I still consider Go the language with which I am strongest and most comfortable. If I had to use a language at my workplace, Go would be it.</p>
+
+<p>But sometimes you just want to poke around and see what else is out there. A language that offers a sense of adventure instead of the safety of Go and its static types, simplicity, rock solid linting and strict philosophy.</p>
+
+<p><a href="elixir-lang.org">Elixir</a> complements Go in this regard. In fact it seems to be the complete opposite. Loosely typed, immutable data structures, enumerators, functional style programming.</p>
+
+<p>So yeah, apparently functional programming is a cool hip thing to do nowadays. Its a fancy term, it makes you think that functional programming actually works (you know, its <em>FUNCTIONAL</em>).</p>
+
+<p>I play around with linux/unix/osx (hah!) a lot, and the fact that you have a pipeline operator Elixir is amazing! Also map, reduce, filter and each operators are something I miss a lot moving to Go from Ruby, so I&rsquo;m glad to see that it&rsquo;s got the first class treatment here in Elixir.</p>
+
+<h1 id="n-ot-i-nvented-h-ere:b9453b1d34ec9f73f05221fbac029349">N(ot) I(nvented) H(ere)</h1>
+
+<p>Being in Go land for so long, I had forgotten what the rest of the programming world is like. Gopher&rsquo;s shun extending the language, using dependencies, building packages for others to use.</p>
+
+<p>Gopher&rsquo;s have a serious case of NIH syndrome, and everything is handrolled to extremes. Its actually quite nice if you think about it. The software you develop ends up fitting like a really, really tight glove.</p>
+
+<p>It was, however, still an (unexpected) breath of fresh air when I had a look at the Elixir community and how they were enthusiastically talking about writing macros, extending the language, using web frameworks and installing dependencies willy nilly.</p>
+
+<h1 id="code:b9453b1d34ec9f73f05221fbac029349">Code</h1>
+
+<p>So I figured as a raw exercise, to convert one of the easy katas I did long ago. The exercise is called <a href="https://www.hackerrank.com/challenges/cut-the-sticks">Cut the Sticks</a> and is a good exercise in recursion (my Go solution did not, however, use recursion).</p>
+
+<h2 id="processing-stdin:b9453b1d34ec9f73f05221fbac029349">Processing STDIN</h2>
+
+<p>The hardest part in Go is always processing the arguments that come through HackerRank. Lots of STDIN scanning, processing etc.</p>
+
+<p>Here is how I processed the STDIN with Go.</p>
+
+<pre><code class="language-Go">// GetArgs reads from STDIN and returns stuff in the correct format
+func GetArgs(r io.Reader) (int, []int) {
+	var numArgs = 0
+	_, err := fmt.Fscanln(r, &amp;numArgs)
+
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	sumArgs := make([]int, numArgs)
+	for i := range sumArgs {
+		_, err = fmt.Fscan(r, &amp;sumArgs[i])
+		if err != nil {
+			fmt.Println(err)
+		}
+	}
+
+	return numArgs, sumArgs
+}
+</code></pre>
+
+<p>Here it is in Elixir.</p>
+
+<pre><code>def process(input) do
+  values = String.split(input, &quot;\n&quot;)
+    |&gt; List.delete_at(0)
+    |&gt; List.delete_at(-1)
+    |&gt; List.to_string
+    |&gt; String.strip
+    |&gt; String.split(&quot; &quot;)
+    |&gt; Enum.map(&amp;(Integer.parse(&amp;1)))
+    |&gt; Enum.map(&amp;(elem(&amp;1,0)))
+  recurse_cut(values, Enum.max(values))
+end
+</code></pre>
+
+<p>Maybe I just suck at Go, but I dunno, there&rsquo;s just something really, really <strong>satisfying</strong> about the pipeline operator and processing stuff functionally.</p>
+
+<h2 id="cutting-the-sticks:b9453b1d34ec9f73f05221fbac029349">Cutting the sticks</h2>
+
+<p>The <em>actual</em> code involves chopping off the sticks by the length of the shortest stick until nothing remains.</p>
+
+<p>UPDATE: I had a look and turns out I wrote the Go code recursively after all!</p>
+
+<p>Here it is in Go:</p>
+
+<pre><code>func cut(numArgs int, args []int, finalArray []int) (int, []int, []int) {
+
+	var newArray []int
+	var newFinalArray []int
+	var zeroValue bool
+
+	minArg := args[0]
+
+	// Get smallest number in args
+	for _, arg := range args {
+		if arg &lt; minArg {
+			minArg = arg
+		}
+		if arg == 0 {
+			zeroValue = true
+		}
+	}
+
+	// If non zero, append to resulting array, less the minimum arg
+	for _, arg := range args {
+		if arg != 0 {
+			newArray = append(newArray, arg-minArg)
+		}
+	}
+
+	// If there exists any zero length sticks, run function again
+	if zeroValue {
+		return cut(len(newArray), newArray, finalArray)
+	}
+
+	// If more than 1 stick remain, run function recursively
+	if numArgs &gt; 1 {
+		newFinalArray = append(finalArray, len(newArray))
+		return cut(len(newArray), newArray, newFinalArray)
+	}
+
+	newFinalArray = append(finalArray, len(newArray))
+	return len(newArray), newArray, newFinalArray
+
+}
+</code></pre>
+
+<p>Here it is in Elixir:</p>
+
+<pre><code>  def recurse_cut(values, max) when max &gt; 0 do
+    min = values
+      |&gt; Enum.filter(&amp;(&amp;1 &gt; 0))
+      |&gt; Enum.min
+    IO.puts(Enum.count(values, &amp;(&amp;1 &gt;= min)))
+    result = Enum.map(values, &amp;(&amp;1-min))
+    recurse_cut(result, Enum.max(result))
+  end
+
+  def recurse_cut(_values, max) when max &lt;= 0 do
+  end
+</code></pre>
+
+<p>Its so clean!</p>
+
+<p>As you can see, for programs that require a lot of iteration and mucking about, you might find that a functional style is a lot more efficient, and easier to understand.</p>
+
+<p>I still believe Go has advantages in tooling, raw speed, simplicity, teams, documentation and a unified community vision. But Elixir offers a great functional style of programming and a sense of adventure that complements it very nicely.</p>
+
+<p>I haven&rsquo;t explored Elixir&rsquo;s metaprogramming, macros or concurrency yet. I will have a look and share my thoughts in the future.</p>
+
+    </section>
+
+    <hr>
+
+    <footer class="post-footer">
+        <section class="f-1">
+            
+
+            <p class="f-post-time"><time datetime="2016-06-16T14:30:07&#43;08:00">June 16, 2016</time></p>
+        </section>
+
+        <section class="f-2">
+            <section class="share">
+                <span>Share:
+                <a class="icon-twitter" href="http://twitter.com/share?text=Elixir&url=http%3a%2f%2fnii236.github.io%2ftechnical-blog%2fpost%2f2016-06-16-elixir%2f"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fnii236.github.io%2ftechnical-blog%2fpost%2f2016-06-16-elixir%2f"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http%3a%2f%2fnii236.github.io%2ftechnical-blog%2fpost%2f2016-06-16-elixir%2f"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <i class="fa fa-google-plus"></i>
+                </a>
+                </span>
+            </section>
+            
+            	<span class="f-post-tags"><i class="fa fa-tag"></i>
+		
+		    <a href="http://nii236.github.io/technical-blog//tags/elixir">elixir</a>
+		
+		    <a href="http://nii236.github.io/technical-blog//tags/go">go</a>
+		
+		    <a href="http://nii236.github.io/technical-blog//tags/programming">programming</a>
+		
+		    <a href="http://nii236.github.io/technical-blog//tags/software">software</a>
+		
+            	</span>
+        </section>
+                
+        <section id="comments">
+            <div id="disqus_thread" class="post-comments"></div>
+            <script type="text/javascript">
+              if (window.location.hostname != "localhost") {
+                var disqus_shortname = 'nii236';
+                (function() {
+                  var dsq = document.createElement('script');
+                  dsq.type = 'text/javascript';
+                  dsq.async = true;
+                  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+              }
+            </script>
+            <noscript>
+              Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+            </noscript>
+        </section>
+        
+    </footer>
+</article>
+
+	</div>
+</main>
+    <footer id="site-footer">
+        <div class="container">
+            <a href="http://nii236.github.io/technical-blog/index.xml" title="Get the RSS feed"><span class="tooltip"><i class="fa fa-rss"></i></span></a>
+            <section>&copy; <a href="http://nii236.github.io/technical-blog/"></a> 2015 | All rights reserved</section>
+            <section>Theme by <a href="http://www.jrdnbwmn.com">Jordan Bowman</a>. Generated with <a href="http://gohugo.io/">Hugo</a>.</section>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="http://nii236.github.io/technical-blog/js/fittext.js"></script>
+    <script type="text/javascript">
+      $(".heading").fitText();
+    </script>
+
+
+</body>
+</html>
