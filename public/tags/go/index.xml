@@ -11,10 +11,10 @@
     
     <item>
       <title>Elixir</title>
-      <link>http://nii236.github.io/technical-blog/post/elixir/</link>
+      <link>http://nii236.github.io/technical-blog/post/2016-06-16-elixir/</link>
       <pubDate>Thu, 16 Jun 2016 14:30:07 +0800</pubDate>
       
-      <guid>http://nii236.github.io/technical-blog/post/elixir/</guid>
+      <guid>http://nii236.github.io/technical-blog/post/2016-06-16-elixir/</guid>
       <description>
 
 &lt;p&gt;All this Gophering around can get boring. That&amp;rsquo;s not a bad thing, I still consider Go the language with which I am strongest and most comfortable. If I had to use a language at my workplace, Go would be it.&lt;/p&gt;
@@ -27,7 +27,7 @@
 
 &lt;p&gt;I play around with linux/unix/osx (hah!) a lot, and the fact that you have a pipeline operator Elixir is amazing! Also map, reduce, filter and each operators are something I miss a lot moving to Go from Ruby, so I&amp;rsquo;m glad to see that it&amp;rsquo;s got the first class treatment here in Elixir.&lt;/p&gt;
 
-&lt;h1 id=&#34;n-ot-i-nvented-h-ere:d357eede9a990435baf8e64347147ff3&#34;&gt;N(ot) I(nvented) H(ere)&lt;/h1&gt;
+&lt;h1 id=&#34;n-ot-i-nvented-h-ere:b9453b1d34ec9f73f05221fbac029349&#34;&gt;N(ot) I(nvented) H(ere)&lt;/h1&gt;
 
 &lt;p&gt;Being in Go land for so long, I had forgotten what the rest of the programming world is like. Gopher&amp;rsquo;s shun extending the language, using dependencies, building packages for others to use.&lt;/p&gt;
 
@@ -35,11 +35,11 @@
 
 &lt;p&gt;It was, however, still an (unexpected) breath of fresh air when I had a look at the Elixir community and how they were enthusiastically talking about writing macros, extending the language, using web frameworks and installing dependencies willy nilly.&lt;/p&gt;
 
-&lt;h1 id=&#34;code:d357eede9a990435baf8e64347147ff3&#34;&gt;Code&lt;/h1&gt;
+&lt;h1 id=&#34;code:b9453b1d34ec9f73f05221fbac029349&#34;&gt;Code&lt;/h1&gt;
 
 &lt;p&gt;So I figured as a raw exercise, to convert one of the easy katas I did long ago. The exercise is called &lt;a href=&#34;https://www.hackerrank.com/challenges/cut-the-sticks&#34;&gt;Cut the Sticks&lt;/a&gt; and is a good exercise in recursion (my Go solution did not, however, use recursion).&lt;/p&gt;
 
-&lt;h2 id=&#34;processing-stdin:d357eede9a990435baf8e64347147ff3&#34;&gt;Processing STDIN&lt;/h2&gt;
+&lt;h2 id=&#34;processing-stdin:b9453b1d34ec9f73f05221fbac029349&#34;&gt;Processing STDIN&lt;/h2&gt;
 
 &lt;p&gt;The hardest part in Go is always processing the arguments that come through HackerRank. Lots of STDIN scanning, processing etc.&lt;/p&gt;
 
@@ -83,7 +83,7 @@ end
 
 &lt;p&gt;Maybe I just suck at Go, but I dunno, there&amp;rsquo;s just something really, really &lt;strong&gt;satisfying&lt;/strong&gt; about the pipeline operator and processing stuff functionally.&lt;/p&gt;
 
-&lt;h2 id=&#34;cutting-the-sticks:d357eede9a990435baf8e64347147ff3&#34;&gt;Cutting the sticks&lt;/h2&gt;
+&lt;h2 id=&#34;cutting-the-sticks:b9453b1d34ec9f73f05221fbac029349&#34;&gt;Cutting the sticks&lt;/h2&gt;
 
 &lt;p&gt;The &lt;em&gt;actual&lt;/em&gt; code involves chopping off the sticks by the length of the shortest stick until nothing remains.&lt;/p&gt;
 
@@ -160,17 +160,17 @@ end
     
     <item>
       <title>A trading platform in Go</title>
-      <link>http://nii236.github.io/technical-blog/post/microservices/</link>
+      <link>http://nii236.github.io/technical-blog/post/2016-04-27-microservices/</link>
       <pubDate>Wed, 27 Apr 2016 14:21:40 +0800</pubDate>
       
-      <guid>http://nii236.github.io/technical-blog/post/microservices/</guid>
+      <guid>http://nii236.github.io/technical-blog/post/2016-04-27-microservices/</guid>
       <description>
 
-&lt;h2 id=&#34;the-language:24c62ab0ae8d6139f10d3d52cfeca2af&#34;&gt;The language&lt;/h2&gt;
+&lt;h2 id=&#34;the-language:910a82634b350f883da17b317aecbc6c&#34;&gt;The language&lt;/h2&gt;
 
 &lt;p&gt;I&amp;rsquo;ve been obsessing over Go lately. I won&amp;rsquo;t go into it much since pretty much everyone else on the internet has at some point or another. And all of the people I know have probably heard me raving about it. The quality of the language itself remains divisive, but I am going to soldier on and just try and build something.&lt;/p&gt;
 
-&lt;h2 id=&#34;the-project:24c62ab0ae8d6139f10d3d52cfeca2af&#34;&gt;The project&lt;/h2&gt;
+&lt;h2 id=&#34;the-project:910a82634b350f883da17b317aecbc6c&#34;&gt;The project&lt;/h2&gt;
 
 &lt;p&gt;I&amp;rsquo;ve been looking at playing with &lt;a href=&#34;https://github.com/micro/go-micro&#34;&gt;go-micro&lt;/a&gt; and building microservices. Really, I only needed an excuse to build something. I&amp;rsquo;ve come across some decent trading platforms and frameworks online but nothing really built in Go. So that&amp;rsquo;s my project.&lt;/p&gt;
 
@@ -178,7 +178,7 @@ end
 
 &lt;p&gt;Everything will be docker-ised into a swarm. NATS and Influx provide docker containers so that&amp;rsquo;s easy. The single microservices will contain static binaries so (in theory) that will be easy as well.&lt;/p&gt;
 
-&lt;h2 id=&#34;the-snippet:24c62ab0ae8d6139f10d3d52cfeca2af&#34;&gt;The snippet&lt;/h2&gt;
+&lt;h2 id=&#34;the-snippet:910a82634b350f883da17b317aecbc6c&#34;&gt;The snippet&lt;/h2&gt;
 
 &lt;p&gt;Here is a code snippet that subscribes to the IB API (also docker-ised) and (for now) just logs the values to STDOUT.&lt;/p&gt;
 
@@ -242,10 +242,10 @@ end
     
     <item>
       <title>Introducing Graviton</title>
-      <link>http://nii236.github.io/technical-blog/post/graviton/</link>
+      <link>http://nii236.github.io/technical-blog/post/2015-11-15-graviton/</link>
       <pubDate>Sun, 15 Nov 2015 16:18:08 +0800</pubDate>
       
-      <guid>http://nii236.github.io/technical-blog/post/graviton/</guid>
+      <guid>http://nii236.github.io/technical-blog/post/2015-11-15-graviton/</guid>
       <description>&lt;p&gt;I&amp;rsquo;d like to introduce Graviton in this post. Its a name I made up for my project mentioned in a previous post. There&amp;rsquo;s no real point to the name, except that it uses Electron plus Go. So I figured I&amp;rsquo;d choose a cool physics based name that starts with G.&lt;/p&gt;
 
 &lt;p&gt;In this post I&amp;rsquo;ll explain the basic steps in communicating between the front and back. In this case a &amp;ldquo;Hello World&amp;rdquo; should do the trick.&lt;/p&gt;
@@ -360,13 +360,13 @@ func main() {
     
     <item>
       <title>Square peg into a square hole</title>
-      <link>http://nii236.github.io/technical-blog/post/electron/</link>
+      <link>http://nii236.github.io/technical-blog/post/2015-11-06-electron/</link>
       <pubDate>Fri, 06 Nov 2015 16:55:21 +0800</pubDate>
       
-      <guid>http://nii236.github.io/technical-blog/post/electron/</guid>
+      <guid>http://nii236.github.io/technical-blog/post/2015-11-06-electron/</guid>
       <description>
 
-&lt;h1 id=&#34;go:ebf9963405bac373eb63012bc418035c&#34;&gt;Go&lt;/h1&gt;
+&lt;h1 id=&#34;go:4ac2213767fecde39d5307d2b39a54d3&#34;&gt;Go&lt;/h1&gt;
 
 &lt;p&gt;My friends know me as someone who is not very loyal. I don&amp;rsquo;t mean to my girlfriend. I mean to various technology and web stacks. Ever since the advent of node.js, frameworks, tooling and just weird stacks have popped up. Not that I&amp;rsquo;m complaining. I love reading about new frameworks, languages and development in general.&lt;/p&gt;
 
@@ -374,7 +374,7 @@ func main() {
 
 &lt;p&gt;I&amp;rsquo;ve been really interested in the language lately, and I look forward to building apps with it. One of the main limitations of Go at the moment is the lack of a proper UI library. There are some bindings to GTK/QT somewhere, but usually filled with bugs or some weird hackery.&lt;/p&gt;
 
-&lt;h1 id=&#34;electron:ebf9963405bac373eb63012bc418035c&#34;&gt;Electron&lt;/h1&gt;
+&lt;h1 id=&#34;electron:4ac2213767fecde39d5307d2b39a54d3&#34;&gt;Electron&lt;/h1&gt;
 
 &lt;p&gt;I have also been looking into &lt;a href=&#34;http://electron.atom.io/&#34;&gt;Electron&lt;/a&gt; lately. It used to be known as Atom Shell and has been rebranded recently.&lt;/p&gt;
 
@@ -384,7 +384,7 @@ func main() {
 
 &lt;p&gt;Communication between the main and renderer processes are done by way of the ipc package that comes with Electron. So I&amp;rsquo;d imagine your main process handles most of the comms, state, and processing. One of the biggest complaints about node js is that when it blocks, it &lt;em&gt;really, really&lt;/em&gt; blocks. Single threaded execution means that as soon as you do some sort of heavy number crunching you&amp;rsquo;re screwed, and then everyone will start complaining about how your &lt;a href=&#34;http://atom.io/&#34;&gt;app&lt;/a&gt; is slow as molasses.&lt;/p&gt;
 
-&lt;h1 id=&#34;multi-tier-architecture:ebf9963405bac373eb63012bc418035c&#34;&gt;Multi tier architecture&lt;/h1&gt;
+&lt;h1 id=&#34;multi-tier-architecture:4ac2213767fecde39d5307d2b39a54d3&#34;&gt;Multi tier architecture&lt;/h1&gt;
 
 &lt;p&gt;So why not defer the processing intensive stuff to yet another process? Perhaps using another language that is well suited to portability (static binaries) and performance.&lt;/p&gt;
 
