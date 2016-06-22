@@ -45,7 +45,7 @@
 
 &lt;p&gt;Here is how I processed the STDIN with Go.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-Go&#34;&gt;// GetArgs reads from STDIN and returns stuff in the correct format
+&lt;pre&gt;&lt;code class=&#34;language-golang&#34;&gt;// GetArgs reads from STDIN and returns stuff in the correct format
 func GetArgs(r io.Reader) (int, []int) {
 	var numArgs = 0
 	_, err := fmt.Fscanln(r, &amp;amp;numArgs)
