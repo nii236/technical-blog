@@ -85,7 +85,7 @@
 
 <p>Here is how I processed the STDIN with Go.</p>
 
-<pre><code class="language-Go">// GetArgs reads from STDIN and returns stuff in the correct format
+<pre><code class="language-golang">// GetArgs reads from STDIN and returns stuff in the correct format
 func GetArgs(r io.Reader) (int, []int) {
 	var numArgs = 0
 	_, err := fmt.Fscanln(r, &amp;numArgs)
