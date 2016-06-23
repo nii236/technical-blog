@@ -11,5 +11,9 @@ h3 {
 }
 
 p, li {
-  font-weight:800;;
+  font-weight:800;
+}
+
+body {
+  -webkit-font-smoothing: auto;
 }
