@@ -17,3 +17,7 @@ p, li {
 body {
   -webkit-font-smoothing: auto;
 }
+
+p>a:link {
+text-decoration: underline;
+}
