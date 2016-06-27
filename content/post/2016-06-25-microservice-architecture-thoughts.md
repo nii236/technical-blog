@@ -1,6 +1,7 @@
 +++
 date = "2016-06-25T12:52:23+08:00"
 title = "Micro"
+tags = ["microservices", "screencast", "programming"]
 +++
 
 # Composing

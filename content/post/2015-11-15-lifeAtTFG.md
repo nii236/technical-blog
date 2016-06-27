@@ -1,7 +1,7 @@
 +++
 date = "2015-11-15T16:05:24+08:00"
 title = "Life on the Dark Side"
-tags = ["engineering", "career", "work"]
+tags = ["career"]
 +++
 
 So there I was.

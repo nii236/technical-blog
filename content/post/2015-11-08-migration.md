@@ -1,7 +1,7 @@
 +++
 date = "2015-11-08T11:15:27+08:00"
 title = "rake career:migrate"
-tags = ["engineering", "career", "work"]
+tags = ["career"]
 +++
 
 I often see people posting on the [/r/cscareerquestions](http://www.reddit.com/r/cscareerquestions) subreddit questions about what is involved in migrating to a career of software development. I'm in the enviable position of having completed that step, and I'll share my background in this article and will cover my migration to software development in a future post.

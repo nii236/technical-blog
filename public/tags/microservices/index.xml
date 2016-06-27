@@ -6,8 +6,24 @@
     <description>Recent content in Microservices on A Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Apr 2016 14:21:40 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jun 2016 12:52:23 +0800</lastBuildDate>
     <atom:link href="http://nii236.github.io/technical-blog/tags/microservices/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Micro</title>
+      <link>http://nii236.github.io/technical-blog/post/2016-06-25-microservice-architecture-thoughts/</link>
+      <pubDate>Sat, 25 Jun 2016 12:52:23 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/post/2016-06-25-microservice-architecture-thoughts/</guid>
+      <description>
+
+&lt;h1 id=&#34;composing:b1c638b768f0195f806b2c3c62f0a2e4&#34;&gt;Composing&lt;/h1&gt;
+
+&lt;p&gt;So it turns out that some people actually have interest in what I (attempted to) build with regards to the microservice trading platform I mentioned a few posts ago. I ended up doing a screencast to try and explain what I&amp;rsquo;ve done so far with my app and how it all plugs together.&lt;/p&gt;
+
+&lt;p&gt;Thanks to Oren Golan for setting this up! &lt;a href=&#34;https://oren.github.io/blog/micro.html&#34;&gt;The link to the post is here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>A trading platform in Go</title>
