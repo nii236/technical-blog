@@ -17,7 +17,7 @@
       <guid>http://nii236.github.io/technical-blog/post/2016-06-25-microservice-architecture-thoughts/</guid>
       <description>
 
-&lt;h1 id=&#34;composing:b1c638b768f0195f806b2c3c62f0a2e4&#34;&gt;Composing&lt;/h1&gt;
+&lt;h1 id=&#34;composing&#34;&gt;Composing&lt;/h1&gt;
 
 &lt;p&gt;So it turns out that some people actually have interest in what I (attempted to) build with regards to the microservice trading platform I mentioned a few posts ago. I ended up doing a screencast to try and explain what I&amp;rsquo;ve done so far with my app and how it all plugs together.&lt;/p&gt;
 

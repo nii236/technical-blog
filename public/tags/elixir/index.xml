@@ -27,7 +27,7 @@
 
 &lt;p&gt;I play around with linux/unix/osx (hah!) a lot, and the fact that you have a pipeline operator Elixir is amazing! Also map, reduce, filter and each operators are something I miss a lot moving to Go from Ruby, so I&amp;rsquo;m glad to see that it&amp;rsquo;s got the first class treatment here in Elixir.&lt;/p&gt;
 
-&lt;h1 id=&#34;n-ot-i-nvented-h-ere:b9453b1d34ec9f73f05221fbac029349&#34;&gt;N(ot) I(nvented) H(ere)&lt;/h1&gt;
+&lt;h1 id=&#34;n-ot-i-nvented-h-ere&#34;&gt;N(ot) I(nvented) H(ere)&lt;/h1&gt;
 
 &lt;p&gt;Being in Go land for so long, I had forgotten what the rest of the programming world is like. Gopher&amp;rsquo;s shun extending the language, using dependencies, building packages for others to use.&lt;/p&gt;
 
@@ -35,11 +35,11 @@
 
 &lt;p&gt;It was, however, still an (unexpected) breath of fresh air when I had a look at the Elixir community and how they were enthusiastically talking about writing macros, extending the language, using web frameworks and installing dependencies willy nilly.&lt;/p&gt;
 
-&lt;h1 id=&#34;code:b9453b1d34ec9f73f05221fbac029349&#34;&gt;Code&lt;/h1&gt;
+&lt;h1 id=&#34;code&#34;&gt;Code&lt;/h1&gt;
 
 &lt;p&gt;So I figured as a raw exercise, to convert one of the easy katas I did long ago. The exercise is called &lt;a href=&#34;https://www.hackerrank.com/challenges/cut-the-sticks&#34;&gt;Cut the Sticks&lt;/a&gt; and is a good exercise in recursion (my Go solution did not, however, use recursion).&lt;/p&gt;
 
-&lt;h2 id=&#34;processing-stdin:b9453b1d34ec9f73f05221fbac029349&#34;&gt;Processing STDIN&lt;/h2&gt;
+&lt;h2 id=&#34;processing-stdin&#34;&gt;Processing STDIN&lt;/h2&gt;
 
 &lt;p&gt;The hardest part in Go is always processing the arguments that come through HackerRank. Lots of STDIN scanning, processing etc.&lt;/p&gt;
 
@@ -83,7 +83,7 @@ end
 
 &lt;p&gt;Maybe I just suck at Go, but I dunno, there&amp;rsquo;s just something really, really &lt;strong&gt;satisfying&lt;/strong&gt; about the pipeline operator and processing stuff functionally.&lt;/p&gt;
 
-&lt;h2 id=&#34;cutting-the-sticks:b9453b1d34ec9f73f05221fbac029349&#34;&gt;Cutting the sticks&lt;/h2&gt;
+&lt;h2 id=&#34;cutting-the-sticks&#34;&gt;Cutting the sticks&lt;/h2&gt;
 
 &lt;p&gt;The &lt;em&gt;actual&lt;/em&gt; code involves chopping off the sticks by the length of the shortest stick until nothing remains.&lt;/p&gt;
 
