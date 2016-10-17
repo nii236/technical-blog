@@ -155,7 +155,7 @@
       <guid>http://nii236.github.io/technical-blog/post/2015-11-06-electron/</guid>
       <description>
 
-&lt;h1 id=&#34;go:4ac2213767fecde39d5307d2b39a54d3&#34;&gt;Go&lt;/h1&gt;
+&lt;h1 id=&#34;go&#34;&gt;Go&lt;/h1&gt;
 
 &lt;p&gt;My friends know me as someone who is not very loyal. I don&amp;rsquo;t mean to my girlfriend. I mean to various technology and web stacks. Ever since the advent of node.js, frameworks, tooling and just weird stacks have popped up. Not that I&amp;rsquo;m complaining. I love reading about new frameworks, languages and development in general.&lt;/p&gt;
 
@@ -163,7 +163,7 @@
 
 &lt;p&gt;I&amp;rsquo;ve been really interested in the language lately, and I look forward to building apps with it. One of the main limitations of Go at the moment is the lack of a proper UI library. There are some bindings to GTK/QT somewhere, but usually filled with bugs or some weird hackery.&lt;/p&gt;
 
-&lt;h1 id=&#34;electron:4ac2213767fecde39d5307d2b39a54d3&#34;&gt;Electron&lt;/h1&gt;
+&lt;h1 id=&#34;electron&#34;&gt;Electron&lt;/h1&gt;
 
 &lt;p&gt;I have also been looking into &lt;a href=&#34;http://electron.atom.io/&#34;&gt;Electron&lt;/a&gt; lately. It used to be known as Atom Shell and has been rebranded recently.&lt;/p&gt;
 
@@ -173,7 +173,7 @@
 
 &lt;p&gt;Communication between the main and renderer processes are done by way of the ipc package that comes with Electron. So I&amp;rsquo;d imagine your main process handles most of the comms, state, and processing. One of the biggest complaints about node js is that when it blocks, it &lt;em&gt;really, really&lt;/em&gt; blocks. Single threaded execution means that as soon as you do some sort of heavy number crunching you&amp;rsquo;re screwed, and then everyone will start complaining about how your &lt;a href=&#34;http://atom.io/&#34;&gt;app&lt;/a&gt; is slow as molasses.&lt;/p&gt;
 
-&lt;h1 id=&#34;multi-tier-architecture:4ac2213767fecde39d5307d2b39a54d3&#34;&gt;Multi tier architecture&lt;/h1&gt;
+&lt;h1 id=&#34;multi-tier-architecture&#34;&gt;Multi tier architecture&lt;/h1&gt;
 
 &lt;p&gt;So why not defer the processing intensive stuff to yet another process? Perhaps using another language that is well suited to portability (static binaries) and performance.&lt;/p&gt;
 

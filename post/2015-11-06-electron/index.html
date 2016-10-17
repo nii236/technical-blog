@@ -13,7 +13,7 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <meta name="author" content="">
-        <meta name="keywords" content="awesome, definitely">
+  
 	
         <meta property="og:site_name" content="A Blog">
         <meta property="og:title" content="A Blog">
@@ -24,7 +24,7 @@
         <meta property="og:article:author" content="" />
         <meta property="og:article:published_time" content="2015-11-06T16:55:21&#43;08:00" />
     
-        <meta name="generator" content="Hugo 0.15" />
+        <meta name="generator" content="Hugo 0.16" />
     <title>Square peg into a square hole &middot; A Blog </title>
     <link rel="canonical" href="http://nii236.github.io/technical-blog/" />
     <link rel="alternate" type="application/rss+xml" title="RSS" href="">
@@ -57,7 +57,7 @@
     <section class="post-content">
         
 
-<h1 id="go:4ac2213767fecde39d5307d2b39a54d3">Go</h1>
+<h1 id="go">Go</h1>
 
 <p>My friends know me as someone who is not very loyal. I don&rsquo;t mean to my girlfriend. I mean to various technology and web stacks. Ever since the advent of node.js, frameworks, tooling and just weird stacks have popped up. Not that I&rsquo;m complaining. I love reading about new frameworks, languages and development in general.</p>
 
@@ -65,7 +65,7 @@
 
 <p>I&rsquo;ve been really interested in the language lately, and I look forward to building apps with it. One of the main limitations of Go at the moment is the lack of a proper UI library. There are some bindings to GTK/QT somewhere, but usually filled with bugs or some weird hackery.</p>
 
-<h1 id="electron:4ac2213767fecde39d5307d2b39a54d3">Electron</h1>
+<h1 id="electron">Electron</h1>
 
 <p>I have also been looking into <a href="http://electron.atom.io/">Electron</a> lately. It used to be known as Atom Shell and has been rebranded recently.</p>
 
@@ -75,7 +75,7 @@
 
 <p>Communication between the main and renderer processes are done by way of the ipc package that comes with Electron. So I&rsquo;d imagine your main process handles most of the comms, state, and processing. One of the biggest complaints about node js is that when it blocks, it <em>really, really</em> blocks. Single threaded execution means that as soon as you do some sort of heavy number crunching you&rsquo;re screwed, and then everyone will start complaining about how your <a href="http://atom.io/">app</a> is slow as molasses.</p>
 
-<h1 id="multi-tier-architecture:4ac2213767fecde39d5307d2b39a54d3">Multi tier architecture</h1>
+<h1 id="multi-tier-architecture">Multi tier architecture</h1>
 
 <p>So why not defer the processing intensive stuff to yet another process? Perhaps using another language that is well suited to portability (static binaries) and performance.</p>
 

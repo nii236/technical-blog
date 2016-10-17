@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Japanese on A Blog</title>
+    <link>http://nii236.github.io/technical-blog/tags/japanese/</link>
+    <description>Recent content in Japanese on A Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 Oct 2016 12:52:23 +0800</lastBuildDate>
+    <atom:link href="http://nii236.github.io/technical-blog/tags/japanese/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Optimising Japanese Study</title>
+      <link>http://nii236.github.io/technical-blog/post/2016-10-17-optimising-japanese/</link>
+      <pubDate>Fri, 07 Oct 2016 12:52:23 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/post/2016-10-17-optimising-japanese/</guid>
+      <description>
+
+&lt;p&gt;This is just a snippet I posted in Reddit a LONG time ago. People keep digging up that post and asking about it, so I decided to paste it here while I work out how to present it properly.&lt;/p&gt;
+
+&lt;h1 id=&#34;original-post&#34;&gt;Original Post&lt;/h1&gt;
+
+&lt;h2 id=&#34;ability-required-to-read-light-novels&#34;&gt;Ability required to read light novels&lt;/h2&gt;
+
+&lt;p&gt;Hey everyone I am new to Japanese and I know I have a long ways to go but I was curious if anyone could answer my question. I was curious how much japanese (we&amp;rsquo;ll use JLPT levels as an example) one would need to know in order to read a light novel such as Sword Art Online? Thanks!&lt;/p&gt;
+
+&lt;h1 id=&#34;my-response&#34;&gt;My Response&lt;/h1&gt;
+
+&lt;p&gt;Its interesting that you ask this, because I&amp;rsquo;ve been preparing to do exactly what you&amp;rsquo;re doing over the past few days (learn with the goal of reading Sword Art Online). I&amp;rsquo;m pretty happy with my approach. You just gotta chip away at it, make the learning part as effortless as possible and approach it systematically.&lt;/p&gt;
+
+&lt;p&gt;Starting resources:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I have a paper copy of the raw Japanese novel.&lt;/li&gt;
+&lt;li&gt;I have digital copies of the Japanese and English novels.&lt;/li&gt;
+&lt;li&gt;I have Tae Kim&amp;rsquo;s grammar guide, and an Anki deck of all Heisig primitives.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;With the above resources, I got some programs off the interwebs and ran an analysis on the first novel. Some findings:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Hayashi score of grade 9 (easiest to hardest 1-13)&lt;/li&gt;
+&lt;li&gt;OBI-2 grade 63.5776557318521 (easiest to hardest 0-100)&lt;/li&gt;
+&lt;li&gt;1848 unique kanji in the first book &lt;a href=&#34;http://pastebin.com/BQTEWuGc&#34;&gt;(report here, last column is cumulative frequency)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;8002 unique words in the first book &lt;a href=&#34;http://pastebin.com/jTYk1v6X&#34;&gt;(report here, last column is cumulative frequency)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;With the above information in mind:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;I divided up the book into 2000 characters per HTML page. Using HTML pages will allow me to use Rikai sama to generate Anki vocab words quickly and easily. Dividing the book into sections help make it more manageable (doing one section per day for instance)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Working on 2000 characters at a time will take you 180 days to go through the first book.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Add unknown words to the deck as I go along. Use Tae Kim&amp;rsquo;s Guide (or The Beginner&amp;rsquo;s Guide to Japanese Grammar) to assist with grammar referencing. Compare with English translated book.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In theory I should be able to get through the book in about 6 months, with a neat anki deck with relevant cards. No idea how well I&amp;rsquo;ll do, but let me know if you&amp;rsquo;d like me to share more information.&lt;/p&gt;
+
+&lt;p&gt;Disclaimer: I&amp;rsquo;ve had about 5 years or so of (poorly committed) Japanese learning. So easy steps for me might be extremely hard for you.&lt;/p&gt;
+
+&lt;p&gt;Disclaimer 2: An alternative method would be to create a true i+1 deck using the CB&amp;rsquo;s Kanji Word Association tool, using the kanji frequency given by the SAO novel but that created 5000 vocab cards to go through and I just couldn&amp;rsquo;t be bothered (guys on the IRC channel talked me out of attempting that)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
