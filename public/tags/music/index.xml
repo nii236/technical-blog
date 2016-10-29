@@ -122,7 +122,7 @@ s: CDEF
 
 &lt;p&gt;&amp;hellip;&lt;/p&gt;
 
-&lt;p&gt;Become jazz master!&lt;/p&gt;
+&lt;p&gt;Become a jazz master!&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://nii236.github.io/technical-blog/technical-blog/images/jazzpianomaster.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
     </item>
@@ -135,6 +135,8 @@ s: CDEF
       <guid>http://nii236.github.io/technical-blog/post/2016-10-17-musical-notation/</guid>
       <description>&lt;p&gt;So I need a way of recording my learnings about Jazz music. Mostly because I can barely keep track of my life in general.&lt;/p&gt;
 
+&lt;p&gt;&lt;/p&gt;
+
 &lt;p&gt;Turns out there&amp;rsquo;s a sweet library called &lt;a href=&#34;https://abcjs.net&#34;&gt;abc.js&lt;/a&gt;. It renders the ABC syntax for music! I used to use Lilypond, but this is a nice subset, suitable for webpages.&lt;/p&gt;
 
 &lt;p&gt;Well, the minified version is 487kb, which you all have already downloaded just by visiting this website. Sorry about that!&lt;/p&gt;
@@ -146,8 +148,56 @@ T: Lick 1
 K:C
 s: CDEF
 |:&amp;quot;Dm7b5&amp;quot; F3 ^C DF_Ac|&amp;quot;G7&amp;quot; B_B_A^F G=Bdf|&amp;quot;Cm7&amp;quot; _e8:|
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reharm Algorithm</title>
+      <link>http://nii236.github.io/technical-blog/post/2016-06-16-leadsheetvoicings/</link>
+      <pubDate>Thu, 16 Jun 2016 16:40:48 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/post/2016-06-16-leadsheetvoicings/</guid>
+      <description>&lt;p&gt;This is a follow-up post from the previous post regarding building extended chords. I will be documenting how I come up with various voicings for &lt;a href=&#34;https://en.wikipedia.org/wiki/A_Foggy_Day&#34;&gt;A Foggy Day&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;rules-of-thumb&#34;&gt;Rules of thumb&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Repeating the melody an octave below is okay&lt;/li&gt;
+&lt;li&gt;Avoid the fifth in favour of other intervals (including for the melody)&lt;/li&gt;
+&lt;li&gt;Tritone subtitutions where suitable&lt;/li&gt;
+&lt;li&gt;When the melody is on the fifth Reharmonisation it is possible to change the tonic to suit a more interesting interval.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;bar-1&#34;&gt;Bar 1&lt;/h2&gt;
+
+&lt;h3 id=&#34;step-1-tonic-and-melody&#34;&gt;Step 1 - Tonic and Melody&lt;/h3&gt;
+
+&lt;p&gt;Figure out the following bits:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Tonic: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Chord: &lt;code&gt;Fmaj7&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Melody: &lt;code&gt;C&lt;/code&gt; (the &lt;code&gt;5th&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;step-2-3rd-and-7th-shell-voicing&#34;&gt;Step 2 - 3rd and 7th shell voicing&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;3rd: &lt;code&gt;A&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;7th: &lt;code&gt;B&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;step-3a-add-alterations&#34;&gt;Step 3a - Add Alterations&lt;/h3&gt;
+
+&lt;p&gt;You also need to make sure the intervals between the alteration and the melody note is suitable. See the previous blog post for suitable alterations.&lt;/p&gt;
+
+&lt;h3 id=&#34;step-3b-consider-context&#34;&gt;Step 3b - Consider Context&lt;/h3&gt;
+
+&lt;h4 id=&#34;step-3b-1-dominant-v&#34;&gt;Step 3b.1 Dominant V&lt;/h4&gt;
+
+&lt;p&gt;Any dominant 7th chords acting as the fifth of the key centre can be switched with a tritone substitution, melody allowing.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -156,10 +206,10 @@ s: CDEF
       <pubDate>Thu, 16 Jun 2016 16:18:06 +0800</pubDate>
       
       <guid>http://nii236.github.io/technical-blog/post/2016-06-16-chordextensions/</guid>
-      <description>
-
-&lt;p&gt;This is a summary from the &lt;a href=&#34;www.reddit.com/r/piano&#34;&gt;/r/piano&lt;/a&gt;
+      <description>&lt;p&gt;This is a summary from the &lt;a href=&#34;www.reddit.com/r/piano&#34;&gt;/r/piano&lt;/a&gt;
  subreddit FAQ. User &lt;code&gt;onaz&lt;/code&gt; gives a great summary on good chord extensions to use.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;I have been playing around with Jazz piano for many years but knowing which extension to use for a chord often eludes me. Turns out there are actually systematic categories for each!&lt;/p&gt;
 
@@ -331,8 +381,7 @@ s: CDEF
 
 &lt;p&gt;Usually many of these alterations are used together to create a dissonant sound to the liking of the pianist. Often you&amp;rsquo;ll see printed alterations in dominant chords caused by melody notes.&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Most often you will change combinations of the 5th and 9th to get a sound you like.&lt;/em&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;em&gt;Most often you will change combinations of the 5th and 9th to get a sound you like.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -341,9 +390,9 @@ s: CDEF
       <pubDate>Mon, 01 Feb 2016 10:06:25 +0800</pubDate>
       
       <guid>http://nii236.github.io/technical-blog/post/2016-02-01-learning-jazz-piano/</guid>
-      <description>
+      <description>&lt;p&gt;So I have been learning music on and off for years, and have never really gotten to a &lt;strong&gt;fully sick&lt;/strong&gt; level of proficiency. The problem here is usually that I don&amp;rsquo;t put in enough hours, which is true. The other problem is paralysis analysis, and the filthy need to optimise my learning. I have suffered this same problem in my Japanese studies but I&amp;rsquo;ll leave that for another post.&lt;/p&gt;
 
-&lt;p&gt;So I have been learning music on and off for years, and have never really gotten to a &lt;strong&gt;fully sick&lt;/strong&gt; level of proficiency. The problem here is usually that I don&amp;rsquo;t put in enough hours, which is true. The other problem is paralysis analysis, and the filthy need to optimise my learning. I have suffered this same problem in my Japanese studies but I&amp;rsquo;ll leave that for another post.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;jazz&#34;&gt;Jazz&lt;/h1&gt;
 
@@ -387,8 +436,7 @@ s: CDEF
 
 &lt;p&gt;Feed the MIDI output into a virtual MIDI device into Reaper, and listen to that &lt;a href=&#34;https://www.pianoteq.com/&#34;&gt;sweet sweet piano VST&lt;/a&gt; that you no doubt own.&lt;/p&gt;
 
-&lt;p&gt;Practice the ear, export to MP3, run it through &lt;a href=&#34;http://www.seventhstring.com/&#34;&gt;Transcribe&lt;/a&gt; (or just slow it down through Synthesia)!&lt;/p&gt;
-</description>
+&lt;p&gt;Practice the ear, export to MP3, run it through &lt;a href=&#34;http://www.seventhstring.com/&#34;&gt;Transcribe&lt;/a&gt; (or just slow it down through Synthesia)!&lt;/p&gt;</description>
     </item>
     
   </channel>

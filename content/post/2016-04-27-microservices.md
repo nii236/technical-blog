@@ -2,14 +2,14 @@
 date = "2016-04-27T14:21:40+08:00"
 description = "Someone was going to do it eventually..."
 title = "A trading platform in Go"
-tags = ["microservices", "finance", "go", "programming"]
-categories = ["software"]
-series = ["go"]
+tags = ["code"]
 +++
 
 ## The language
 
 I've been obsessing over Go lately. I won't go into it much since pretty much everyone else on the internet has at some point or another. And all of the people I know have probably heard me raving about it. The quality of the language itself remains divisive, but I am going to soldier on and just try and build something.
+
+<!--more-->
 
 ## The project
 

@@ -1,11 +1,13 @@
 +++
 date = "2016-06-16T16:18:06+08:00"
 title = "Chord Extensions"
-tags = ["music", "jazz", "chords"]
+tags = ["music"]
 +++
 
 This is a summary from the [/r/piano](www.reddit.com/r/piano)
  subreddit FAQ. User `onaz` gives a great summary on good chord extensions to use.
+
+<!--more-->
 
 I have been playing around with Jazz piano for many years but knowing which extension to use for a chord often eludes me. Turns out there are actually systematic categories for each!
 

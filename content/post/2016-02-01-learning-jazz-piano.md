@@ -1,10 +1,12 @@
 +++
 date = "2016-02-01T10:06:25+08:00"
 title = "Experiments in learning jazz piano"
-tags = ["piano", "jazz", "music"]
+tags = ["music"]
 +++
 
 So I have been learning music on and off for years, and have never really gotten to a __fully sick__ level of proficiency. The problem here is usually that I don't put in enough hours, which is true. The other problem is paralysis analysis, and the filthy need to optimise my learning. I have suffered this same problem in my Japanese studies but I'll leave that for another post.
+
+<!--more-->
 
 # Jazz
 

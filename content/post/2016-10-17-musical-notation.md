@@ -1,10 +1,12 @@
 +++
 date = "2016-10-17T18:40:23+08:00"
 title = "Rendering music"
-tags = ["music", "jazz", "piano"]
+tags = ["music"]
 +++
 
 So I need a way of recording my learnings about Jazz music. Mostly because I can barely keep track of my life in general.
+
+<!--more-->
 
 Turns out there's a sweet library called [abc.js](https://abcjs.net). It renders the ABC syntax for music! I used to use Lilypond, but this is a nice subset, suitable for webpages.
 

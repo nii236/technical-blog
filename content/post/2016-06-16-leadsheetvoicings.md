@@ -1,11 +1,13 @@
 +++
 date = "2016-06-16T16:40:48+08:00"
 title = "Reharm Algorithm"
-tags = ["music", "jazz", "chords", "piano"]
-draft = true
+tags = ["music"]
+draft = false
 +++
 
 This is a follow-up post from the previous post regarding building extended chords. I will be documenting how I come up with various voicings for [A Foggy Day](https://en.wikipedia.org/wiki/A_Foggy_Day).
+
+<!--more-->
 
 ## Rules of thumb
 

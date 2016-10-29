@@ -8,6 +8,8 @@ So there I was.
 
 I joked that programming is like the dark side of career paths. Its tempting to do because it looks fun from the outside. It would have been a nice change from pushing paper and excel spreadsheets to vendors about why X does not adhere to standard Y. To be able to go to 'work', and that 'work' means somewhere near civilisation. The concept is amazingly tempting, yet fraught with risk.
 
+<!--more-->
+
 As I write this, I've been working at TFG for the past 9 months! I have various things to say but my work here has been very fruitful.
 
 The majority of my time has been spent looking at the data analytics work that I was originally signed up to do. During slower times, however, I have been encouraged to help out with the others in developing web apps just like I hoped!

@@ -6,6 +6,8 @@ tags = ["career"]
 
 I often see people posting on the [/r/cscareerquestions](http://www.reddit.com/r/cscareerquestions) subreddit questions about what is involved in migrating to a career of software development. I'm in the enviable position of having completed that step, and I'll share my background in this article and will cover my migration to software development in a future post.
 
+<!--more-->
+
 I graduated in 2008 with an Engineering bachelor's degree in Mechatronics. I enjoyed the work, and the combination of electronic, mechanical and programming was appealing to me.
 
 I ended up working as a vanilla mechanical engineer due to the job market at the time. I did it for 3 years, during which I worked on:

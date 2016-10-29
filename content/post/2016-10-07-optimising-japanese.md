@@ -1,10 +1,12 @@
 +++
 date = "2016-10-07T12:52:23+08:00"
 title = "Optimising Japanese Study"
-tags = ["japanese", "language"]
+tags = ["language"]
 +++
 
 This is just a snippet I posted in Reddit a LONG time ago. People keep digging up that post and asking about it, so I decided to paste it here while I work out how to present it properly.
+
+<!--more-->
 
 # Original Post
 ## Ability required to read light novels

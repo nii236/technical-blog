@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>A Blog</title>
+    <link>http://nii236.github.io/technical-blog/tags/misc/index.xml</link>
+    <description>Recent content on A Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://nii236.github.io/technical-blog/tags/misc/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>First post!</title>
+      <link>http://nii236.github.io/technical-blog/post/2015-09-18-first/</link>
+      <pubDate>Fri, 18 Sep 2015 14:21:40 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/post/2015-09-18-first/</guid>
+      <description>
+
+&lt;h1 id=&#34;why-hello-there&#34;&gt;Why hello there!&lt;/h1&gt;
+
+&lt;p&gt;This is the initial post. I&amp;rsquo;ll be exploring various technology stacks during my journey to become a (more) competent developer.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

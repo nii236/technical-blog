@@ -5,7 +5,7 @@ title = "A Blog"
 
 [params]
 	name = "John Nguyen"
-	description = "Explorations in tech and music"
+	description = "On tech and music"
 	bio = "Engineer - Developer - Traveller"
 	# Enter optionally your twitter account
 	twitter = "nii236"
