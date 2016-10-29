@@ -4,6 +4,7 @@ languageCode = "en-us"
 title = "A Blog"
 
 [params]
+	resumeURL = "http://niiteki.io"
 	name = "John Nguyen"
 	description = "On tech and music"
 	bio = "Engineer - Developer - Traveller"

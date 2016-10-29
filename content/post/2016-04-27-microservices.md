@@ -21,7 +21,7 @@ Everything will be docker-ised into a swarm. NATS and Influx provide docker cont
 
 Here is a code snippet that subscribes to the IB API (also docker-ised) and (for now) just logs the values to STDOUT.
 
-```go
+```
 func exec(pair string, currency string) {
 	log.Infoln("Starting connection to IB gateway...", "Pair:", pair, ", Currency:", currency)
 	options := &ib.EngineOptions{
