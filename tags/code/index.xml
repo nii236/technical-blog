@@ -14,9 +14,7 @@
       <pubDate>Sat, 25 Jun 2016 12:52:23 +0800</pubDate>
       
       <guid>http://nii236.github.io/technical-blog/post/2016-06-25-microservice-architecture-thoughts/</guid>
-      <description>&lt;h1 id=&#34;composing&#34;&gt;Composing&lt;/h1&gt;
-
-&lt;p&gt;So it turns out that some people actually have interest in what I (attempted to) build with regards to the microservice trading platform I mentioned a few posts ago.&lt;/p&gt;
+      <description>&lt;p&gt;So it turns out that some people actually have interest in what I (attempted to) build with regards to the microservice trading platform I mentioned a few posts ago.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;
 
@@ -179,9 +177,7 @@ end
       <pubDate>Wed, 27 Apr 2016 14:21:40 +0800</pubDate>
       
       <guid>http://nii236.github.io/technical-blog/post/2016-04-27-microservices/</guid>
-      <description>&lt;h2 id=&#34;the-language&#34;&gt;The language&lt;/h2&gt;
-
-&lt;p&gt;I&amp;rsquo;ve been obsessing over Go lately. I won&amp;rsquo;t go into it much since pretty much everyone else on the internet has at some point or another. And all of the people I know have probably heard me raving about it. The quality of the language itself remains divisive, but I am going to soldier on and just try and build something.&lt;/p&gt;
+      <description>&lt;p&gt;I&amp;rsquo;ve been obsessing over Go lately. I won&amp;rsquo;t go into it much since pretty much everyone else on the internet has at some point or another. And all of the people I know have probably heard me raving about it. The quality of the language itself remains divisive, but I am going to soldier on and just try and build something.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;
 
