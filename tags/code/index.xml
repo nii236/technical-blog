@@ -193,7 +193,7 @@ end
 
 &lt;p&gt;Here is a code snippet that subscribes to the IB API (also docker-ised) and (for now) just logs the values to STDOUT.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-go&#34;&gt;func exec(pair string, currency string) {
+&lt;pre&gt;&lt;code&gt;func exec(pair string, currency string) {
 	log.Infoln(&amp;quot;Starting connection to IB gateway...&amp;quot;, &amp;quot;Pair:&amp;quot;, pair, &amp;quot;, Currency:&amp;quot;, currency)
 	options := &amp;amp;ib.EngineOptions{
 		Client:           0,
