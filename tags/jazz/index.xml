@@ -1,18 +1,136 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jazz on A Blog</title>
-    <link>http://nii236.github.io/technical-blog/tags/jazz/</link>
-    <description>Recent content in Jazz on A Blog</description>
+    <title>A Blog</title>
+    <link>http://nii236.github.io/technical-blog/tags/jazz/index.xml</link>
+    <description>Recent content on A Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Oct 2016 18:40:23 +0800</lastBuildDate>
     <atom:link href="http://nii236.github.io/technical-blog/tags/jazz/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Learning lick 1</title>
+      <link>http://nii236.github.io/technical-blog/post/2016-10-29-lick-1/</link>
+      <pubDate>Mon, 31 Oct 2016 12:05:23 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/post/2016-10-29-lick-1/</guid>
+      <description>&lt;p&gt;In this blog post I will attempt to explain how I am learning these licks.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is lick 1 again.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;X:1
+T: Lick 1
+K:C
+s: CDEF
+|:&amp;quot;Dm7b5&amp;quot; F3 ^C DF_Ac|&amp;quot;G7&amp;quot; B_B_A^F G=Bdf|&amp;quot;Cm7&amp;quot; _e8:|
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So what&amp;rsquo;s going on here?&lt;/p&gt;
+
+&lt;h2 id=&#34;bar-one&#34;&gt;Bar one&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;X:1
+T: Lick 1
+K:C
+s: CDEF
+|:&amp;quot;Dm7b5&amp;quot; F3 ^C DF_Ac|
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Some observations:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;We&amp;rsquo;re in the key of Eb.&lt;/li&gt;
+&lt;li&gt;This is a ii V7 I on the 6th.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The first bar does the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Start on the minor third and approach the root from a semitone below.&lt;/li&gt;
+&lt;li&gt;Arpeggiate up the chord (Dmin7b5) and hit the 7th. Simple enough.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;bar-two&#34;&gt;Bar two&lt;/h2&gt;
+
+&lt;p&gt;In bar 2, we are now in G7.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;X:1
+T: Lick 1
+K:C
+s: CDEF
+|:&amp;quot;G7&amp;quot; B_B_A^F G=Bdf|
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is where it gets sorta weird.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Descend down the &lt;a href=&#34;https://en.wikipedia.org/wiki/Altered_scale&#34;&gt;altered scale&lt;/a&gt; past the tonic&lt;/li&gt;
+&lt;li&gt;Surround the tonic&lt;/li&gt;
+&lt;li&gt;Arpeggiate up the current chord, easy enough.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;bar-three&#34;&gt;Bar three&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;X:1
+T: Lick 1
+K:C
+s: CDEF
+|:&amp;quot;Cm7&amp;quot; _e8:|
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Lastly:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;End on the third of i7.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;thoughts&#34;&gt;Thoughts&lt;/h1&gt;
+
+&lt;p&gt;So what&amp;rsquo;s so interesting about this? Not much, honestly, its a pretty basic lick. The idea here is that we have mini blocks of functional lick ideas. Its not enough to just transcribe and copy jazz tunes and improvisations.&lt;/p&gt;
+
+&lt;p&gt;Allegedly (my teacher tells me), its best to break it down into functional blocks. Arpeggiate here, surround there, approach over there. All these need to be learned in the context of the harmony.&lt;/p&gt;
+
+&lt;p&gt;So instead of this:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;start on &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;approach the &lt;code&gt;D&lt;/code&gt; from &lt;code&gt;C#&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;then arpeggiate up to &lt;code&gt;C&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You would think of this in your head:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;start on the third of the current chord which is a &lt;code&gt;min7b5&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;approach the &lt;code&gt;tonic&lt;/code&gt; from a &lt;code&gt;semitone&lt;/code&gt; below&lt;/li&gt;
+&lt;li&gt;then arpeggiate up to its &lt;code&gt;7th&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;With this in mind, and transposing it a few times, you will be able to get a core understanding of what it is the lick is actually doing.&lt;/p&gt;
+
+&lt;p&gt;Then during practice, you would apply a single functional concept. Maybe you&amp;rsquo;d attempt to focus on &amp;lsquo;approaching the tonic from a semitone below&amp;rsquo;. The next practice session you could focus on &amp;lsquo;arpeggiating from the tonic up to its 7th&amp;rsquo;.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-above-is-very-important&#34;&gt;The above is very important!&lt;/h2&gt;
+
+&lt;p&gt;Learn a bunch of functional building blocks for licks.&lt;/p&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Compose them all together on the fly in any key.&lt;/p&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Become jazz master!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://nii236.github.io/technical-blog/technical-blog/images/jazzpianomaster.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Rendering music</title>
       <link>http://nii236.github.io/technical-blog/post/2016-10-17-musical-notation/</link>
-      <pubDate>Fri, 07 Oct 2016 18:40:23 +0800</pubDate>
+      <pubDate>Mon, 17 Oct 2016 18:40:23 +0800</pubDate>
       
       <guid>http://nii236.github.io/technical-blog/post/2016-10-17-musical-notation/</guid>
       <description>&lt;p&gt;So I need a way of recording my learnings about Jazz music. Mostly because I can barely keep track of my life in general.&lt;/p&gt;
