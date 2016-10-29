@@ -4,8 +4,6 @@ title = "Micro"
 tags = ["code"]
 +++
 
-# Composing
-
 So it turns out that some people actually have interest in what I (attempted to) build with regards to the microservice trading platform I mentioned a few posts ago.
 
 <!--more-->

@@ -4,7 +4,7 @@
         </header>
 
         <p class="w-100 tl-ns tc i pb3" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Date.Format "January 2, 2006" }}</p>
-        <p class="normal">{{ .Summary }}</p>
+        <p>{{ .Summary }}</p>
 
         <footer>
                 {{ if .Site.Params.disqusShortname }}

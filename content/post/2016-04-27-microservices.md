@@ -5,8 +5,6 @@ title = "A trading platform in Go"
 tags = ["code"]
 +++
 
-## The language
-
 I've been obsessing over Go lately. I won't go into it much since pretty much everyone else on the internet has at some point or another. And all of the people I know have probably heard me raving about it. The quality of the language itself remains divisive, but I am going to soldier on and just try and build something.
 
 <!--more-->
