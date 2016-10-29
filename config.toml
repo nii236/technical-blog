@@ -2,7 +2,6 @@
 baseurl = "http://nii236.github.io/technical-blog/"
 languageCode = "en-us"
 title = "A Blog"
-theme = "hugo-theme-blueberry-detox"
 
 [params]
 	name = "John Nguyen"

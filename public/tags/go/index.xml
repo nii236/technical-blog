@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Go on A Blog</title>
-    <link>http://nii236.github.io/technical-blog/tags/go/</link>
-    <description>Recent content in Go on A Blog</description>
+    <title>A Blog</title>
+    <link>http://nii236.github.io/technical-blog/tags/go/index.xml</link>
+    <description>Recent content on A Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 16 Jun 2016 14:30:07 +0800</lastBuildDate>
     <atom:link href="http://nii236.github.io/technical-blog/tags/go/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -45,7 +44,7 @@
 
 &lt;p&gt;Here is how I processed the STDIN with Go.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-golang&#34;&gt;// GetArgs reads from STDIN and returns stuff in the correct format
+&lt;pre&gt;&lt;code&gt;// GetArgs reads from STDIN and returns stuff in the correct format
 func GetArgs(r io.Reader) (int, []int) {
 	var numArgs = 0
 	_, err := fmt.Fscanln(r, &amp;amp;numArgs)

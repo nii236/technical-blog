@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+{{ partial "head.html" . }}
+<body class="baskerville pa4">
+
+{{ partial "header.html" . }}
+<div class="measure-wide center">
+	{{ .Render "post" }}
+</div>
+{{ partial "footer.html" . }}
+{{ partial "google_analytics.html" . }}
+
+</body>
+</html>

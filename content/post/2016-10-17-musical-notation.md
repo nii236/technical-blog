@@ -1,5 +1,5 @@
 +++
-date = "2016-10-07T18:40:23+08:00"
+date = "2016-10-17T18:40:23+08:00"
 title = "Rendering music"
 tags = ["music", "jazz", "piano"]
 +++
