@@ -10,9 +10,54 @@
     <atom:link href="http://nii236.github.io/technical-blog/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Learning to improvise</title>
+      <link>http://nii236.github.io/technical-blog/post/2016-10-31-learning-to-improvise/</link>
+      <pubDate>Mon, 31 Oct 2016 12:05:23 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/post/2016-10-31-learning-to-improvise/</guid>
+      <description>&lt;p&gt;Learning to become a Jazz musician is a frustrating endeavour. There is no long and extensive history of the art form. Classical pianists have it easy in that regard. You&amp;rsquo;ve passed grade 4? Oh good, now you can work on passing grade 5. You will need to learn these scales, for this many octaves, and select pieces from this list. It should take roughly a year.&lt;/p&gt;
+
+&lt;p&gt;There is no clear way of learning to become like the Jazz greats. Sure, ABRSM has their Jazz track. But its not really the same thing.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;In fact, it seems that many of the great Jazz musicians of our time simply became what they are through sheer hard work and self learning their craft.&lt;/p&gt;
+
+&lt;p&gt;This is frustrating because I have had many jazz teachers for the past decade (4 so far) and I always seem to hit a wall. Its hard to explain. Its like I get lost in a sea of chord changes and esoteric scales. I lose track of timing, of the pulse and of the melody.&lt;/p&gt;
+
+&lt;p&gt;So today during my lesson there were three important exercises I was given to attempt to unblock myself.&lt;/p&gt;
+
+&lt;h2 id=&#34;tranposing-licks&#34;&gt;Tranposing licks&lt;/h2&gt;
+
+&lt;p&gt;This was covered in my previous post. Breaking down licks into their functional elements, working with a single element in a key agnostic fashion, then combining multiple elements when you are ready.&lt;/p&gt;
+
+&lt;h2 id=&#34;singing-while-playing&#34;&gt;Singing while playing&lt;/h2&gt;
+
+&lt;p&gt;Lots of Jazz recordings have musicians humming while they&amp;rsquo;re playing. Its a lot more natural with woodwind or brass instruments. You can get by pretty far on the piano without having audiating anything at all! That&amp;rsquo;s actually one of the issues I have.&lt;/p&gt;
+
+&lt;p&gt;So in this exercise, I was given a scale to work with. Lydian Bb in this case. I was to hum as I play. My teacher turned away from me to reduce my shame.&lt;/p&gt;
+
+&lt;p&gt;This one was good, one of my main issues is having a huge disconnect between brain and hands. The idea is that you&amp;rsquo;ll naturally sing what feels melodic and hopefully our hands will follow along. As opposed to your hands mechanically doing things with muscle memory and your brain zoning out.&lt;/p&gt;
+
+&lt;h2 id=&#34;free-improvisation&#34;&gt;Free improvisation&lt;/h2&gt;
+
+&lt;p&gt;This is the most alarming of them all. My teacher again turned away from me during this phase to reduce the shame (this helps a lot!).&lt;/p&gt;
+
+&lt;p&gt;My task was to play anything. Literally, just slap out notes. No chord progressions, no scales. Just poke around and get a feel for shapes and motifs.&lt;/p&gt;
+
+&lt;p&gt;This one was a little trickier. My teacher tells me what I played during that moment was the most melodic thing I&amp;rsquo;ve played ever. I find that interesting and also unbelievable but there you go. By not focusing on chord progressions, melodies or timing, I was given the chance to explore the keyboard. When something sounds good I can expand on it.&lt;/p&gt;
+
+&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;So this was one of the trickier sessions in my long history of taking piano lessons. In the end I definitely see the advantage here. I have reduced the frequency of my piano lessons down to once a fortnight and I will focus on these exercises until the next lesson.&lt;/p&gt;
+
+&lt;p&gt;The most interesting one to me was singing while playing. I felt so much more connected to the instrument and what I was actually playing. Normally when I improvising I spend a lot of time just thinking about the scale tones, approach notes, surrounds and various scales. By just humming and playing along with what&amp;rsquo;s in my head I hope to be able to bridge that gap that has been there my entire music life.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Learning lick 1</title>
       <link>http://nii236.github.io/technical-blog/post/2016-10-29-lick-1/</link>
-      <pubDate>Mon, 31 Oct 2016 12:05:23 +0800</pubDate>
+      <pubDate>Sat, 29 Oct 2016 12:05:23 +0800</pubDate>
       
       <guid>http://nii236.github.io/technical-blog/post/2016-10-29-lick-1/</guid>
       <description>&lt;p&gt;In this blog post I will attempt to explain how I am learning these licks.&lt;/p&gt;
@@ -1034,18 +1079,6 @@ func main() {
 &lt;/ol&gt;
 
 &lt;p&gt;I&amp;rsquo;ll continue these musings in part two.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>First post!</title>
-      <link>http://nii236.github.io/technical-blog/post/2015-09-18-first/</link>
-      <pubDate>Fri, 18 Sep 2015 14:21:40 +0800</pubDate>
-      
-      <guid>http://nii236.github.io/technical-blog/post/2015-09-18-first/</guid>
-      <description>&lt;p&gt;Why hello there!&lt;/p&gt;
-
-&lt;p&gt;This is the initial post. I&amp;rsquo;ll be exploring various technology stacks during my journey to become a (more) competent developer.&lt;/p&gt;
-</description>
     </item>
     
   </channel>
