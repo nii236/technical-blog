@@ -9,6 +9,85 @@
     <atom:link href="http://nii236.github.io/technical-blog/tags/music/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Modes</title>
+      <link>http://nii236.github.io/technical-blog/post/2016-11-15-modes/</link>
+      <pubDate>Tue, 15 Nov 2016 12:05:23 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/post/2016-11-15-modes/</guid>
+      <description>&lt;p&gt;Another (fort)night, another jazz piano lesson.&lt;/p&gt;
+
+&lt;h2 id=&#34;using-the-jazz-minor-modes&#34;&gt;Using the jazz minor modes.&lt;/h2&gt;
+
+&lt;p&gt;Using the jazz minor modes is a good way to improvise.&lt;/p&gt;
+
+&lt;p&gt;Modes sound a lot better when you can blend them into each other. They basically give you tension and release for free. It will give you the iconic bebop jazz sound.&lt;/p&gt;
+
+&lt;p&gt;They sound awful on their own but playing it quickly and well blended will give a great sound.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;jazz-minor-scale&#34;&gt;Jazz minor scale&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;X:1
+T: Jazz Minor Scale
+K:C
+s: CDEF
+|: c2 d2 _e2 f2 | g2 a2 b2 c&#39;2:|
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For the first part of There Will Never Be Another You:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;X:1
+T: TWNBAY part 1
+K:C
+s: CDEF
+|:&amp;quot;EbMaj7&amp;quot; z4|&amp;quot;EbMaj7&amp;quot; z4|&amp;quot;Dm7b5&amp;quot; z4 |&amp;quot;G7&amp;quot; z4|&amp;quot;Cm7&amp;quot; z4 :|
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can use:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The lydian mode over EbMaj7
+
+&lt;ul&gt;
+&lt;li&gt;1 2 3 #4 5 6 7&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;The locrian #2 mode over Dmin7b5
+
+&lt;ul&gt;
+&lt;li&gt;1 2 ♭3 4 ♭5 ♭6 ♭7 R&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&#34;https://en.wikipedia.org/wiki/Altered_scale&#34;&gt;altered&lt;/a&gt; scale over G7
+
+&lt;ul&gt;
+&lt;li&gt;1 ♭2 #2 3 #4 #5 ♭6 ♭7&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;The dorian mode over Cm7
+
+&lt;ul&gt;
+&lt;li&gt;1 2 ♭3 4 5 6 ♭7&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;reading-from-lead-sheets&#34;&gt;Reading from lead sheets&lt;/h2&gt;
+
+&lt;p&gt;Reading lead sheets fluently is just a matter of practice. Reading bebop tunes is good practice. They&amp;rsquo;re written for saxophones so fingering these tunes on a piano is difficult and leads to unexpected movements.&lt;/p&gt;
+
+&lt;p&gt;Walking bass is extremely difficult and needs to be completely automatic. Best to leave it to later. For the time being simple 2 or 3 note voicings will do.&lt;/p&gt;
+
+&lt;p&gt;When playing bud powell voicings (2 note), using 3 and 7th scale tones is fine when you&amp;rsquo;re in the middle register of the piano. Too low and it is a good idea to invert otherwise it&amp;rsquo;ll sound like a different chord.&lt;/p&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Noodling around on the jazz minor modes as above&lt;/li&gt;
+&lt;li&gt;Getting comfortable with the horrific sound of the jazz minor modes&lt;/li&gt;
+&lt;li&gt;Reading through some simple swing lead sheets&lt;/li&gt;
+&lt;li&gt;Learning Charlie Parker&amp;rsquo;s Dexterity&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
       <title>Learning to improvise</title>
       <link>http://nii236.github.io/technical-blog/post/2016-10-31-learning-to-improvise/</link>
       <pubDate>Mon, 31 Oct 2016 12:05:23 +0800</pubDate>

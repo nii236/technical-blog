@@ -6,8 +6,87 @@
     <description>Recent content in Post-rsses on A Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 31 Oct 2016 12:05:23 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 15 Nov 2016 12:05:23 +0800</lastBuildDate>
     <atom:link href="http://nii236.github.io/technical-blog/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Modes</title>
+      <link>http://nii236.github.io/technical-blog/post/2016-11-15-modes/</link>
+      <pubDate>Tue, 15 Nov 2016 12:05:23 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/post/2016-11-15-modes/</guid>
+      <description>&lt;p&gt;Another (fort)night, another jazz piano lesson.&lt;/p&gt;
+
+&lt;h2 id=&#34;using-the-jazz-minor-modes&#34;&gt;Using the jazz minor modes.&lt;/h2&gt;
+
+&lt;p&gt;Using the jazz minor modes is a good way to improvise.&lt;/p&gt;
+
+&lt;p&gt;Modes sound a lot better when you can blend them into each other. They basically give you tension and release for free. It will give you the iconic bebop jazz sound.&lt;/p&gt;
+
+&lt;p&gt;They sound awful on their own but playing it quickly and well blended will give a great sound.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;jazz-minor-scale&#34;&gt;Jazz minor scale&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;X:1
+T: Jazz Minor Scale
+K:C
+s: CDEF
+|: c2 d2 _e2 f2 | g2 a2 b2 c&#39;2:|
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For the first part of There Will Never Be Another You:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;X:1
+T: TWNBAY part 1
+K:C
+s: CDEF
+|:&amp;quot;EbMaj7&amp;quot; z4|&amp;quot;EbMaj7&amp;quot; z4|&amp;quot;Dm7b5&amp;quot; z4 |&amp;quot;G7&amp;quot; z4|&amp;quot;Cm7&amp;quot; z4 :|
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You can use:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The lydian mode over EbMaj7
+
+&lt;ul&gt;
+&lt;li&gt;1 2 3 #4 5 6 7&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;The locrian #2 mode over Dmin7b5
+
+&lt;ul&gt;
+&lt;li&gt;1 2 ♭3 4 ♭5 ♭6 ♭7 R&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&#34;https://en.wikipedia.org/wiki/Altered_scale&#34;&gt;altered&lt;/a&gt; scale over G7
+
+&lt;ul&gt;
+&lt;li&gt;1 ♭2 #2 3 #4 #5 ♭6 ♭7&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;The dorian mode over Cm7
+
+&lt;ul&gt;
+&lt;li&gt;1 2 ♭3 4 5 6 ♭7&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;reading-from-lead-sheets&#34;&gt;Reading from lead sheets&lt;/h2&gt;
+
+&lt;p&gt;Reading lead sheets fluently is just a matter of practice. Reading bebop tunes is good practice. They&amp;rsquo;re written for saxophones so fingering these tunes on a piano is difficult and leads to unexpected movements.&lt;/p&gt;
+
+&lt;p&gt;Walking bass is extremely difficult and needs to be completely automatic. Best to leave it to later. For the time being simple 2 or 3 note voicings will do.&lt;/p&gt;
+
+&lt;p&gt;When playing bud powell voicings (2 note), using 3 and 7th scale tones is fine when you&amp;rsquo;re in the middle register of the piano. Too low and it is a good idea to invert otherwise it&amp;rsquo;ll sound like a different chord.&lt;/p&gt;
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Noodling around on the jazz minor modes as above&lt;/li&gt;
+&lt;li&gt;Getting comfortable with the horrific sound of the jazz minor modes&lt;/li&gt;
+&lt;li&gt;Reading through some simple swing lead sheets&lt;/li&gt;
+&lt;li&gt;Learning Charlie Parker&amp;rsquo;s Dexterity&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
     
     <item>
       <title>Learning to improvise</title>
@@ -1039,46 +1118,6 @@ func main() {
 &lt;/blockquote&gt;
 
 &lt;p&gt;That got me thinking&amp;hellip;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Square peg into a square hole</title>
-      <link>http://nii236.github.io/technical-blog/post/2015-11-06-electron/</link>
-      <pubDate>Fri, 06 Nov 2015 16:55:21 +0800</pubDate>
-      
-      <guid>http://nii236.github.io/technical-blog/post/2015-11-06-electron/</guid>
-      <description>&lt;p&gt;My friends know me as someone who is not very loyal. I don&amp;rsquo;t mean to my girlfriend. I mean to various technology and web stacks. Ever since the advent of node.js, frameworks, tooling and just weird stacks have popped up. Not that I&amp;rsquo;m complaining. I love reading about new frameworks, languages and development in general.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;My current interest is in &lt;a href=&#34;golang.org&#34;&gt;Go&lt;/a&gt;, or &lt;a href=&#34;golang.org&#34;&gt;Golang&lt;/a&gt;. I won&amp;rsquo;t bother introducing it here, as I&amp;rsquo;ll just be repeating what others have said.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve been really interested in the language lately, and I look forward to building apps with it. One of the main limitations of Go at the moment is the lack of a proper UI library. There are some bindings to GTK/QT somewhere, but usually filled with bugs or some weird hackery.&lt;/p&gt;
-
-&lt;h1 id=&#34;electron&#34;&gt;Electron&lt;/h1&gt;
-
-&lt;p&gt;I have also been looking into &lt;a href=&#34;http://electron.atom.io/&#34;&gt;Electron&lt;/a&gt; lately. It used to be known as Atom Shell and has been rebranded recently.&lt;/p&gt;
-
-&lt;p&gt;Electron allows people who are more experienced in Single Page App (SPA) style development to build apps for desktops. All signs point towards web apps as the future, but yet here is Electron and Atom enjoying success and adoption. It helps us lowly web developers to get our feet wet in desktop development.&lt;/p&gt;
-
-&lt;p&gt;A quick read of Electron documentation suggests that it runs off a basic node.js server as the &lt;code&gt;main process&lt;/code&gt;. There are also many &lt;code&gt;renderer processes&lt;/code&gt; that can be spawned, and these will be your browser instances that will be presented to the end user.&lt;/p&gt;
-
-&lt;p&gt;Communication between the main and renderer processes are done by way of the ipc package that comes with Electron. So I&amp;rsquo;d imagine your main process handles most of the comms, state, and processing. One of the biggest complaints about node js is that when it blocks, it &lt;em&gt;really, really&lt;/em&gt; blocks. Single threaded execution means that as soon as you do some sort of heavy number crunching you&amp;rsquo;re screwed, and then everyone will start complaining about how your &lt;a href=&#34;http://atom.io/&#34;&gt;app&lt;/a&gt; is slow as molasses.&lt;/p&gt;
-
-&lt;h1 id=&#34;multi-tier-architecture&#34;&gt;Multi tier architecture&lt;/h1&gt;
-
-&lt;p&gt;So why not defer the processing intensive stuff to yet another process? Perhaps using another language that is well suited to portability (static binaries) and performance.&lt;/p&gt;
-
-&lt;p&gt;There is something called &lt;a href=&#34;https://en.wikipedia.org/wiki/Multitier_architecture&#34;&gt;multitier architecture&lt;/a&gt; that allows one to split up these concerns cleanly.&lt;/p&gt;
-
-&lt;p&gt;I have explored connecting a Go backend into Electron and have found reasonable success. The first iteration used a REST API, and my second attempt covers using gRPC instead, to great effect. I may have solved two problems in two different camps:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Performance by the main process in Electron&lt;/li&gt;
-&lt;li&gt;A UI toolkit for Go&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I&amp;rsquo;ll continue these musings in part two.&lt;/p&gt;</description>
     </item>
     
   </channel>
