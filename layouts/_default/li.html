@@ -3,20 +3,16 @@
                 <a class="f2-ns f3 dim link black" href="{{ .Permalink }}">{{ .Title }}</a>
         </header>
 
-        <p class="w-100 tc i pb3" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Date.Format "January 2, 2006" }}</p>
-        <p>{{ .Summary }}</p>
-
-        <footer class="tc">
-                {{ if .Site.Params.disqusShortname }}
-                        <a class="dim link black ttu" href="{{ .Permalink }}#comments">
-                                <i class="fa fa-comment"></i> Comments
-                        </a>
-                {{ end }}
-                {{ $baseurl := .Site.BaseURL}}
+        <div class="ma0 pa0" >
+                <p class="w-100 tc i" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Date.Format "January 2, 2006" }}</p>
+        </div>
+        <div class="tc pa0 ma0">
                 &nbsp;
                 <i class="fa fa-tag"></i>
                 {{ range .Params.tags }}
-                        <a class="dim link black ttu" href="{{ $baseurl }}/tags/{{.}}">{{ . }}&nbsp;&nbsp;</a>
+                <a class="dim link black ttu" href="{{ $.Site.BaseURL }}/tags/{{.}}">{{ . }}&nbsp;&nbsp;</a>
                 {{ end }}
-        </footer>
+        </div>
+        <p>{{ .Summary }}</p>
+
 </div>
