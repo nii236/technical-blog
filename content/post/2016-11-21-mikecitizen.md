@@ -1,6 +1,6 @@
 +++
 title = "Words of wisdom from mikecitizen"
-draft = true
+draft = false
 date = "2016-11-21T09:17:28+08:00"
 tags = ["music"]
 +++
@@ -11,6 +11,8 @@ There's an amazing fellow who goes by the name Mike. There are many Mike's in th
 - [Youtube](https://www.youtube.com/channel/UCgVybJK7wC3JB7TQVJCVmew)
 
 We had a few exchanges over PM on Reddit. Lots of good information here about the nature of Jazz practice and how we can improve ourselves. Conversation follows:
+
+<!--more-->
 
 ---
 
