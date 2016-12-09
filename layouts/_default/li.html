@@ -1,17 +1,10 @@
-<div class="pv4">
+<div class="pv4 bb b--light-silver">
         <header class="w-100 tc">
-                <a class="f2-ns f3 dim link black" href="{{ .Permalink }}">{{ .Title }}</a>
+                <a class="f2 link" href="{{ .Permalink }}">{{ .Title }}</a>
+                <p class="w-100 tc i" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Date.Format "January 2, 2006" }}</p>
         </header>
 
         <div class="ma0 pa0" >
-                <p class="w-100 tc i" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Date.Format "January 2, 2006" }}</p>
-        </div>
-        <div class="tc pa0 ma0">
-                &nbsp;
-                <i class="fa fa-tag"></i>
-                {{ range .Params.tags }}
-                <a class="dim link black ttu" href="{{ $.Site.BaseURL }}/tags/{{.}}">{{ . }}&nbsp;&nbsp;</a>
-                {{ end }}
         </div>
         <p>{{ .Summary }}</p>
 

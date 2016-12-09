@@ -1,4 +1,4 @@
-<div class="w-70-ns center tc bb mv4 pb4">
+<div class="w-70-ns center tc mv4">
 	<a class="dim black link f-subheadline-ns f1 ttu tracked-mega" href="{{ .Site.BaseURL }}" alt="{{ .Site.Title }}">
 		{{ .Site.Title }}
 	</a>
@@ -8,4 +8,9 @@
 	<a class="dim link black" href="{{ .Site.Params.resumeURL }}">
 		{{ .Site.Params.name }}
 	</a>
+	<div class="tc center mv4 bt bb">
+		{{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+			<a class="w-100 w-auto-ns ttc dib pv3 hover-bg-lightest-blue bg-animate ph3-ns link" href="{{ "/tags/" | relLangURL}}{{ $name | urlize }}">{{ $name }}</a>
+		{{ end }}
+	</div>
 </div>
