@@ -2,8 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://nii236.github.io/technical-blog/</loc>
-    <lastmod>2016-12-02T09:17:28+08:00</lastmod>
+    <loc>http://nii236.github.io/technical-blog/post/2017-08-22-struggling-to-improvise/</loc>
+    <lastmod>2017-08-22T09:17:28+08:00</lastmod>
   </url>
   
   <url>
@@ -104,6 +104,53 @@
   <url>
     <loc>http://nii236.github.io/technical-blog/about/</loc>
     <lastmod>2015-09-17T09:07:19+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nii236.github.io/technical-blog/</loc>
+    <lastmod>2017-08-22T09:17:28+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://nii236.github.io/technical-blog/tags/career/</loc>
+    <lastmod>2015-11-15T16:05:24+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://nii236.github.io/technical-blog/tags/code/</loc>
+    <lastmod>2016-06-25T12:52:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://nii236.github.io/technical-blog/tags/language/</loc>
+    <lastmod>2016-10-07T12:52:23+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://nii236.github.io/technical-blog/tags/misc/</loc>
+    <lastmod>2015-09-18T14:21:40+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://nii236.github.io/technical-blog/tags/music/</loc>
+    <lastmod>2017-08-22T09:17:28+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://nii236.github.io/technical-blog/post/</loc>
+    <lastmod>2017-08-22T09:17:28+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://nii236.github.io/technical-blog/tags/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>
