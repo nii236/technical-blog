@@ -9,16 +9,16 @@
 	
         <meta property="og:site_name" content="A Blog">
         <meta property="og:title" content="A Blog">
-        <meta property="og:url" content="http://nii236.github.io/technical-blog/post/2015-11-06-electron/">
+        <meta property="og:url" content="http://nii236.github.io/technical-blog/post/2017-08-22-struggling-to-improvise/">
         <meta property="og:description" content="On tech and music">
     
         <meta property="og:type" content="article" />
         <meta property="og:article:author" content="" />
-        <meta property="og:article:published_time" content="2015-11-06T16:55:21&#43;08:00" />
+        <meta property="og:article:published_time" content="2017-08-22T09:17:28&#43;08:00" />
     
         <meta name="generator" content="Hugo 0.19" />
 
-	<title>Square peg into a square hole &middot; A Blog </title>
+	<title>Struggling to Improvise &middot; A Blog </title>
 	<link rel="canonical" href="http://nii236.github.io/technical-blog/" />
 	<link rel="alternate" type="application/rss+xml" title="RSS" href="">
 	<link rel="stylesheet" type='text/css' href="http://nii236.github.io/technical-blog/css/main.css" />
@@ -64,48 +64,74 @@
 </div>
 
 <div class="measure-wide center">
-	<header class="tc f1-ns f2">Square peg into a square hole</header>
-<p class="tc"><time datetime=" 2015-11-06T16:55:21&#43;08:00 ">November 6, 2015</time></p>
+	<header class="tc f1-ns f2">Struggling to Improvise</header>
+<p class="tc"><time datetime=" 2017-08-22T09:17:28&#43;08:00 ">August 22, 2017</time></p>
 <div class="center">
 	
 	<div class="tc center pv2">
 		<i class="fa fa-tag"></i> 
-		<a class="dim link black ttu" href="http://nii236.github.io/technical-blog//tags/career">career&nbsp;</a> 
+		<a class="dim link black ttu" href="http://nii236.github.io/technical-blog//tags/music">music&nbsp;</a> 
 	</div>
 </div>
 <section class="hyphen-auto tj">
-	<p>My friends know me as someone who is not very loyal. I don&rsquo;t mean to my girlfriend. I mean to various technology and web stacks. Ever since the advent of node.js, frameworks, tooling and just weird stacks have popped up. Not that I&rsquo;m complaining. I love reading about new frameworks, languages and development in general.</p>
+	<p>I kind of let this blog fall off the wayside (like most people) but it turns out that there are actual people that read it! I should continue to update it for my large readership.</p>
+
+<p>I still struggle to improvise. Actually, I suck at it. My brain can&rsquo;t keep up with such fast chord changes, nor can my fingers work out where I am quickly enough either. Noodling on the blues scale is boring, and scale tones just sound too safe.</p>
 
 <p></p>
 
-<p>My current interest is in <a href="golang.org">Go</a>, or <a href="golang.org">Golang</a>. I won&rsquo;t bother introducing it here, as I&rsquo;ll just be repeating what others have said.</p>
+<p>Lately I&rsquo;ve been relearning Billie&rsquo;s Bounce. Its a blues tune, with some jazzification. You&rsquo;ve got a couple ii V7 Is, and neat substitutions (Bb7 -&gt; B half diminished 7 -&gt; F7). I&rsquo;ve been learning the solos from <a href="https://www.youtube.com/watch?v=S4mRaEzwTYo">Charlie Parker&rsquo;s performance</a>. My teacher has been helping me to break it down and actually use the solos in my own playing.</p>
 
-<p>I&rsquo;ve been really interested in the language lately, and I look forward to building apps with it. One of the main limitations of Go at the moment is the lack of a proper UI library. There are some bindings to GTK/QT somewhere, but usually filled with bugs or some weird hackery.</p>
+<p>The trick is not to transcribe solos and memorise them. Its better to work out what&rsquo;s actually going on thematically or harmonically, in tiny chunks. I&rsquo;ll attempt to go through some in this post.</p>
 
-<h1 id="electron">Electron</h1>
+<h1 id="motifs">Motifs</h1>
 
-<p>I have also been looking into <a href="http://electron.atom.io/">Electron</a> lately. It used to be known as Atom Shell and has been rebranded recently.</p>
+<p>Here are some little licks from Charlie Parker&rsquo;s first chorus.</p>
 
-<p>Electron allows people who are more experienced in Single Page App (SPA) style development to build apps for desktops. All signs point towards web apps as the future, but yet here is Electron and Atom enjoying success and adoption. It helps us lowly web developers to get our feet wet in desktop development.</p>
+<p>This is just a jump up to the tonic.</p>
 
-<p>A quick read of Electron documentation suggests that it runs off a basic node.js server as the <code>main process</code>. There are also many <code>renderer processes</code> that can be spawned, and these will be your browser instances that will be presented to the end user.</p>
+<pre><code>X:1
+T: Jump
+K:C
+s: CDEF
+|: z4 z3 c,1 | f,8 :|
+</code></pre>
 
-<p>Communication between the main and renderer processes are done by way of the ipc package that comes with Electron. So I&rsquo;d imagine your main process handles most of the comms, state, and processing. One of the biggest complaints about node js is that when it blocks, it <em>really, really</em> blocks. Single threaded execution means that as soon as you do some sort of heavy number crunching you&rsquo;re screwed, and then everyone will start complaining about how your <a href="http://atom.io/">app</a> is slow as molasses.</p>
+<p>Straight after we have a chromatic approach to the 9th.</p>
 
-<h1 id="multi-tier-architecture">Multi tier architecture</h1>
+<pre><code>X:1
+T: Chromatic Approach
+K:C
+s: CDEF
+|: f,2 g,_a, a,_b,b,c:|
+</code></pre>
 
-<p>So why not defer the processing intensive stuff to yet another process? Perhaps using another language that is well suited to portability (static binaries) and performance.</p>
+<p>This is a surround using the altered scale (maybe?). Actually I think it is the textbook surround. You have a scale tone above, semitone below surround around Bb.</p>
 
-<p>There is something called <a href="https://en.wikipedia.org/wiki/Multitier_architecture">multitier architecture</a> that allows one to split up these concerns cleanly.</p>
+<pre><code>X:1
+T: Surround
+K:C
+s: CDEF
+|: z a, (3 _Bc_b, Af, z2:|
+</code></pre>
 
-<p>I have explored connecting a Go backend into Electron and have found reasonable success. The first iteration used a REST API, and my second attempt covers using gRPC instead, to great effect. I may have solved two problems in two different camps:</p>
+<p>That&rsquo;s a triplet up there, but the ABCjs rendering engine has failed me. Pull requests welcome!</p>
 
-<ol>
-<li>Performance by the main process in Electron</li>
-<li>A UI toolkit for Go</li>
-</ol>
+<h1 id="strategies">Strategies</h1>
 
-<p>I&rsquo;ll continue these musings in part two.</p>
+<p>When a chord functions as a V7 chord, pretend its a 7b9 chord. You can then use the diminished arpeggio on any note of that chord (except the tonic)! Amazing really. Nice cheat for when you&rsquo;re falling behind.</p>
+
+<p>I aim to use this liberally in Billie&rsquo;s Bounce chord 7 to 9. Where it moves from Am7 to D7 to Gmin7. When you hit the D7 just jam out on the diminished arppeggio built off Eb.</p>
+
+<h1 id="thoughts">Thoughts</h1>
+
+<p>Broken down, these are all very simple! Together they make an amazing solo, but there&rsquo;s nothing crazy going on here.</p>
+
+<p>The true jazz master brings all of these together with groove and swing to make an amazing solo. But for us average people? We have a tangible concept with which to build our skills. Each of the ideas above can be drilled separately and then brought together.</p>
+
+<p>My brain can handle this. Maybe.</p>
+
+<p>See you next time!</p>
 </section>
 <hr>
 <footer class="post-footer">
@@ -117,15 +143,15 @@
 	<section class="share tc">
 		<span>
 			Share:
-			<a class="icon-twitter dim link black" href="http://twitter.com/share?text=Square%20peg%20into%20a%20square%20hole&url=http%3a%2f%2fnii236.github.io%2ftechnical-blog%2fpost%2f2015-11-06-electron%2f"
+			<a class="icon-twitter dim link black" href="http://twitter.com/share?text=Struggling%20to%20Improvise&url=http%3a%2f%2fnii236.github.io%2ftechnical-blog%2fpost%2f2017-08-22-struggling-to-improvise%2f"
 				onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
 				<i class="fa fa-twitter"></i>
 			</a>
-			<a class="icon-facebook dim link black" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fnii236.github.io%2ftechnical-blog%2fpost%2f2015-11-06-electron%2f"
+			<a class="icon-facebook dim link black" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fnii236.github.io%2ftechnical-blog%2fpost%2f2017-08-22-struggling-to-improvise%2f"
 			onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
 				<i class="fa fa-facebook"></i>
 			</a>
-			<a class="icon-google-plus dim link black" href="https://plus.google.com/share?url=http%3a%2f%2fnii236.github.io%2ftechnical-blog%2fpost%2f2015-11-06-electron%2f"
+			<a class="icon-google-plus dim link black" href="https://plus.google.com/share?url=http%3a%2f%2fnii236.github.io%2ftechnical-blog%2fpost%2f2017-08-22-struggling-to-improvise%2f"
 			onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
 				<i class="fa fa-google-plus"></i>
 			</a>
