@@ -9,6 +9,51 @@
     <atom:link href="http://nii236.github.io/technical-blog/tags/music/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Modal Jazz</title>
+      <link>http://nii236.github.io/technical-blog/post/2017-12-04-modal-quartals/</link>
+      <pubDate>Mon, 04 Dec 2017 09:17:28 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/post/2017-12-04-modal-quartals/</guid>
+      <description>
+
+&lt;h1 id=&#34;exploring-modes&#34;&gt;Exploring Modes&lt;/h1&gt;
+
+&lt;p&gt;Modal jazz sounds pretty horrible to the untrained ear.&lt;/p&gt;
+
+&lt;p&gt;Do not worry, my ear is untrained as well.&lt;/p&gt;
+
+&lt;p&gt;There are some advantages to this interesting way of playing jazz though.&lt;/p&gt;
+
+&lt;h1 id=&#34;modes&#34;&gt;Modes&lt;/h1&gt;
+
+&lt;p&gt;The most common modes that must be studied are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Dorian (b3)&lt;/li&gt;
+&lt;li&gt;Mixolydian (b3, b7)&lt;/li&gt;
+&lt;li&gt;Lydian (#4)&lt;/li&gt;
+&lt;li&gt;Ionian&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Dorian is useful for minor 7 chords.&lt;/p&gt;
+
+&lt;p&gt;Mixolydian is useful for dominant chords. Also you can squeeze in altered chords somehow.&lt;/p&gt;
+
+&lt;p&gt;Lydian is useful for #11 chords. Also you can squeeze in the blues scale somehow.&lt;/p&gt;
+
+&lt;p&gt;Ionian is useful for major 7 chords.&lt;/p&gt;
+
+&lt;h1 id=&#34;quartals&#34;&gt;Quartals&lt;/h1&gt;
+
+&lt;p&gt;Stacking fourths is the cheat code of Jazz piano. This is because when when you stack fourths on a chord tone, you get
+some neat effects.&lt;/p&gt;
+
+&lt;p&gt;Basically you hit some combination of chord tone and chord extensions for free! With quartal chords, it always fits.
+Some scale degrees work better than others, but not always.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Struggling to Improvise</title>
       <link>http://nii236.github.io/technical-blog/post/2017-08-22-struggling-to-improvise/</link>
       <pubDate>Tue, 22 Aug 2017 09:17:28 +0800</pubDate>
