@@ -6,8 +6,53 @@
     <description>Recent content on A Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 Dec 2017 09:17:28 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 15 Dec 2017 09:17:28 +0800</lastBuildDate>
     <atom:link href="http://nii236.github.io/technical-blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Modal Improvisation</title>
+      <link>http://nii236.github.io/technical-blog/post/2017-12-19-modal-improv/</link>
+      <pubDate>Fri, 15 Dec 2017 09:17:28 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/post/2017-12-19-modal-improv/</guid>
+      <description>
+
+&lt;p&gt;Some new points today about playing modal jazz.&lt;/p&gt;
+
+&lt;h1 id=&#34;right-hand&#34;&gt;Right Hand&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Quartal arpeggios sound good&lt;/li&gt;
+&lt;li&gt;Minor pentatonic for m7&lt;/li&gt;
+&lt;li&gt;Major pentatonic for 7&lt;/li&gt;
+&lt;li&gt;Mixolydian has an avoid note (4th) for dominant chords
+
+&lt;ul&gt;
+&lt;li&gt;When played with quartal voicings, avoid note is no longer an avoid note&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Whole tone scale works for dominant chords&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;left-hand&#34;&gt;Left Hand&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Left hand is triplets, right hand is straight quavers&lt;/li&gt;
+&lt;li&gt;Stride pattern 1: and of 2, and of 4&lt;/li&gt;
+&lt;li&gt;Stride pattern 2: and of 2, on 4&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;improvisation&#34;&gt;Improvisation&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Play single chord vamp with left hand&lt;/li&gt;
+&lt;li&gt;Start with a single note just crotchets&lt;/li&gt;
+&lt;li&gt;Add second note&lt;/li&gt;
+&lt;li&gt;Add third note&lt;/li&gt;
+&lt;li&gt;Add quavers&lt;/li&gt;
+&lt;li&gt;Profit&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Modal Jazz</title>
@@ -1090,61 +1135,6 @@ end
 &lt;p&gt;At the moment CPU usage jumps up to 50% as soon as you connect to the IB Gateway. No idea why but I&amp;rsquo;m just going to assume its a library issue for the time being.&lt;/p&gt;
 
 &lt;p&gt;The repo can be located on &lt;a href=&#34;https://github.com/nii236/nii-finance&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Experiments in learning jazz piano</title>
-      <link>http://nii236.github.io/technical-blog/post/2016-02-01-learning-jazz-piano/</link>
-      <pubDate>Mon, 01 Feb 2016 10:06:25 +0800</pubDate>
-      
-      <guid>http://nii236.github.io/technical-blog/post/2016-02-01-learning-jazz-piano/</guid>
-      <description>&lt;p&gt;So I have been learning music on and off for years, and have never really gotten to a &lt;strong&gt;fully sick&lt;/strong&gt; level of proficiency. The problem here is usually that I don&amp;rsquo;t put in enough hours, which is true. The other problem is paralysis analysis, and the filthy need to optimise my learning. I have suffered this same problem in my Japanese studies but I&amp;rsquo;ll leave that for another post.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;jazz&#34;&gt;Jazz&lt;/h1&gt;
-
-&lt;p&gt;My background is classical piano, where I learnt enough in high school that a constant level of proficiency just sticks with me for the rest of my life. My interest in the past five years, however, has been jazz piano. I have had various teachers, learning methods and styles, but have never really seemed to stick. My poor sight reading ability coupled with my adult responsibilities (harhar) make it difficult to keep a steady practice routine going.&lt;/p&gt;
-
-&lt;p&gt;I am about to embark on a new method, combining everything that I have attempted so far.&lt;/p&gt;
-
-&lt;h1 id=&#34;synthesia&#34;&gt;Synthesia&lt;/h1&gt;
-
-&lt;p&gt;The game &lt;a href=&#34;http://www.synthesiagame.com&#34;&gt;Synthesia&lt;/a&gt; is something that has been around for a long long time. I bought a license back in 2011 I think, and its still been going strong. I opened up the latest version just last night and it seems that it now supports:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Custom hand splitting&lt;/li&gt;
-&lt;li&gt;Looping&lt;/li&gt;
-&lt;li&gt;Sweet sweet UI&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Definitely worth the price.&lt;/p&gt;
-
-&lt;h2 id=&#34;finding-high-quality-midi&#34;&gt;Finding high quality MIDI&lt;/h2&gt;
-
-&lt;p&gt;Most of the songs in Synthesia kind of suck to be honest. Not to mention irrelevant to jazz piano. Or classical piano. Or anything decent really. And I refuse to pay for lame-o Adele piano covers.&lt;/p&gt;
-
-&lt;p&gt;So I went hunting around for decent jazz piano MIDI. It needs to ideally have backing tracks, quantized beats and split tracks for each hand. Its not easy. Here it is.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.bushgrafts.com&#34;&gt;Douglas McKenzie&lt;/a&gt; (I bought his DVD!) is a great jazz pianist in Australia. He has a website with excellently formatted MIDI files. Its actually to time! And he even releases sheet music transcriptions of each of his solos. The MIDI files even have his annotations of each improvisation idea dammit! Its amazing.&lt;/p&gt;
-
-&lt;p&gt;I am also lazy. So run the following code in the folder of your choice to download all the MIDI files on his page.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;wget -A mid -m -p -E -k -K -np http://www.bushgrafts.com/jazz/midi.htm
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Stage 2 (actually stage 999) will be to look at these &lt;a href=&#34;http://www.billevans.nl/midipage.htm&#34;&gt;Bill Evans transcriptions&lt;/a&gt;. Pull them thus:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;wget -A mid -m -p -E -k -K -np http://www.billevans.nl/midipage.htm
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;using-the-midi&#34;&gt;Using the MIDI&lt;/h2&gt;
-
-&lt;p&gt;So just feed these into Synthesia, have a listen, play what you can, then check against the Synthesia falling notes, official sheet music or the generated ones from the game.&lt;/p&gt;
-
-&lt;p&gt;Feed the MIDI output into a virtual MIDI device into Reaper, and listen to that &lt;a href=&#34;https://www.pianoteq.com/&#34;&gt;sweet sweet piano VST&lt;/a&gt; that you no doubt own.&lt;/p&gt;
-
-&lt;p&gt;Practice the ear, export to MP3, run it through &lt;a href=&#34;http://www.seventhstring.com/&#34;&gt;Transcribe&lt;/a&gt; (or just slow it down through Synthesia)!&lt;/p&gt;</description>
     </item>
     
   </channel>
