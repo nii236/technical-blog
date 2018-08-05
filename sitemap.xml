@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://nii236.github.io/technical-blog/post/2018-08-05-timing/</loc>
+    <lastmod>2018-08-05T13:08:53+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://nii236.github.io/technical-blog/post/2017-12-19-modal-improv/</loc>
     <lastmod>2017-12-15T09:17:28+08:00</lastmod>
   </url>
@@ -119,7 +124,7 @@
   
   <url>
     <loc>http://nii236.github.io/technical-blog/</loc>
-    <lastmod>2017-12-15T09:17:28+08:00</lastmod>
+    <lastmod>2018-08-05T13:08:53+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -154,13 +159,13 @@
   
   <url>
     <loc>http://nii236.github.io/technical-blog/tags/music/</loc>
-    <lastmod>2017-12-15T09:17:28+08:00</lastmod>
+    <lastmod>2018-08-05T13:08:53+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://nii236.github.io/technical-blog/post/</loc>
-    <lastmod>2017-12-15T09:17:28+08:00</lastmod>
+    <lastmod>2018-08-05T13:08:53+08:00</lastmod>
     <priority>0</priority>
   </url>
   
