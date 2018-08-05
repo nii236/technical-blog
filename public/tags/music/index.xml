@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Music on A Blog</title>
-    <link>http://nii236.github.io/technical-blog/tags/music/index.xml</link>
+    <link>http://nii236.github.io/technical-blog/tags/music/</link>
     <description>Recent content in Music on A Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://nii236.github.io/technical-blog/tags/music/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Dec 2017 09:17:28 +0800</lastBuildDate>
+    
+	<atom:link href="http://nii236.github.io/technical-blog/tags/music/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Modal Improvisation</title>
@@ -14,43 +17,8 @@
       <pubDate>Fri, 15 Dec 2017 09:17:28 +0800</pubDate>
       
       <guid>http://nii236.github.io/technical-blog/post/2017-12-19-modal-improv/</guid>
-      <description>
-
-&lt;p&gt;Some new points today about playing modal jazz.&lt;/p&gt;
-
-&lt;h1 id=&#34;right-hand&#34;&gt;Right Hand&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Quartal arpeggios sound good&lt;/li&gt;
-&lt;li&gt;Minor pentatonic for m7&lt;/li&gt;
-&lt;li&gt;Major pentatonic for 7&lt;/li&gt;
-&lt;li&gt;Mixolydian has an avoid note (4th) for dominant chords
-
-&lt;ul&gt;
-&lt;li&gt;When played with quartal voicings, avoid note is no longer an avoid note&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Whole tone scale works for dominant chords&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;left-hand&#34;&gt;Left Hand&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Left hand is triplets, right hand is straight quavers&lt;/li&gt;
-&lt;li&gt;Stride pattern 1: and of 2, and of 4&lt;/li&gt;
-&lt;li&gt;Stride pattern 2: and of 2, on 4&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;improvisation&#34;&gt;Improvisation&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Play single chord vamp with left hand&lt;/li&gt;
-&lt;li&gt;Start with a single note just crotchets&lt;/li&gt;
-&lt;li&gt;Add second note&lt;/li&gt;
-&lt;li&gt;Add third note&lt;/li&gt;
-&lt;li&gt;Add quavers&lt;/li&gt;
-&lt;li&gt;Profit&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description> Some new points today about playing modal jazz.
+Right Hand  Quartal arpeggios sound good Minor pentatonic for m7 Major pentatonic for 7 Mixolydian has an avoid note (4th) for dominant chords  When played with quartal voicings, avoid note is no longer an avoid note  Whole tone scale works for dominant chords  Left Hand  Left hand is triplets, right hand is straight quavers Stride pattern 1: and of 2, and of 4 Stride pattern 2: and of 2, on 4  Improvisation  Play single chord vamp with left hand Start with a single note just crotchets Add second note Add third note Add quavers Profit  </description>
     </item>
     
     <item>
@@ -59,43 +27,12 @@
       <pubDate>Mon, 04 Dec 2017 09:17:28 +0800</pubDate>
       
       <guid>http://nii236.github.io/technical-blog/post/2017-12-04-modal-quartals/</guid>
-      <description>
-
-&lt;h1 id=&#34;exploring-modes&#34;&gt;Exploring Modes&lt;/h1&gt;
-
-&lt;p&gt;Modal jazz sounds pretty horrible to the untrained ear.&lt;/p&gt;
-
-&lt;p&gt;Do not worry, my ear is untrained as well.&lt;/p&gt;
-
-&lt;p&gt;There are some advantages to this interesting way of playing jazz though.&lt;/p&gt;
-
-&lt;h1 id=&#34;modes&#34;&gt;Modes&lt;/h1&gt;
-
-&lt;p&gt;The most common modes that must be studied are:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Dorian (b3)&lt;/li&gt;
-&lt;li&gt;Mixolydian (b3, b7)&lt;/li&gt;
-&lt;li&gt;Lydian (#4)&lt;/li&gt;
-&lt;li&gt;Ionian&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Dorian is useful for minor 7 chords.&lt;/p&gt;
-
-&lt;p&gt;Mixolydian is useful for dominant chords. Also you can squeeze in altered chords somehow.&lt;/p&gt;
-
-&lt;p&gt;Lydian is useful for #11 chords. Also you can squeeze in the blues scale somehow.&lt;/p&gt;
-
-&lt;p&gt;Ionian is useful for major 7 chords.&lt;/p&gt;
-
-&lt;h1 id=&#34;quartals&#34;&gt;Quartals&lt;/h1&gt;
-
-&lt;p&gt;Stacking fourths is the cheat code of Jazz piano. This is because when when you stack fourths on a chord tone, you get
-some neat effects.&lt;/p&gt;
-
-&lt;p&gt;Basically you hit some combination of chord tone and chord extensions for free! With quartal chords, it always fits.
-Some scale degrees work better than others, but not always.&lt;/p&gt;
-</description>
+      <description>Exploring Modes Modal jazz sounds pretty horrible to the untrained ear.
+Do not worry, my ear is untrained as well.
+There are some advantages to this interesting way of playing jazz though.
+Modes The most common modes that must be studied are:
+ Dorian (b3) Mixolydian (b3, b7) Lydian (#4) Ionian  Dorian is useful for minor 7 chords.
+Mixolydian is useful for dominant chords. Also you can squeeze in altered chords somehow.</description>
     </item>
     
     <item>
@@ -108,60 +45,7 @@ Some scale degrees work better than others, but not always.&lt;/p&gt;
 
 &lt;p&gt;I still struggle to improvise. Actually, I suck at it. My brain can&amp;rsquo;t keep up with such fast chord changes, nor can my fingers work out where I am quickly enough either. Noodling on the blues scale is boring, and scale tones just sound too safe.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Lately I&amp;rsquo;ve been relearning Billie&amp;rsquo;s Bounce. Its a blues tune, with some jazzification. You&amp;rsquo;ve got a couple ii V7 Is, and neat substitutions (Bb7 -&amp;gt; B half diminished 7 -&amp;gt; F7). I&amp;rsquo;ve been learning the solos from &lt;a href=&#34;https://www.youtube.com/watch?v=S4mRaEzwTYo&#34;&gt;Charlie Parker&amp;rsquo;s performance&lt;/a&gt;. My teacher has been helping me to break it down and actually use the solos in my own playing.&lt;/p&gt;
-
-&lt;p&gt;The trick is not to transcribe solos and memorise them. Its better to work out what&amp;rsquo;s actually going on thematically or harmonically, in tiny chunks. I&amp;rsquo;ll attempt to go through some in this post.&lt;/p&gt;
-
-&lt;h1 id=&#34;motifs&#34;&gt;Motifs&lt;/h1&gt;
-
-&lt;p&gt;Here are some little licks from Charlie Parker&amp;rsquo;s first chorus.&lt;/p&gt;
-
-&lt;p&gt;This is just a jump up to the tonic.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;X:1
-T: Jump
-K:C
-s: CDEF
-|: z4 z3 c,1 | f,8 :|
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Straight after we have a chromatic approach to the 9th.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;X:1
-T: Chromatic Approach
-K:C
-s: CDEF
-|: f,2 g,_a, a,_b,b,c:|
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This is a surround using the altered scale (maybe?). Actually I think it is the textbook surround. You have a scale tone above, semitone below surround around Bb.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;X:1
-T: Surround
-K:C
-s: CDEF
-|: z a, (3 _Bc_b, Af, z2:|
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;That&amp;rsquo;s a triplet up there, but the ABCjs rendering engine has failed me. Pull requests welcome!&lt;/p&gt;
-
-&lt;h1 id=&#34;strategies&#34;&gt;Strategies&lt;/h1&gt;
-
-&lt;p&gt;When a chord functions as a V7 chord, pretend its a 7b9 chord. You can then use the diminished arpeggio on any note of that chord (except the tonic)! Amazing really. Nice cheat for when you&amp;rsquo;re falling behind.&lt;/p&gt;
-
-&lt;p&gt;I aim to use this liberally in Billie&amp;rsquo;s Bounce chord 7 to 9. Where it moves from Am7 to D7 to Gmin7. When you hit the D7 just jam out on the diminished arppeggio built off Eb.&lt;/p&gt;
-
-&lt;h1 id=&#34;thoughts&#34;&gt;Thoughts&lt;/h1&gt;
-
-&lt;p&gt;Broken down, these are all very simple! Together they make an amazing solo, but there&amp;rsquo;s nothing crazy going on here.&lt;/p&gt;
-
-&lt;p&gt;The true jazz master brings all of these together with groove and swing to make an amazing solo. But for us average people? We have a tangible concept with which to build our skills. Each of the ideas above can be drilled separately and then brought together.&lt;/p&gt;
-
-&lt;p&gt;My brain can handle this. Maybe.&lt;/p&gt;
-
-&lt;p&gt;See you next time!&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -176,45 +60,7 @@ s: CDEF
 
 &lt;p&gt;Some interesting points follow.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;comping-yourself&#34;&gt;Comping yourself&lt;/h1&gt;
-
-&lt;p&gt;With chords in bebop, the tempos are usually too fast to be able to play two handed chords. Keep it to simple Bud Powell voicings.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Root and 7&lt;/li&gt;
-&lt;li&gt;Root and 3&lt;/li&gt;
-&lt;li&gt;3 and 7. Only for dominant chords, otherwise it will sound like a different chord&lt;/li&gt;
-&lt;li&gt;7 and 3. Only for dominant chords, otherwise it will sound like a different chord&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Chordal expectation is a thing. Hit chords either after or before beat 3 depending on what the melody is doing.&lt;/p&gt;
-
-&lt;h1 id=&#34;the-tune&#34;&gt;The tune&lt;/h1&gt;
-
-&lt;p&gt;Very quick, I need to work on my timing.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;It helps to be able to count in 8ths to be able to fit the weird semi quaver rhythms.&lt;/li&gt;
-&lt;li&gt;Play along with the recordings.&lt;/li&gt;
-&lt;li&gt;End of A section semi quavers is off beat&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;swinging-not&#34;&gt;Swinging (not)&lt;/h1&gt;
-
-&lt;p&gt;No swing! Bebop tunes don&amp;rsquo;t swing! Only swing jazz swings.&lt;/p&gt;
-
-&lt;p&gt;The swing feel is achieved
-- The drums
-- The accenting on the offbeats&lt;/p&gt;
-
-&lt;p&gt;The melodic interest is generated through:
-- Random accents
-- Reduction of the melody
-- Incredible tempo&lt;/p&gt;
-
-&lt;p&gt;Play the melody rock solid straight. No exceptions.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -232,112 +78,7 @@ s: CDEF
 
 &lt;p&gt;We had a few exchanges over PM on Reddit. Lots of good information here about the nature of Jazz practice and how we can improve ourselves. Conversation follows:&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Hey dude,&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve been going through our PM conversations a year or so ago and I&amp;rsquo;m sad to say that I have not gotten much progress with Jazz piano!
-You&amp;rsquo;re pretty much at the point that I&amp;rsquo;d like to achieve. I&amp;rsquo;m not sure how to go about saying this, but I would like either:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Lessons from you; or&lt;/li&gt;
-&lt;li&gt;Some sort of weekly email assignments from you telling me what to do/activities to attempt&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Because honestly I&amp;rsquo;m getting nowhere and its very frustrating.&lt;/p&gt;
-
-&lt;p&gt;Anyhoo happy to pay with Bitcoin or Paypal if you prefer!&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;I&amp;rsquo;m all too well acquainted with that feeling, and I know how difficult it break out of the musical stagnancy.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;d be glad to give you lessons and/or assignments, and though I&amp;rsquo;m not opposed to being paid I have no idea what to charge. That&amp;rsquo;s relatively unimportant for now though.&lt;/p&gt;
-
-&lt;p&gt;Going forward, I&amp;rsquo;d like to avoid giving you any advice or assignments that are completely trite, obvious, or otherwise totally not worth paying for. These are things I don&amp;rsquo;t doubt you already know, but are always worth repeating and are guaranteed to make you a better player (and often things I avoid doing myself, out of laziness, disinterest, and/or preference for having fun):&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Practice slow and to a metronome. Talkin like 40-60bpm&lt;/li&gt;
-&lt;li&gt;Drill every scale, every pattern, every chord, every inversion, in every key, every day, until you can easily play them in any sequence at ~200bpm. Congratulations, you are now a virtuoso.&lt;/li&gt;
-&lt;li&gt;Learn tunes. Get a real book, find lead sheets online, pick them up by ear from youtube, play along to the television, anything. Learn all the songs. Learn songs you don&amp;rsquo;t even like. Getting your hands and ears around the common progressions, patterns, and harmonic movements that dominate popular music is invaluable.&lt;/li&gt;
-&lt;li&gt;Transcribe. Pretty much anything. Solos from your favorite players, melodies from cartoon theme songs, spoken word, anything.&lt;/li&gt;
-&lt;li&gt;Put in the time. I truly believe that focused time commitment is the most fundamentally important part of developing any skill or ability. If you do something a lot and you try hard to do it well, you will get better at it. That&amp;rsquo;s just how it works.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Now these are all things that will with absolute certainty improve your technical facility, manual dexterity, aural skills, and understanding. They are simple enough, but damn hard to do consistently. I almost never play to a metronome, I often give up on drilling things about 3 or 4 keys into the 12, I rarely complete transcriptions, and I all to frequently just play the tunes I know because they&amp;rsquo;re easy and fun.&lt;/p&gt;
-
-&lt;p&gt;An important thing to figure out and keep in mind is what exactly you want to achieve with and gain from playing music. You said I am at the point you&amp;rsquo;d like to get to (very flattering by the way, thank you), but I am far from the most technically gifted or dexterous pianist.I assume when you say that you mean more that you&amp;rsquo;d like to get comfortable and capable on piano to the point of being able to improvise around tunes with a level of freedom and ability that allows you to have fun and express yourself.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Wow! Thanks for the massive response! I must&amp;rsquo;ve hit a passionate spot with you.
-How do you prefer to communicate? I like to use Google Hangouts if you have that. Otherwise we should share emails/WhatsApp/Facebook Messenger/Line ID or whatever. My email and Hangouts is jtnguyen236@gmail.com.&lt;/p&gt;
-
-&lt;p&gt;I really enjoyed this video by you.&lt;/p&gt;
-
-&lt;p&gt;Regarding payment, I think its worth paying you for sure. We can work it out later, for the time being I&amp;rsquo;m happy with just talking to someone about this stuff. I&amp;rsquo;ve engaged other people on Reddit for piano lessons before, but it&amp;rsquo;s always sort of fizzled out. The most recent one with Marcus Choi was 20 dollars for a 30 to 45 minute session. I prefer paying through Bitcoin since it&amp;rsquo;ll eventually appreciate a lot more plus I don&amp;rsquo;t have to pay massive fees. For instance I&amp;rsquo;m based in Australia and sending money to wherever you are (United States?) means that I&amp;rsquo;ll have to pay a huge amount on top. About 10 or 15% I think?&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m just sick of stagnation as you said. ii V7 Is in the circle of fourths over and over again. I just don&amp;rsquo;t enjoy the process as much as I should. The way you play is very in the moment and you look like you&amp;rsquo;re having fun! I want to play like that. Right now its just drills and calculated chords. Struggling with basic lead sheets. I know the theory, but my brain and ears can&amp;rsquo;t work fast enough. And if I CAN work fast enough, its an uninspired poking of boring chord inversions. Can&amp;rsquo;t do any decent variations or improv as I can&amp;rsquo;t hear sounds in my head. I want to be able to just feel where the notes should be and let the creativity flow. Right now my lack of ability to transfer my harmonic knowledge to the keys is a huge blocker.&lt;/p&gt;
-
-&lt;p&gt;I just need someone to guide me. I want to be able to express myself. I&amp;rsquo;ve been at this for around five years now with nothing to show for it. Even something like &amp;lsquo;Do X and put it on Soundcloud&amp;rsquo;, and then having you listen to it would work for me. Like a study buddy or gym buddy, but for piano!
-I wrote a sort of &amp;lsquo;profile&amp;rsquo; of myself for a previous teacher. I&amp;rsquo;ll paste it below for your reference.&lt;/p&gt;
-
-&lt;p&gt;Classical&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;I mucked around with the piano when I was 7. Managed to play fur elise and similar level stuff&lt;/li&gt;
-&lt;li&gt;Two years of classical piano lessons when I was &lt;sup&gt;16&lt;/sup&gt;&amp;frasl;&lt;sub&gt;17&lt;/sub&gt;.&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Hobbyist level, around grade 5 or 6 (no exams).&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Rondo Alla Turca&lt;/li&gt;
-&lt;li&gt;Pathetique Movement 2&lt;/li&gt;
-&lt;li&gt;Raindrop Prelude&lt;/li&gt;
-&lt;li&gt;Liszt Consolation in D Flat&lt;/li&gt;
-&lt;li&gt;Kuhlau Sonatina
-Jazz&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I have had lessons with a jazz piano teacher for the past 3 years&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Lessons have sometimes had large breaks inbetween without practice (months at a time) because I often have to work in the mines. I&amp;rsquo;ve become based in Perth recently so more time to practice.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Covered A form and B form ii V7 Is (3rd and 7ths on the bottom) rootless voicing in regular (9ths) and basic forms in all keys&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Blues piano for the past year (12 bar blues, licks) in C and F&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Started transcribing, Wynton Kelly&amp;rsquo;s Freddie Freeloader solo and now Red Garland&amp;rsquo;s C Jam Blues solo (stabbing chords on the &amp;ldquo;2 and&amp;rdquo; and &amp;ldquo;4 and&amp;rdquo; is very difficult!)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Recently started exploring playing from basic lead sheets (Autumn Leaves, Fly me to the Moon etc) Lots of Lindy Hopping/Swing Dancing for the past 5 years too!&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Music can be a source of functionally infinite joy and creative expression long before you develop virtuoso-level technical facility. Developing your technique expands the musical vocabulary with which you can express yourself, but hardly any technique is necessary to say and feel &amp;ldquo;This is me and I&amp;rsquo;m having fun&amp;rdquo; through an instrument. When it feels like your hands are playing you and you are struggling to do anything with them, it can be hard to get into that headspace of genuine expression, but its not impossible. You can jam out on C, F, and G triads and have a ball, but then it all falls away when you try to throw a Dm7b5 in and your hands remind you how little you&amp;rsquo;ve practiced. This is getting sorta rambly, but its something I feel very strongly about with music in my life. Being self-taught, my development as a musician and instrumentalist has come primarily through pursuing that sort of honest, joyful self-expression than it has from more mechanical routines and exercises. I do attempt those occasionally, and they are necessary when I need to learn new, more challenging songs, but they have never been my forte or MO.&lt;/p&gt;
-
-&lt;p&gt;If you&amp;rsquo;d still like to, I&amp;rsquo;d be glad to stay in correspondence and suggest exercises, tunes, ideas, or vaguely philosophical approaches to playing for you to try out and work with. It would be harder to schedule, but I&amp;rsquo;d also be open to doing Skype lessons or something in the future. Regardless, I&amp;rsquo;m glad you reached out, flattered that you&amp;rsquo;d come to me for help, and slightly embarrassed for writing so much. Hope any of this helps, and looking forward to hearing from you!&lt;/p&gt;
-
-&lt;p&gt;I haven&amp;rsquo;t used Google Hangouts before but it should work, and I have no objection to bitcoin but I also have no idea how to accept it. I&amp;rsquo;ll look into setting up a bitcoin wallet.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m glad you enjoyed that video, its such a fun tune! I&amp;rsquo;ve forgotten the changes since but I am compelled to play it again now.
-From what you&amp;rsquo;ve described, It&amp;rsquo;s clear you already understand and have loads of experience with the mechanical aspects of playing piano. You know the excitement of drilling uninspired patterns, and you&amp;rsquo;ve got a solid background in theory. It&amp;rsquo;s more so getting over the hurdle into playing with feeling and feeling what you&amp;rsquo;re playing.
-Closing that gap between the music in your head and the music coming out of your fingers is the eternal struggle, and one I&amp;rsquo;m very well acquainted with. I can&amp;rsquo;t say that I have a tried and true method of cultivating joy and genuine expression in playing that I can pass onto you, but I&amp;rsquo;d love to give it a shot. I think giving assignments and what not with things to upload to soundcloud would be a great idea. I&amp;rsquo;ll message you on google hangouts and we&amp;rsquo;ll get more into that.
-I&amp;rsquo;m looking forward to it!&lt;/p&gt;
-
-&lt;p&gt;I do want to tell you that ultimately I won&amp;rsquo;t be able to accomplish for you what you want. I&amp;rsquo;m glad to help and advise, and I don&amp;rsquo;t mean that it will all be nothing, just that it&amp;rsquo;s going to have to come from you because that&amp;rsquo;s the only way it can. Really enjoying and feeling music is something I feel very strongly about and think about arguably too much, and it goes beyond just playing. Whether improvising, listening to, or just imagining music, there gatekeeper to passionate involvement and feeling and joy with music is always internal. It&amp;rsquo;s a state of mind to be in, and you won&amp;rsquo;t always be in it. The more you get into that flow, the easier it will be to get there and stay there for longer, and that&amp;rsquo;s where I think this musical relationship will help the most. It&amp;rsquo;s a type of practice that has almost nothing to do with the mechanical, technical, or theoretical aspects of the music, and almost everything to do with the creative, emotional, passionate aspects of it. You gotta love and want to hear every note you play, even if you can&amp;rsquo;t play every note you love and want to hear.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;No problem, the work is all mine, I just need some guidance!&lt;/p&gt;
-
-&lt;p&gt;Good to see you on hangouts. If you&amp;rsquo;re looking at Bitcoin wallets, don&amp;rsquo;t use the main one because it has to sync like 30gb. I use Electrum!&lt;/p&gt;
-
-&lt;p&gt;Chat to you soon!&lt;/p&gt;
-
-&lt;p&gt;Are you an iPhone man? iMessages might work better.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -356,67 +97,7 @@ I&amp;rsquo;m looking forward to it!&lt;/p&gt;
 
 &lt;p&gt;They sound awful on their own but playing it quickly and well blended will give a great sound.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;jazz-minor-scale&#34;&gt;Jazz minor scale&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;X:1
-T: Jazz Minor Scale
-K:C
-s: CDEF
-|: c2 d2 _e2 f2 | g2 a2 b2 c&#39;2:|
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;For the first part of There Will Never Be Another You:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;X:1
-T: TWNBAY part 1
-K:C
-s: CDEF
-|:&amp;quot;EbMaj7&amp;quot; z4|&amp;quot;EbMaj7&amp;quot; z4|&amp;quot;Dm7b5&amp;quot; z4 |&amp;quot;G7&amp;quot; z4|&amp;quot;Cm7&amp;quot; z4 :|
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You can use:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;The lydian mode over EbMaj7
-
-&lt;ul&gt;
-&lt;li&gt;1 2 3 #4 5 6 7&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;The locrian #2 mode over Dmin7b5
-
-&lt;ul&gt;
-&lt;li&gt;1 2 ♭3 4 ♭5 ♭6 ♭7 R&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;The &lt;a href=&#34;https://en.wikipedia.org/wiki/Altered_scale&#34;&gt;altered&lt;/a&gt; scale over G7
-
-&lt;ul&gt;
-&lt;li&gt;1 ♭2 #2 3 #4 #5 ♭6 ♭7&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;The dorian mode over Cm7
-
-&lt;ul&gt;
-&lt;li&gt;1 2 ♭3 4 5 6 ♭7&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;reading-from-lead-sheets&#34;&gt;Reading from lead sheets&lt;/h2&gt;
-
-&lt;p&gt;Reading lead sheets fluently is just a matter of practice. Reading bebop tunes is good practice. They&amp;rsquo;re written for saxophones so fingering these tunes on a piano is difficult and leads to unexpected movements.&lt;/p&gt;
-
-&lt;p&gt;Walking bass is extremely difficult and needs to be completely automatic. Best to leave it to later. For the time being simple 2 or 3 note voicings will do.&lt;/p&gt;
-
-&lt;p&gt;When playing bud powell voicings (2 note), using 3 and 7th scale tones is fine when you&amp;rsquo;re in the middle register of the piano. Too low and it is a good idea to invert otherwise it&amp;rsquo;ll sound like a different chord.&lt;/p&gt;
-
-&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Noodling around on the jazz minor modes as above&lt;/li&gt;
-&lt;li&gt;Getting comfortable with the horrific sound of the jazz minor modes&lt;/li&gt;
-&lt;li&gt;Reading through some simple swing lead sheets&lt;/li&gt;
-&lt;li&gt;Learning Charlie Parker&amp;rsquo;s Dexterity&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -429,39 +110,7 @@ s: CDEF
 
 &lt;p&gt;There is no clear way of learning to become like the Jazz greats. Sure, ABRSM has their Jazz track. But its not really the same thing.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;In fact, it seems that many of the great Jazz musicians of our time simply became what they are through sheer hard work and self learning their craft.&lt;/p&gt;
-
-&lt;p&gt;This is frustrating because I have had many jazz teachers for the past decade (4 so far) and I always seem to hit a wall. Its hard to explain. Its like I get lost in a sea of chord changes and esoteric scales. I lose track of timing, of the pulse and of the melody.&lt;/p&gt;
-
-&lt;p&gt;So today during my lesson there were three important exercises I was given to attempt to unblock myself.&lt;/p&gt;
-
-&lt;h2 id=&#34;tranposing-licks&#34;&gt;Tranposing licks&lt;/h2&gt;
-
-&lt;p&gt;This was covered in my previous post. Breaking down licks into their functional elements, working with a single element in a key agnostic fashion, then combining multiple elements when you are ready.&lt;/p&gt;
-
-&lt;h2 id=&#34;singing-while-playing&#34;&gt;Singing while playing&lt;/h2&gt;
-
-&lt;p&gt;Lots of Jazz recordings have musicians humming while they&amp;rsquo;re playing. Its a lot more natural with woodwind or brass instruments. You can get by pretty far on the piano without having audiating anything at all! That&amp;rsquo;s actually one of the issues I have.&lt;/p&gt;
-
-&lt;p&gt;So in this exercise, I was given a scale to work with. Lydian Bb in this case. I was to hum as I play. My teacher turned away from me to reduce my shame.&lt;/p&gt;
-
-&lt;p&gt;This one was good, one of my main issues is having a huge disconnect between brain and hands. The idea is that you&amp;rsquo;ll naturally sing what feels melodic and hopefully our hands will follow along. As opposed to your hands mechanically doing things with muscle memory and your brain zoning out.&lt;/p&gt;
-
-&lt;h2 id=&#34;free-improvisation&#34;&gt;Free improvisation&lt;/h2&gt;
-
-&lt;p&gt;This is the most alarming of them all. My teacher again turned away from me during this phase to reduce the shame (this helps a lot!).&lt;/p&gt;
-
-&lt;p&gt;My task was to play anything. Literally, just slap out notes. No chord progressions, no scales. Just poke around and get a feel for shapes and motifs.&lt;/p&gt;
-
-&lt;p&gt;This one was a little trickier. My teacher tells me what I played during that moment was the most melodic thing I&amp;rsquo;ve played ever. I find that interesting and also unbelievable but there you go. By not focusing on chord progressions, melodies or timing, I was given the chance to explore the keyboard. When something sounds good I can expand on it.&lt;/p&gt;
-
-&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
-
-&lt;p&gt;So this was one of the trickier sessions in my long history of taking piano lessons. In the end I definitely see the advantage here. I have reduced the frequency of my piano lessons down to once a fortnight and I will focus on these exercises until the next lesson.&lt;/p&gt;
-
-&lt;p&gt;The most interesting one to me was singing while playing. I felt so much more connected to the instrument and what I was actually playing. Normally when I improvising I spend a lot of time just thinking about the scale tones, approach notes, surrounds and various scales. By just humming and playing along with what&amp;rsquo;s in my head I hope to be able to bridge that gap that has been there my entire music life.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -472,115 +121,7 @@ s: CDEF
       <guid>http://nii236.github.io/technical-blog/post/2016-10-29-lick-1/</guid>
       <description>&lt;p&gt;In this blog post I will attempt to explain how I am learning these licks.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Here is lick 1 again.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;X:1
-T: Lick 1
-K:C
-s: CDEF
-|:&amp;quot;Dm7b5&amp;quot; F3 ^C DF_Ac|&amp;quot;G7&amp;quot; B_B_A^F G=Bdf|&amp;quot;Cm7&amp;quot; _e8:|
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;So what&amp;rsquo;s going on here?&lt;/p&gt;
-
-&lt;h2 id=&#34;bar-one&#34;&gt;Bar one&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;X:1
-T: Lick 1
-K:C
-s: CDEF
-|:&amp;quot;Dm7b5&amp;quot; F3 ^C DF_Ac|
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Some observations:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;We&amp;rsquo;re in the key of Eb.&lt;/li&gt;
-&lt;li&gt;This is a ii V7 I on the 6th.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The first bar does the following:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Start on the minor third and approach the root from a semitone below.&lt;/li&gt;
-&lt;li&gt;Arpeggiate up the chord (Dmin7b5) and hit the 7th. Simple enough.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;bar-two&#34;&gt;Bar two&lt;/h2&gt;
-
-&lt;p&gt;In bar 2, we are now in G7.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;X:1
-T: Lick 1
-K:C
-s: CDEF
-|:&amp;quot;G7&amp;quot; B_B_A^F G=Bdf|
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This is where it gets sorta weird.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Descend down the &lt;a href=&#34;https://en.wikipedia.org/wiki/Altered_scale&#34;&gt;altered scale&lt;/a&gt; past the tonic&lt;/li&gt;
-&lt;li&gt;Surround the tonic&lt;/li&gt;
-&lt;li&gt;Arpeggiate up the current chord, easy enough.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;bar-three&#34;&gt;Bar three&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;X:1
-T: Lick 1
-K:C
-s: CDEF
-|:&amp;quot;Cm7&amp;quot; _e8:|
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Lastly:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;End on the third of i7.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;thoughts&#34;&gt;Thoughts&lt;/h1&gt;
-
-&lt;p&gt;So what&amp;rsquo;s so interesting about this? Not much, honestly, its a pretty basic lick. The idea here is that we have mini blocks of functional lick ideas. Its not enough to just transcribe and copy jazz tunes and improvisations.&lt;/p&gt;
-
-&lt;p&gt;Allegedly (my teacher tells me), its best to break it down into functional blocks. Arpeggiate here, surround there, approach over there. All these need to be learned in the context of the harmony.&lt;/p&gt;
-
-&lt;p&gt;So instead of this:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;start on &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;approach the &lt;code&gt;D&lt;/code&gt; from &lt;code&gt;C#&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;then arpeggiate up to &lt;code&gt;C&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;You would think of this in your head:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;start on the third of the current chord which is a &lt;code&gt;min7b5&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;approach the &lt;code&gt;tonic&lt;/code&gt; from a &lt;code&gt;semitone&lt;/code&gt; below&lt;/li&gt;
-&lt;li&gt;then arpeggiate up to its &lt;code&gt;7th&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;With this in mind, and transposing it a few times, you will be able to get a core understanding of what it is the lick is actually doing.&lt;/p&gt;
-
-&lt;p&gt;Then during practice, you would apply a single functional concept. Maybe you&amp;rsquo;d attempt to focus on &amp;lsquo;approaching the tonic from a semitone below&amp;rsquo;. The next practice session you could focus on &amp;lsquo;arpeggiating from the tonic up to its 7th&amp;rsquo;.&lt;/p&gt;
-
-&lt;h2 id=&#34;the-above-is-very-important&#34;&gt;The above is very important!&lt;/h2&gt;
-
-&lt;p&gt;Learn a bunch of functional building blocks for licks.&lt;/p&gt;
-
-&lt;p&gt;&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;Compose them all together on the fly in any key.&lt;/p&gt;
-
-&lt;p&gt;&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;Become a jazz master!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://nii236.github.io/technical-blog/technical-blog/images/jazzpianomaster.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -591,20 +132,7 @@ s: CDEF
       <guid>http://nii236.github.io/technical-blog/post/2016-10-17-musical-notation/</guid>
       <description>&lt;p&gt;So I need a way of recording my learnings about Jazz music. Mostly because I can barely keep track of my life in general.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Turns out there&amp;rsquo;s a sweet library called &lt;a href=&#34;https://abcjs.net&#34;&gt;abc.js&lt;/a&gt;. It renders the ABC syntax for music! I used to use Lilypond, but this is a nice subset, suitable for webpages.&lt;/p&gt;
-
-&lt;p&gt;Well, the minified version is 487kb, which you all have already downloaded just by visiting this website. Sorry about that!&lt;/p&gt;
-
-&lt;p&gt;As a test, I have posted one of the jazz licks I am learning in this post. In a future blog post, I shall talk about things I have learnt about each lick.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;X:1
-T: Lick 1
-K:C
-s: CDEF
-|:&amp;quot;Dm7b5&amp;quot; F3 ^C DF_Ac|&amp;quot;G7&amp;quot; B_B_A^F G=Bdf|&amp;quot;Cm7&amp;quot; _e8:|
-&lt;/code&gt;&lt;/pre&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -615,45 +143,7 @@ s: CDEF
       <guid>http://nii236.github.io/technical-blog/post/2016-06-16-leadsheetvoicings/</guid>
       <description>&lt;p&gt;This is a follow-up post from the previous post regarding building extended chords. I will be documenting how I come up with various voicings for &lt;a href=&#34;https://en.wikipedia.org/wiki/A_Foggy_Day&#34;&gt;A Foggy Day&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;rules-of-thumb&#34;&gt;Rules of thumb&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Repeating the melody an octave below is okay&lt;/li&gt;
-&lt;li&gt;Avoid the fifth in favour of other intervals (including for the melody)&lt;/li&gt;
-&lt;li&gt;Tritone subtitutions where suitable&lt;/li&gt;
-&lt;li&gt;When the melody is on the fifth Reharmonisation it is possible to change the tonic to suit a more interesting interval.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;bar-1&#34;&gt;Bar 1&lt;/h2&gt;
-
-&lt;h3 id=&#34;step-1-tonic-and-melody&#34;&gt;Step 1 - Tonic and Melody&lt;/h3&gt;
-
-&lt;p&gt;Figure out the following bits:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Tonic: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Chord: &lt;code&gt;Fmaj7&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Melody: &lt;code&gt;C&lt;/code&gt; (the &lt;code&gt;5th&lt;/code&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;step-2-3rd-and-7th-shell-voicing&#34;&gt;Step 2 - 3rd and 7th shell voicing&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;3rd: &lt;code&gt;A&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;7th: &lt;code&gt;B&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;step-3a-add-alterations&#34;&gt;Step 3a - Add Alterations&lt;/h3&gt;
-
-&lt;p&gt;You also need to make sure the intervals between the alteration and the melody note is suitable. See the previous blog post for suitable alterations.&lt;/p&gt;
-
-&lt;h3 id=&#34;step-3b-consider-context&#34;&gt;Step 3b - Consider Context&lt;/h3&gt;
-
-&lt;h4 id=&#34;step-3b-1-dominant-v&#34;&gt;Step 3b.1 Dominant V&lt;/h4&gt;
-
-&lt;p&gt;Any dominant 7th chords acting as the fifth of the key centre can be switched with a tritone substitution, melody allowing.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -665,179 +155,7 @@ s: CDEF
       <description>&lt;p&gt;This is a summary from the &lt;a href=&#34;www.reddit.com/r/piano&#34;&gt;/r/piano&lt;/a&gt;
  subreddit FAQ. User &lt;code&gt;onaz&lt;/code&gt; gives a great summary on good chord extensions to use.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;I have been playing around with Jazz piano for many years but knowing which extension to use for a chord often eludes me. Turns out there are actually systematic categories for each!&lt;/p&gt;
-
-&lt;p&gt;I will be assuming chords built of the tonic of &lt;code&gt;C&lt;/code&gt; for each chord below. Because I&amp;rsquo;m a nooblet.&lt;/p&gt;
-
-&lt;h1 id=&#34;major7-chords&#34;&gt;Major7 chords&lt;/h1&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;C E G B
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;suitable-extensions&#34;&gt;Suitable extensions&lt;/h2&gt;
-
-&lt;h3 id=&#34;9th&#34;&gt;9th&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;C E G B D
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This is a safe note to add for many different voicings&lt;/p&gt;
-
-&lt;h3 id=&#34;11&#34;&gt;#11&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;C E G B F#
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This comes from the lydian mode. A normal &lt;code&gt;11th&lt;/code&gt; (or &lt;code&gt;4th&lt;/code&gt;) would clash with the major seventh sound as it&amp;rsquo;s an avoid note. However, when we raise the usual note a half-step, we get a very rich &lt;code&gt;#11&lt;/code&gt; sound.&lt;/p&gt;
-
-&lt;h3 id=&#34;13th&#34;&gt;13th&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;C E G B A
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The &lt;code&gt;13th&lt;/code&gt; (or &lt;code&gt;6th&lt;/code&gt;) won&amp;rsquo;t add very much color to a major seven chord because the function it provides is the same as the normal major seventh. We often talk about how major seven chords (like &lt;code&gt;Cmaj7&lt;/code&gt;) are interchangable with sixth chords (like &lt;code&gt;C6&lt;/code&gt;) because of their function.&lt;/p&gt;
-
-&lt;h2 id=&#34;upper-structure-triads&#34;&gt;Upper Structure Triads&lt;/h2&gt;
-
-&lt;p&gt;To get an instant &lt;code&gt;13(#11)&lt;/code&gt; sound on a major chord, add a triad built from a whole step above the root.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;USII - e.g. D major over Cmaj7, resulting in C13♯11&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;So if we have a &lt;code&gt;Cmaj7&lt;/code&gt; chord&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;C E G B
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;We go a whole step above the root of the chord (which is a &lt;code&gt;C&lt;/code&gt;). Then we take that note (&lt;code&gt;D&lt;/code&gt;) and build a major triad from there. Now in addition to &lt;code&gt;C E G B&lt;/code&gt;, we are adding &lt;code&gt;D F# A&lt;/code&gt; to get a final chord of &lt;code&gt;C13(#11)&lt;/code&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;C E G B D F# A
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&#34;minor-7th-chords&#34;&gt;Minor 7th chords&lt;/h1&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;C E G Bb
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;suitable-extensions-1&#34;&gt;Suitable extensions&lt;/h2&gt;
-
-&lt;h3 id=&#34;9th-1&#34;&gt;9th&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;C Eb G Bb D
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Still a safe note to add.&lt;/p&gt;
-
-&lt;h3 id=&#34;11th&#34;&gt;11th&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;C Eb G Bb F
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This comes from the dorian mode and is a great note to add.&lt;/p&gt;
-
-&lt;h3 id=&#34;13th-1&#34;&gt;13th&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;C Eb G Bb A
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;A good note to add in minor voicings.&lt;/p&gt;
-
-&lt;h2 id=&#34;upper-structure-triads-1&#34;&gt;Upper Structure Triads&lt;/h2&gt;
-
-&lt;p&gt;For minor 7th chords we can use a USii voicing, in this case the Dm. You&amp;rsquo;ll get a Cm13!&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;USii - e.g. D minor over Cm7, resulting in Cm13&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;C Eb G Bb D F A
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&#34;7th-chords&#34;&gt;7th chords&lt;/h1&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;C E G Bb
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Dominant chords provide the most opportunity for color. They are often used in transition and contain the most dissonance in a chord progression.&lt;/p&gt;
-
-&lt;h2 id=&#34;suitable-extensions-2&#34;&gt;Suitable extensions&lt;/h2&gt;
-
-&lt;h3 id=&#34;5-b5&#34;&gt;#5/b5&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;C E Gb Bb
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;C E G# Bb
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;These usually replace the normal fifth.&lt;/p&gt;
-
-&lt;h3 id=&#34;9&#34;&gt;9&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;C E G Bb D
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Adds more color&lt;/p&gt;
-
-&lt;h3 id=&#34;9-b9&#34;&gt;#9/b9&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;C E G Bb Db
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;C E G Bb D#
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Altering the nine can give you a ton of color and disonnace very quickly&lt;/p&gt;
-
-&lt;h3 id=&#34;11-1&#34;&gt;11&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;C E G Bb F
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This turns the chord into a sus chord. You&amp;rsquo;ll see that written as &lt;code&gt;C7sus&lt;/code&gt;. This is one of the least dissonant alterations you can make.&lt;/p&gt;
-
-&lt;h3 id=&#34;11-2&#34;&gt;#11&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;C E G Bb F#
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You&amp;rsquo;ll notice that &lt;code&gt;#11&lt;/code&gt; and b5 are the same note. &lt;code&gt;#11&lt;/code&gt; is simply another way to think about it.&lt;/p&gt;
-
-&lt;h3 id=&#34;13&#34;&gt;13&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;C E G Bb A
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Adds more colour (and is a standard addition to our four note rootless voicings.)&lt;/p&gt;
-
-&lt;h2 id=&#34;upper-structure-triads-2&#34;&gt;Upper Structure Triads&lt;/h2&gt;
-
-&lt;p&gt;The 7th chords are the most flexible here. You can use any of the following triads to alter the chord (from Wikipedia).&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;USII - e.g. D major over C7, resulting in C13♯11&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;US♭V - e.g. G♭ major over C7, resulting in C7♭9♯11&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;US♭VI - e.g. A♭ major over C7, resulting in C7♯9♭13&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;USVI - e.g. A major over C7, resulting in C13♭9&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;USi - e.g. C minor over C7, resulting in C7♯9&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;US♭ii - e.g. D♭ minor over C7, resulting in C7♭9 ♭13&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;US♭iii - e.g. E♭ minor over C7, resulting in C7♯9♯11&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;additional-notes&#34;&gt;Additional Notes&lt;/h1&gt;
-
-&lt;p&gt;Usually many of these alterations are used together to create a dissonant sound to the liking of the pianist. Often you&amp;rsquo;ll see printed alterations in dominant chords caused by melody notes.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Most often you will change combinations of the 5th and 9th to get a sound you like.&lt;/em&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -848,51 +166,7 @@ s: CDEF
       <guid>http://nii236.github.io/technical-blog/post/2016-02-01-learning-jazz-piano/</guid>
       <description>&lt;p&gt;So I have been learning music on and off for years, and have never really gotten to a &lt;strong&gt;fully sick&lt;/strong&gt; level of proficiency. The problem here is usually that I don&amp;rsquo;t put in enough hours, which is true. The other problem is paralysis analysis, and the filthy need to optimise my learning. I have suffered this same problem in my Japanese studies but I&amp;rsquo;ll leave that for another post.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h1 id=&#34;jazz&#34;&gt;Jazz&lt;/h1&gt;
-
-&lt;p&gt;My background is classical piano, where I learnt enough in high school that a constant level of proficiency just sticks with me for the rest of my life. My interest in the past five years, however, has been jazz piano. I have had various teachers, learning methods and styles, but have never really seemed to stick. My poor sight reading ability coupled with my adult responsibilities (harhar) make it difficult to keep a steady practice routine going.&lt;/p&gt;
-
-&lt;p&gt;I am about to embark on a new method, combining everything that I have attempted so far.&lt;/p&gt;
-
-&lt;h1 id=&#34;synthesia&#34;&gt;Synthesia&lt;/h1&gt;
-
-&lt;p&gt;The game &lt;a href=&#34;http://www.synthesiagame.com&#34;&gt;Synthesia&lt;/a&gt; is something that has been around for a long long time. I bought a license back in 2011 I think, and its still been going strong. I opened up the latest version just last night and it seems that it now supports:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Custom hand splitting&lt;/li&gt;
-&lt;li&gt;Looping&lt;/li&gt;
-&lt;li&gt;Sweet sweet UI&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Definitely worth the price.&lt;/p&gt;
-
-&lt;h2 id=&#34;finding-high-quality-midi&#34;&gt;Finding high quality MIDI&lt;/h2&gt;
-
-&lt;p&gt;Most of the songs in Synthesia kind of suck to be honest. Not to mention irrelevant to jazz piano. Or classical piano. Or anything decent really. And I refuse to pay for lame-o Adele piano covers.&lt;/p&gt;
-
-&lt;p&gt;So I went hunting around for decent jazz piano MIDI. It needs to ideally have backing tracks, quantized beats and split tracks for each hand. Its not easy. Here it is.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.bushgrafts.com&#34;&gt;Douglas McKenzie&lt;/a&gt; (I bought his DVD!) is a great jazz pianist in Australia. He has a website with excellently formatted MIDI files. Its actually to time! And he even releases sheet music transcriptions of each of his solos. The MIDI files even have his annotations of each improvisation idea dammit! Its amazing.&lt;/p&gt;
-
-&lt;p&gt;I am also lazy. So run the following code in the folder of your choice to download all the MIDI files on his page.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;wget -A mid -m -p -E -k -K -np http://www.bushgrafts.com/jazz/midi.htm
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Stage 2 (actually stage 999) will be to look at these &lt;a href=&#34;http://www.billevans.nl/midipage.htm&#34;&gt;Bill Evans transcriptions&lt;/a&gt;. Pull them thus:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;wget -A mid -m -p -E -k -K -np http://www.billevans.nl/midipage.htm
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;using-the-midi&#34;&gt;Using the MIDI&lt;/h2&gt;
-
-&lt;p&gt;So just feed these into Synthesia, have a listen, play what you can, then check against the Synthesia falling notes, official sheet music or the generated ones from the game.&lt;/p&gt;
-
-&lt;p&gt;Feed the MIDI output into a virtual MIDI device into Reaper, and listen to that &lt;a href=&#34;https://www.pianoteq.com/&#34;&gt;sweet sweet piano VST&lt;/a&gt; that you no doubt own.&lt;/p&gt;
-
-&lt;p&gt;Practice the ear, export to MP3, run it through &lt;a href=&#34;http://www.seventhstring.com/&#34;&gt;Transcribe&lt;/a&gt; (or just slow it down through Synthesia)!&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

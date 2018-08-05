@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Code on A Blog</title>
-    <link>http://nii236.github.io/technical-blog/tags/code/index.xml</link>
+    <link>http://nii236.github.io/technical-blog/tags/code/</link>
     <description>Recent content in Code on A Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://nii236.github.io/technical-blog/tags/code/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Jun 2016 12:52:23 +0800</lastBuildDate>
+    
+	<atom:link href="http://nii236.github.io/technical-blog/tags/code/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Micro</title>
@@ -16,11 +19,7 @@
       <guid>http://nii236.github.io/technical-blog/post/2016-06-25-microservice-architecture-thoughts/</guid>
       <description>&lt;p&gt;So it turns out that some people actually have interest in what I (attempted to) build with regards to the microservice trading platform I mentioned a few posts ago.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;I ended up doing a screencast to try and explain what I&amp;rsquo;ve done so far with my app and how it all plugs together.&lt;/p&gt;
-
-&lt;p&gt;Thanks to Oren Golan for setting this up! &lt;a href=&#34;https://oren.github.io/blog/micro.html&#34;&gt;The link to the post is here&lt;/a&gt;.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -31,144 +30,7 @@
       <guid>http://nii236.github.io/technical-blog/post/2016-06-16-elixir/</guid>
       <description>&lt;p&gt;All this Gophering around can get boring. That&amp;rsquo;s not a bad thing, I still consider Go the language with which I am strongest and most comfortable. If I had to use a language at my workplace, Go would be it.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;But sometimes you just want to poke around and see what else is out there. A language that offers a sense of adventure instead of the safety of Go and its static types, simplicity, rock solid linting and strict philosophy.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;elixir-lang.org&#34;&gt;Elixir&lt;/a&gt; complements Go in this regard. In fact it seems to be the complete opposite. Loosely typed, immutable data structures, enumerators, functional style programming.&lt;/p&gt;
-
-&lt;p&gt;So yeah, apparently functional programming is a cool hip thing to do nowadays. Its a fancy term, it makes you think that functional programming actually works (you know, its &lt;em&gt;FUNCTIONAL&lt;/em&gt;).&lt;/p&gt;
-
-&lt;p&gt;I play around with linux/unix/osx (hah!) a lot, and the fact that you have a pipeline operator Elixir is amazing! Also map, reduce, filter and each operators are something I miss a lot moving to Go from Ruby, so I&amp;rsquo;m glad to see that it&amp;rsquo;s got the first class treatment here in Elixir.&lt;/p&gt;
-
-&lt;h1 id=&#34;n-ot-i-nvented-h-ere&#34;&gt;N(ot) I(nvented) H(ere)&lt;/h1&gt;
-
-&lt;p&gt;Being in Go land for so long, I had forgotten what the rest of the programming world is like. Gopher&amp;rsquo;s shun extending the language, using dependencies, building packages for others to use.&lt;/p&gt;
-
-&lt;p&gt;Gopher&amp;rsquo;s have a serious case of NIH syndrome, and everything is handrolled to extremes. Its actually quite nice if you think about it. The software you develop ends up fitting like a really, really tight glove.&lt;/p&gt;
-
-&lt;p&gt;It was, however, still an (unexpected) breath of fresh air when I had a look at the Elixir community and how they were enthusiastically talking about writing macros, extending the language, using web frameworks and installing dependencies willy nilly.&lt;/p&gt;
-
-&lt;h1 id=&#34;code&#34;&gt;Code&lt;/h1&gt;
-
-&lt;p&gt;So I figured as a raw exercise, to convert one of the easy katas I did long ago. The exercise is called &lt;a href=&#34;https://www.hackerrank.com/challenges/cut-the-sticks&#34;&gt;Cut the Sticks&lt;/a&gt; and is a good exercise in recursion (my Go solution did not, however, use recursion).&lt;/p&gt;
-
-&lt;h2 id=&#34;processing-stdin&#34;&gt;Processing STDIN&lt;/h2&gt;
-
-&lt;p&gt;The hardest part in Go is always processing the arguments that come through HackerRank. Lots of STDIN scanning, processing etc.&lt;/p&gt;
-
-&lt;p&gt;Here is how I processed the STDIN with Go.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;// GetArgs reads from STDIN and returns stuff in the correct format
-func GetArgs(r io.Reader) (int, []int) {
-	var numArgs = 0
-	_, err := fmt.Fscanln(r, &amp;amp;numArgs)
-
-	if err != nil {
-		fmt.Println(err)
-	}
-
-	sumArgs := make([]int, numArgs)
-	for i := range sumArgs {
-		_, err = fmt.Fscan(r, &amp;amp;sumArgs[i])
-		if err != nil {
-			fmt.Println(err)
-		}
-	}
-
-	return numArgs, sumArgs
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Here it is in Elixir.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;def process(input) do
-  values = String.split(input, &amp;quot;\n&amp;quot;)
-    |&amp;gt; List.delete_at(0)
-    |&amp;gt; List.delete_at(-1)
-    |&amp;gt; List.to_string
-    |&amp;gt; String.strip
-    |&amp;gt; String.split(&amp;quot; &amp;quot;)
-    |&amp;gt; Enum.map(&amp;amp;(Integer.parse(&amp;amp;1)))
-    |&amp;gt; Enum.map(&amp;amp;(elem(&amp;amp;1,0)))
-  recurse_cut(values, Enum.max(values))
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Maybe I just suck at Go, but I dunno, there&amp;rsquo;s just something really, really &lt;strong&gt;satisfying&lt;/strong&gt; about the pipeline operator and processing stuff functionally.&lt;/p&gt;
-
-&lt;h2 id=&#34;cutting-the-sticks&#34;&gt;Cutting the sticks&lt;/h2&gt;
-
-&lt;p&gt;The &lt;em&gt;actual&lt;/em&gt; code involves chopping off the sticks by the length of the shortest stick until nothing remains.&lt;/p&gt;
-
-&lt;p&gt;UPDATE: I had a look and turns out I wrote the Go code recursively after all!&lt;/p&gt;
-
-&lt;p&gt;Here it is in Go:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;func cut(numArgs int, args []int, finalArray []int) (int, []int, []int) {
-
-	var newArray []int
-	var newFinalArray []int
-	var zeroValue bool
-
-	minArg := args[0]
-
-	// Get smallest number in args
-	for _, arg := range args {
-		if arg &amp;lt; minArg {
-			minArg = arg
-		}
-		if arg == 0 {
-			zeroValue = true
-		}
-	}
-
-	// If non zero, append to resulting array, less the minimum arg
-	for _, arg := range args {
-		if arg != 0 {
-			newArray = append(newArray, arg-minArg)
-		}
-	}
-
-	// If there exists any zero length sticks, run function again
-	if zeroValue {
-		return cut(len(newArray), newArray, finalArray)
-	}
-
-	// If more than 1 stick remain, run function recursively
-	if numArgs &amp;gt; 1 {
-		newFinalArray = append(finalArray, len(newArray))
-		return cut(len(newArray), newArray, newFinalArray)
-	}
-
-	newFinalArray = append(finalArray, len(newArray))
-	return len(newArray), newArray, newFinalArray
-
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Here it is in Elixir:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;  def recurse_cut(values, max) when max &amp;gt; 0 do
-    min = values
-      |&amp;gt; Enum.filter(&amp;amp;(&amp;amp;1 &amp;gt; 0))
-      |&amp;gt; Enum.min
-    IO.puts(Enum.count(values, &amp;amp;(&amp;amp;1 &amp;gt;= min)))
-    result = Enum.map(values, &amp;amp;(&amp;amp;1-min))
-    recurse_cut(result, Enum.max(result))
-  end
-
-  def recurse_cut(_values, max) when max &amp;lt;= 0 do
-  end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Its so clean!&lt;/p&gt;
-
-&lt;p&gt;As you can see, for programs that require a lot of iteration and mucking about, you might find that a functional style is a lot more efficient, and easier to understand.&lt;/p&gt;
-
-&lt;p&gt;I still believe Go has advantages in tooling, raw speed, simplicity, teams, documentation and a unified community vision. But Elixir offers a great functional style of programming and a sense of adventure that complements it very nicely.&lt;/p&gt;
-
-&lt;p&gt;I haven&amp;rsquo;t explored Elixir&amp;rsquo;s metaprogramming, macros or concurrency yet. I will have a look and share my thoughts in the future.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -179,75 +41,7 @@ end
       <guid>http://nii236.github.io/technical-blog/post/2016-04-27-microservices/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been obsessing over Go lately. I won&amp;rsquo;t go into it much since pretty much everyone else on the internet has at some point or another. And all of the people I know have probably heard me raving about it. The quality of the language itself remains divisive, but I am going to soldier on and just try and build something.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;the-project&#34;&gt;The project&lt;/h2&gt;
-
-&lt;p&gt;I&amp;rsquo;ve been looking at playing with &lt;a href=&#34;https://github.com/micro/go-micro&#34;&gt;go-micro&lt;/a&gt; and building microservices. Really, I only needed an excuse to build something. I&amp;rsquo;ve come across some decent trading platforms and frameworks online but nothing really built in Go. So that&amp;rsquo;s my project.&lt;/p&gt;
-
-&lt;p&gt;The first step will be to write a client that subscribes to the Interactive Brokers API and publishes the ticker data onto a &lt;a href=&#34;http://nats.io/&#34;&gt;NATS&lt;/a&gt; message bus, which will then be consumed by &lt;a href=&#34;https://influxdata.com/&#34;&gt;InfluxData&amp;rsquo;s&lt;/a&gt; Telegraf NATS connector. This will give me a bunch of data to play with, with helpful time series crunching tools that come for free with InfluxDB (&lt;code&gt;min&lt;/code&gt;, &lt;code&gt;max&lt;/code&gt;, even an &lt;code&gt;SMA&lt;/code&gt;!).&lt;/p&gt;
-
-&lt;p&gt;Everything will be docker-ised into a swarm. NATS and Influx provide docker containers so that&amp;rsquo;s easy. The single microservices will contain static binaries so (in theory) that will be easy as well.&lt;/p&gt;
-
-&lt;h2 id=&#34;the-snippet&#34;&gt;The snippet&lt;/h2&gt;
-
-&lt;p&gt;Here is a code snippet that subscribes to the IB API (also docker-ised) and (for now) just logs the values to STDOUT.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;func exec(pair string, currency string) {
-	log.Infoln(&amp;quot;Starting connection to IB gateway...&amp;quot;, &amp;quot;Pair:&amp;quot;, pair, &amp;quot;, Currency:&amp;quot;, currency)
-	options := &amp;amp;ib.EngineOptions{
-		Client:           0,
-		Gateway:          &amp;quot;192.168.99.100:4003&amp;quot;,
-		DumpConversation: false,
-	}
-
-	var err error
-	e, err = ib.NewEngine(*options)
-
-	defer e.Stop()
-
-	if err != nil {
-		log.Fatalln(&amp;quot;ERROR!&amp;quot;, err)
-		return
-	}
-	defer e.Stop()
-	log.Infoln(&amp;quot;Done.&amp;quot;)
-	log.Infoln(&amp;quot;Setting up contract for subscription...&amp;quot;)
-	contract := &amp;amp;ib.Contract{
-		Symbol:       pair,
-		SecurityType: &amp;quot;CASH&amp;quot;,
-		Exchange:     &amp;quot;IDEALPRO&amp;quot;,
-		Currency:     currency,
-	}
-
-	im, err := ib.NewInstrumentManager(e, *contract)
-	defer im.Close()
-	ctm, err := ib.NewCurrentTimeManager(e)
-	defer ctm.Close()
-
-	if err != nil {
-		log.Fatalln(err)
-	}
-
-	for {
-		select {
-		case &amp;lt;-im.Refresh():
-			if err := im.FatalError(); err != nil {
-				log.Fatalln(err)
-			}
-			log.Infoln(&amp;quot;Time:&amp;quot;, ctm.Time().UnixNano())
-			log.Infoln(&amp;quot;Bid:&amp;quot;, im.Bid())
-			log.Infoln(&amp;quot;Ask:&amp;quot;, im.Ask())
-			log.Infoln(&amp;quot;Last:&amp;quot;, im.Last())
-		}
-
-	}
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;At the moment CPU usage jumps up to 50% as soon as you connect to the IB Gateway. No idea why but I&amp;rsquo;m just going to assume its a library issue for the time being.&lt;/p&gt;
-
-&lt;p&gt;The repo can be located on &lt;a href=&#34;https://github.com/nii236/nii-finance&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -258,115 +52,7 @@ end
       <guid>http://nii236.github.io/technical-blog/post/2015-11-15-graviton/</guid>
       <description>&lt;p&gt;I&amp;rsquo;d like to introduce Graviton in this post. Its a name I made up for my project mentioned in a previous post. There&amp;rsquo;s no real point to the name, except that it uses Electron plus Go. So I figured I&amp;rsquo;d choose a cool physics based name that starts with G.&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;In this post I&amp;rsquo;ll explain the basic steps in communicating between the front and back. In this case a &amp;ldquo;Hello World&amp;rdquo; should do the trick.&lt;/p&gt;
-
-&lt;p&gt;So there are three parts to a graviton app:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Browser front-end&lt;/li&gt;
-&lt;li&gt;Node js glue-end&lt;/li&gt;
-&lt;li&gt;Golang backend&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The first two parts are covered with Electron.js. And the backend is covered by Go, believe it or not.&lt;/p&gt;
-
-&lt;p&gt;Connecting the front-end to the glue-end is done by Electron&amp;rsquo;s internal &lt;code&gt;ipc&lt;/code&gt; package. Its an event based system.&lt;/p&gt;
-
-&lt;p&gt;Let&amp;rsquo;s send a &amp;ldquo;Hello from front-end&amp;rdquo; message from our front-end. I&amp;rsquo;m a react.js guy as well, so that&amp;rsquo;s what I&amp;rsquo;ll be using.&lt;/p&gt;
-
-&lt;p&gt;Create a React component which has a button which calls:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;ipc.send(&#39;SendHello&#39;, &#39;Front-end&#39;);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In the glue-end, you&amp;rsquo;ll want a handler for this event, which basically just passes this onto the backend&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;var client = new todoProto.Todo(&#39;localhost:3000&#39;, grpc.Credentials.createInsecure());
-
-ipc.on(&#39;SendHello&#39;, function(event, arg) {
-  client.sendHello({request: arg}, function(err, response) {
-    if (err) { console.log(err); }
-    event.sender.send(&#39;SendHelloResponse&#39;, response)
-  });
-})
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The communication between the glue-end and the backend needs to be declared in a protobuf3 file. The glue-end will also handle the response which will be sent back over IPC to the front-end:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;syntax = &amp;quot;proto3&amp;quot;;
-
-package Hello;
-
-message SendHelloRequest {
-  string request = 1;
-}
-
-message SendHelloResponse {
-  string response = 1;
-}
-
-service Todo {
-  rpc SendHello(SendHelloRequest) returns
-  (SendHelloResponse);
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now to handle it in the backend:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;type sendHelloServer struct{}
-
-// AddTodoService implements pb.AddTodoServer
-func (s sendHelloServer) SendHello(ctx context.Context, in *pb.SendHelloRequest) (*pb.SendHelloResponse, error) {
-	return &amp;amp;pb.SendHelloResponse{Response: &amp;quot;Hello&amp;quot; + in.Request}, nil
-}
-
-func main() {
-  port := os.Getenv(&amp;quot;PORT&amp;quot;)
-	host := os.Getenv(&amp;quot;HOST&amp;quot;)
-
-	if len(port) == 0 {
-		port = &amp;quot;3000&amp;quot;
-	}
-
-	if len(host) == 0 {
-		host = &amp;quot;localhost&amp;quot;
-	}
-
-	lis, err := net.Listen(&amp;quot;tcp&amp;quot;, host+&amp;quot;:&amp;quot;+port)
-	if err != nil {
-		log.Fatalf(&amp;quot;failed to listen: %v&amp;quot;, err)
-	}
-	s := grpc.NewServer()
-	pb.RegisterSendHelloServer(s, &amp;amp;sendHelloServer{})
-	s.Serve(lis)
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The response from the Go backend is now sent to your node.js glue-end which will forward it to the front-end. Now handle the response over in your front-end:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;ipc.on(&#39;SendHelloResponse&#39;, (arg) =&amp;gt; {
-  console.log(arg);
-});
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You will see &amp;ldquo;Hello Front-end&amp;rdquo; in your Electron&amp;rsquo;s console everytime you click the button! Amazing!&lt;/p&gt;
-
-&lt;p&gt;I imagine you&amp;rsquo;re thinking something like:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Goddamn that was a LOT of effort for a Hello World&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Sure it was. But now you have a cool framework for your Go app! You are Hello World-ing across three different layers! Its a self contained, cross platform, multi-language, HTTP2 streaming enabled microservice!&lt;/p&gt;
-
-&lt;p&gt;The connection between the presentation layer and the backend is handled in Protobuf/gRPC format. Communication is very efficient compared to JSON, uses HTTP/2 and supports streaming, duplex communication and other cool things that I have only begun to explore.&lt;/p&gt;
-
-&lt;p&gt;I would like to imagine that with all this setup you have a scalable system with which you can create cool apps like PopcornTime, Atom and others, except now you can do it with Go.&lt;/p&gt;
-
-&lt;p&gt;And that&amp;rsquo;s pretty damn cool.&lt;/p&gt;</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
