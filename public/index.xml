@@ -6,10 +6,20 @@
     <description>Recent content on A Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 15 Dec 2017 09:17:28 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 05 Aug 2018 13:08:53 +0800</lastBuildDate>
     
 	<atom:link href="http://nii236.github.io/technical-blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Why My Timing Sucks, and Binary Search in Music</title>
+      <link>http://nii236.github.io/technical-blog/post/2018-08-05-timing/</link>
+      <pubDate>Sun, 05 Aug 2018 13:08:53 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/post/2018-08-05-timing/</guid>
+      <description>Drawing the lines through the beats You&amp;rsquo;d think that keeping the beat wouldn&amp;rsquo;t be difficult while playing a tune. I thought the same thing. I realised this wasn&amp;rsquo;t the case when I finally admitted to myself that I still could not play to time (without the help of a metronome) for tunes that I&amp;rsquo;ve been playing for months.
+Why problem? I don&amp;rsquo;t know where notes land relative to the beat.</description>
+    </item>
     
     <item>
       <title>Modal Improvisation</title>
