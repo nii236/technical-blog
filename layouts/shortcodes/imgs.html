@@ -3,7 +3,7 @@
 	<div class="image">
 		{{ range .}} {{ $image := .Resize "500x"}}
 		<figure style="border: thin silver solid">
-			<img src={{ $image.RelPermalink}}>
+			<img src="{{ $image.RelPermalink}}">
 			<figcaption style="color: #424242;text-align: center; font-variant: small-caps;
 			">{{.Params.caption}}
 				<figcaption>
