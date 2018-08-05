@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on A Blog</title>
+    <link>http://nii236.github.io/technical-blog/tags/</link>
+    <description>Recent content in Tags on A Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Nov 2015 16:05:24 +0800</lastBuildDate>
+    
+	<atom:link href="http://nii236.github.io/technical-blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Career</title>
+      <link>http://nii236.github.io/technical-blog/tags/career/</link>
+      <pubDate>Sun, 15 Nov 2015 16:05:24 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/tags/career/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Code</title>
+      <link>http://nii236.github.io/technical-blog/tags/code/</link>
+      <pubDate>Sat, 25 Jun 2016 12:52:23 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/tags/code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Language</title>
+      <link>http://nii236.github.io/technical-blog/tags/language/</link>
+      <pubDate>Fri, 07 Oct 2016 12:52:23 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/tags/language/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Misc</title>
+      <link>http://nii236.github.io/technical-blog/tags/misc/</link>
+      <pubDate>Fri, 18 Sep 2015 14:21:40 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/tags/misc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Music</title>
+      <link>http://nii236.github.io/technical-blog/tags/music/</link>
+      <pubDate>Fri, 15 Dec 2017 09:17:28 +0800</pubDate>
+      
+      <guid>http://nii236.github.io/technical-blog/tags/music/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
